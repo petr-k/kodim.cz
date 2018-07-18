@@ -1,0 +1,74 @@
+[
+  {
+    "link": "programovani",
+    "title": "Co je to programování",
+    "desc": "Povíme si co je to programování, jak funguje počítač a vyzkoušíme si jaké problémy se v programování řeší.",
+    "ready": true
+  },
+  {
+    "link": "jazyky-nastroje",
+    "title": "Jazyky a nástroje",
+    "desc": "Nainstalujeme jazyk Python a nástroje, které budete pro programování na vlastním počítači potřebovat.",
+    "ready": true
+  },
+  {
+    "link": "cisla-retezce",
+    "title": "Čísla a řetězce",
+    "desc": "Nyní už skutečně začneme programovat a vyzkoušíme si první příkazy v jazyce Python.",
+    "ready": true
+  },
+  {
+    "link": "promenne",
+    "title": "Proměnné",
+    "desc": "Proměnné potřebujeme k tomu, abychom si mohli nějakou hodnotu zapamatovat pro pozdější použití.",
+    "ready": true
+  },
+  {
+    "link": "funkce-moduly",
+    "title": "Funkce a moduly",
+    "desc": "Ukážeme si, jak používat funkce a importovat moduly, abychom nemuseli všechno v Pythonu psát od píky.",
+    "ready": true
+  },
+  {
+    "link": "vstup-vystup",
+    "title": "Vstup a výstup",
+    "desc": "Vstup a výstup potřebujeme aby program dokázal komunikovat s uživatelem.",
+    "ready": true
+  },
+  {
+    "link": "podminky",
+    "title": "Podmínky",
+    "desc": "V této kapitole naučíme naše programy rozhodovat se a měnit svoje chování podle zadaného vstupu.",
+    "ready": true
+  },
+  {
+    "link": "sekvence",
+    "title": "Sekvenční hodnoty",
+    "desc": "Díky sekvencím můžeme do jedné proměnné uložít více hodnot najednou.",
+    "ready": true
+  },
+  {
+    "link": "cykly",
+    "title": "Cykly",
+    "desc": "Naučíme naše programy provádět opakovaně nějakou činnost.",
+    "ready": true
+  },
+  {
+    "link": "slovniky",
+    "title": "Slovníky",
+    "desc": "Nová datová struktura, která nám umožní lépe organizovat komplikovanější data.",
+    "ready": false
+  },
+  {
+    "link": "vlastni-funkce",
+    "title": "Vlastní funkce",
+    "desc": "Naučíme se jak psát vlastní funkce a rozčlenit tak větší programy na manší kousky.",
+    "ready": false
+  },
+  {
+    "link": "drobnosti",
+    "title": "Drobnosti na závěr",
+    "desc": "Drobné ale užitečné věci z jazyka Python, které se jinam nevešly.",
+    "ready": false
+  }
+]

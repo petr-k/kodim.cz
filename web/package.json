@@ -1,0 +1,24 @@
+{
+  "name": "kodim-cz",
+  "description": "Programing courses web page",
+  "private": true,
+  "author": "Martin Podloucký",
+  "version": "0.1.0",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "babel-preset-env": "^1.7.0",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "sass-brunch": "^2.10.4",
+    "uglify-js-brunch": "^2"
+  }
+}

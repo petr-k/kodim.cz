@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter1048" x="-.0099375" y="-.015143" width="1.0199" height="1.0303" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.3505729"/>
+  </filter>
+ </defs>
+ <g transform="translate(0 -270.54)">
+  <g transform="translate(4)">
+   <g>
+    <path transform="matrix(.94295 0 0 .94295 329.88 155.68)" d="m-336.81 173.18v40.481l65.617-2e-5c2.1167 0 2.6458-0.52917 2.6458-2.1166l1e-5 -41.01 17.198-16.404h-83.079z" fill="#b4b4ff" filter="url(#filter1048)"/>
+    <rect x="10.531" y="315.98" width="64.867" height="39.918" rx="1.1977" ry="1.1977" fill="#fff"/>
+    <rect x="10.531" y="315.98" width="64.867" height="39.918" rx="1.1977" ry="1.1977" fill="#d5d5ff"/>
+   </g>
+   <g fill="#283891" stroke-width="1.2474">
+    <g stroke="#d5d5ff" stroke-linecap="round">
+     <rect transform="scale(-1)" x="-20.511" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-25.501" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-30.491" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-35.48" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-40.47" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-45.46" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-50.45" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-60.429" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-71.656" y="-325.96" width="11.227" height="4.9898"/>
+     <rect transform="scale(-1)" x="-55.44" y="-325.96" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-23.006" y="-330.95" width="7.4847" height="4.9898"/>
+     <rect transform="scale(-1)" x="-27.996" y="-330.95" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-32.986" y="-330.95" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-37.975" y="-330.95" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-42.965" y="-330.95" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-47.955" y="-330.95" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-52.945" y="-330.95" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-57.935" y="-330.95" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-65.419" y="-330.95" width="7.4847" height="4.9898"/>
+     <rect transform="scale(-1)" x="-20.511" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-25.501" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-30.491" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-35.48" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-40.47" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-45.46" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-50.45" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-60.429" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-55.44" y="-335.94" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-23.006" y="-340.93" width="7.4847" height="4.9898"/>
+     <rect transform="scale(-1)" x="-27.996" y="-340.93" width="4.9898" height="4.9898"/>
+     <rect transform="scale(-1)" x="-57.935" y="-340.93" width="29.939" height="4.9898"/>
+     <rect transform="scale(-1)" x="-66.667" y="-340.93" width="8.7321" height="4.9898"/>
+     <rect transform="scale(-1)" x="-71.656" y="-340.93" width="4.9898" height="4.9898"/>
+    </g>
+    <path d="m5.6698 288.02c-1.7435-0.0398-1.8278 0.87857-1.1261 2.5158l4.9898 21.955c0.74847 1.7464 1.4969 1.9959 2.7444 1.9959h61.374c1.2475 0 1.9959-0.24948 2.7444-1.9959l4.9898-21.955c0.74847-1.7464 0.60287-2.6748-1.4969-2.4949h-73.849c-0.13123-0.0112-0.25461-0.0183-0.37082-0.021z" stroke="#283891"/>
+    <path d="m71.656 335.94h-11.227v-4.9898h4.9898v-4.9898h6.2372z" stroke="#d5d5ff" stroke-linecap="round"/>
+   </g>
+   <rect x="32.986" y="343.43" width="17.464" height="9.9796" rx="1.1977" ry="1.1977" fill="#b9b9b9"/>
+   <g shape-rendering="auto">
+    <g fill="none">
+     <path d="m14.313 293.53h-2.0866l0.36837 1.9964h2.0612" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m41.659 293.53h-27.346" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m41.644 295.53h9.9874l0.01547-1.9964h-9.9874" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m14.656 295.53h26.988" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m14.913 297.02h-2.0427l0.3679 1.9945h2.0178" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m15.256 299.02h21.347l-0.18712-1.9945h-21.503" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+    </g>
+    <g fill="#fff">
+     <path d="m17.88 293.53 0.29627 1.9964h32.855l0.14034-1.9964z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m18.398 297.02 0.29629 1.9944h17.909l-0.18712-1.9944z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m18.917 300.51 0.29627 1.9964h25.733l0.06238-1.9964z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m19.435 304.01 0.29627 1.9944h12.03l-0.26511-1.9944z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m19.954 307.5 0.29627 1.9964h14.12l-0.2339-1.9964z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+    </g>
+    <g fill="none">
+     <path d="m15.513 300.51h-1.9993l0.36837 1.9964h1.974" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m41.605 300.51h-26.091" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m41.589 302.51h4.3544l-0.06232-1.9964h-4.2764" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m15.857 302.51h25.733" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m16.114 304.01h-1.9555l0.3679 1.9944h1.9306" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m16.457 306h15.305l-0.26511-1.9944h-15.383" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m16.714 307.5h-1.9116l0.36792 1.9964h1.8868" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+     <path d="m17.057 309.5h17.312l-0.2339-1.9964h-17.421" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+    </g>
+    <path d="m12.226 293.53 0.36838 1.9964h3.2346l-0.32746-1.9964zm0.64419 3.4938 0.36789 1.9945h3.1639l-0.32743-1.9945zm0.64371 3.4919 0.36838 1.9964h3.0928l-0.32745-1.9964zm0.64418 3.4938 0.3679 1.9945h3.0221l-0.32745-1.9945zm0.64419 3.4919 0.36792 1.9964h2.951l-0.32746-1.9964z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#ffc200" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   </g>
+  </g>
+ </g>
+</svg>
