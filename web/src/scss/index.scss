@@ -123,3 +123,57 @@ h1, h2, h3, h4 {
   font-size: 3rem;
   font-weight: 900;
 }
+
+.chapters {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.chapter-tile {
+  display: flex;
+  flex: 0 0 100%;
+  padding: 2rem 0;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width: 880px) { 
+  .chapters {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .chapter-tile {
+    flex: 0 0 50%;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.chapter-title {
+  font-size: 1.5rem;
+  margin: 0.7rem 0;
+}
+
+.chapter-desc {
+  margin: 0;
+}
+
+.chapter-num {
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: $czblue;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  margin-right: 1rem;
+}
