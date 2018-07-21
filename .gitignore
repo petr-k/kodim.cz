@@ -18,10 +18,7 @@ web/node_modules/
 
 # Project build
 
-web/public/index.css
-web/public/index.js
-web/public/index.css.map
-web/public/index.js.map
+web/public
 
 # Temporary files
 

@@ -1,12 +1,14 @@
 
 module.exports = {
+  paths: {
+    watched: ['src']
+  },
   files: {
-    javascripts: {
+    stylesheets: {
       joinTo: {
-        'index.js': /^app/
+        'index.css': 'src/scss/index.scss'
       }
-    },
-    stylesheets: {joinTo: 'index.css'}
+    }
   },
   plugins: {
     sass: {
@@ -15,13 +17,5 @@ module.exports = {
       },
       mode: 'native'
     },
-    babel: {
-      presets: ['env']
-    }
-  },
-  server: {
-    port: 3000,
-    base: './public',
-    stripSlashes: true
   }
 }
