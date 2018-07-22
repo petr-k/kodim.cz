@@ -4,7 +4,7 @@
   "link": "uvod-do-progr",
   "sections": [
     {
-      "name": "level1",
+      "name": "zaklady",
       "chapters": [
         {
           "link": "programovani",
@@ -17,7 +17,12 @@
           "title": "Jazyky a nástroje",
           "desc": "Nainstalujeme jazyk Python a nástroje, které budete pro programování na vlastním počítači potřebovat.",
           "ready": true
-        },
+        }
+      ]
+    },
+    {
+      "name": "zaciname",
+      "chapters": [
         {
           "link": "cisla-retezce",
           "title": "Čísla a řetězce",

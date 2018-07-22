@@ -18,7 +18,7 @@ body {
 }
 
 p {
-  line-height: 140%;
+  line-height: 1.5em;
 }
 
 .container {
@@ -29,6 +29,12 @@ p {
 
 h1, h2, h3, h4 {
   color: $czblue;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 5rem;
 }
 
 .intro {
@@ -113,7 +119,7 @@ h1, h2, h3, h4 {
   text-decoration: none;
   
   &:hover {
-    h2 {
+    h3 {
       text-decoration: underline;
     }
   }

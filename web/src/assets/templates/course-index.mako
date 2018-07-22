@@ -4,7 +4,7 @@
   <div class="chapter-tile">
     <div class="chapter-num">${counter['chapter']}</div>
     <div class="chapter-info">
-      <a href="../${chapter.link}"><h2 class="chapter-title">${chapter.title}</h2></a>
+      <a href="../${chapter.link}"><h3 class="chapter-title">${chapter.title}</h3></a>
       <p class="chapter-desc">${chapter.desc}</p>
     </div>
   </div>
@@ -15,11 +15,11 @@
 </%def>
 
 <%def name="section(name)">
-  <section class="container chapters">
+  <div class="chapters">
     %for chapter in course.section_by_name(name).all_chapters():
       ${chapterTile(chapter)}
     %endfor
-  </section>
+  </div>
 </%def>
 
 <%block name="header">
