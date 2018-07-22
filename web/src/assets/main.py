@@ -22,60 +22,80 @@ class Chapter:
     self.link = chapter_json['link']
     self.ready = chapter_json['ready']
 
-class Course:
-  def __init__(self, course_json):
-    self.title = course_json['title']
-    self.subtitle = course_json['subtitle']
-    self.link = course_json['link']
+class Section:
+  def __init__(self, section_json):
+    self.name = section_json['name']
     self.chapters_dict = OrderedDict()
 
-    with open(f'courses/{self.link}/chapters.json') as file:
-      all_chapters = json.load(file)
-
-    for chapter in all_chapters:
+    for chapter in section_json['chapters']:
       self.chapters_dict[chapter['link']] = Chapter(chapter)
-    
+
   def chapter_by_link(self, link):
-    return self.chapters_dict[link]
+    if link in self.chapters_dict:
+      return self.chapters_dict[link]
+    
+    return None
   
   def all_chapters(self):
     return self.chapters_dict.values()
 
-class CoursesDB:
-  courses_dict = OrderedDict()
-  
-  def __init__(self, filename):
-    with open(filename) as file:
-      all_courses = json.load(file)
-
-    for course in all_courses:
-      self.courses_dict[course['link']] = Course(course)
+class Course:
+  def __init__(self, link):
+    with open(f'courses/{link}.json') as file:
+      course_json = json.load(file)
     
-  def course_by_link(self, link):
-    return self.courses_dict[link]
-  
-  def all_courses(self):
-    return self.courses_dict.values()
+    self.title = course_json['title']
+    self.subtitle = course_json['subtitle']
+    self.link = course_json['link']
+    self.sections_dict = OrderedDict()
+    
+    for section in course_json['sections']:
+      self.sections_dict[section['name']] = Section(section)
 
-courses_db = CoursesDB('courses/courses.json')
+  def section_by_name(self, name):
+    return self.sections_dict[name]
+
+  def chapter_by_link(self, link):
+    for section in self.all_sections():
+      chapter = section.chapter_by_link(link)
+      if chapter != None:
+        return chapter
+
+    return None
+
+  def all_sections(self):
+    return self.sections_dict.values()
+
+courses = {
+  'uvod-do-progr': Course('uvod-do-progr'),
+  'python-data': Course('python-data')
+}
 
 @app.route('/')
 def index():
-  return render_template('index.mako', courses_db = courses_db)
+  return render_template('index.mako', courses=courses)
 
 @app.route('/<course_link>')
 def course_index(course_link):
   return redirect(f'/{course_link}/index')
 
+
 @app.route("/<course_link>/<chapter_link>/")
 def course_chapter(course_link, chapter_link):
-  course = courses_db.course_by_link(course_link)
+  course = courses[course_link]
 
   if chapter_link == 'index':
-    return render_template('course-index.mako', course=course)
+    return render_template(
+      f'{course_link}/index.mako',
+      course=course,
+      counter={'chapter': 1}
+    )
+    
+"""
   else:
     return render_template(
       f'{course_link}/{chapter_link}.mako', 
       course=course,
-      chapter=find_chapter(course, chapter_id)
+      chapter=course.chapter_by_link(chapter_link)
     )
+"""

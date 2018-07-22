@@ -1,6 +1,6 @@
 <%inherit file="/layout.mako"/>
 
-<%def name="course_tile(course)">
+<%def name="courseTile(course)">
   <div class="course-tile">
     <style>
       .course-link .icon-${course.link} {
@@ -34,8 +34,7 @@
 
 <%block name="main">
   <div class="courses container">
-    % for course in courses_db.all_courses():
-      ${course_tile(course)}
-    % endfor
+    ${courseTile(courses['uvod-do-progr'])}
+    ${courseTile(courses['python-data'])}
   </div>
 </%block>

@@ -1,13 +1,25 @@
 <%inherit file="/layout.mako"/>
 
-<%def name="chapterTile(num, link)">
+<%def name="chapterTile(chapter)">
   <div class="chapter-tile">
-    <div class="chapter-num">${num}</div>
+    <div class="chapter-num">${counter['chapter']}</div>
     <div class="chapter-info">
-      <a href="${link}"><h2 class="chapter-title">${caller.title()}</h2></a>
-      <p class="chapter-desc">${caller.desc()}</p>
+      <a href="../${chapter.link}"><h2 class="chapter-title">${chapter.title}</h2></a>
+      <p class="chapter-desc">${chapter.desc}</p>
     </div>
   </div>
+
+  <% 
+    counter['chapter'] = counter['chapter'] + 1
+  %>
+</%def>
+
+<%def name="section(name)">
+  <section class="container chapters">
+    %for chapter in course.section_by_name(name).all_chapters():
+      ${chapterTile(chapter)}
+    %endfor
+  </section>
 </%def>
 
 <%block name="header">
@@ -19,17 +31,5 @@
         ${course.subtitle}
       </p>
     </div>
-  </div>
-  <div class="chapters container">
-    %for i, chapter in enumerate(course.all_chapters()):
-      <%self:chapterTile num="${i+1}" link="../${chapter.link}">
-        <%def name="title()">
-          ${chapter.title}
-        </%def>
-        <%def name="desc()">
-          ${chapter.desc}
-        </%def>
-      </%self:chapterTile>
-    %endfor
   </div>
 </%block>
