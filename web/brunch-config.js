@@ -17,5 +17,8 @@ module.exports = {
       },
       mode: 'native'
     },
+  },
+  watcher: {
+    awaitWriteFinish: true
   }
 }

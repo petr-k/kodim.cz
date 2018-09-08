@@ -2,6 +2,7 @@
 
 <%block name="main">
   <section class="container">
-    Na obsahu se pracuje.
+    <h2>Základy</h2>
+    ${self.section('zaklady')}
   </section>
 </%block>

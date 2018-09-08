@@ -2,16 +2,12 @@
 
 <%def name="chapterTile(chapter)">
   <div class="chapter-tile">
-    <div class="chapter-num">${counter['chapter']}</div>
+    <div class="chapter-tile-num">${chapter.num}</div>
     <div class="chapter-info">
-      <a href="../${chapter.link}"><h3 class="chapter-title">${chapter.title}</h3></a>
-      <p class="chapter-desc">${chapter.desc}</p>
+      <a href="../${chapter.link}"><h3 class="chapter-tile-title">${chapter.title}</h3></a>
+      <p class="chapter-tile-desc">${chapter.desc}</p>
     </div>
   </div>
-
-  <% 
-    counter['chapter'] = counter['chapter'] + 1
-  %>
 </%def>
 
 <%def name="section(name)">

@@ -16,19 +16,24 @@ def diclist_find(diclist, link):
   return None
 
 class Chapter:
-  def __init__(self, chapter_json):
+  def __init__(self, chapter_json, num):
     self.title = chapter_json['title']
     self.desc = chapter_json['desc']
     self.link = chapter_json['link']
     self.ready = chapter_json['ready']
+    self.num = num
 
 class Section:
-  def __init__(self, section_json):
+  def __init__(self, section_json, start_num):
     self.name = section_json['name']
     self.chapters_dict = OrderedDict()
-
+    
+    num = start_num
     for chapter in section_json['chapters']:
-      self.chapters_dict[chapter['link']] = Chapter(chapter)
+      self.chapters_dict[chapter['link']] = Chapter(chapter, num)
+      num += 1
+
+    self.last_num = num
 
   def chapter_by_link(self, link):
     if link in self.chapters_dict:
@@ -49,8 +54,11 @@ class Course:
     self.link = course_json['link']
     self.sections_dict = OrderedDict()
     
+    num = 1
     for section in course_json['sections']:
-      self.sections_dict[section['name']] = Section(section)
+      sec = Section(section, num)
+      self.sections_dict[section['name']] = sec
+      num = sec.last_num
 
   def section_by_name(self, name):
     return self.sections_dict[name]
@@ -68,8 +76,18 @@ class Course:
 
 courses = {
   'uvod-do-progr': Course('uvod-do-progr'),
-  'python-data': Course('python-data')
+  'python-data': Course('python-data'),
+  'jak-to-funguje': Course('jak-to-funguje')
 }
+
+class Counter:
+  def __init__(self):
+    self.value = 1
+
+  def next(self):
+    value = self.value
+    self.value += 1
+    return value
 
 @app.route('/')
 def index():
@@ -87,15 +105,11 @@ def course_chapter(course_link, chapter_link):
   if chapter_link == 'index':
     return render_template(
       f'{course_link}/index.mako',
-      course=course,
-      counter={'chapter': 1}
+      course=course
     )
-    
-"""
   else:
     return render_template(
       f'{course_link}/{chapter_link}.mako', 
-      course=course,
-      chapter=course.chapter_by_link(chapter_link)
+      chapter=course.chapter_by_link(chapter_link),
+      counter=Counter()
     )
-"""

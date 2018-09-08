@@ -2,7 +2,7 @@
 
 DEPLOY_FILE=deploy.tar.gz
 
-rm -R public/*
+rm -rf public/*
 brunch build --production
 cd public
 tar -zcvf ${DEPLOY_FILE} *

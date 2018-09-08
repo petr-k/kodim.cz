@@ -1,0 +1,207 @@
+@mixin debug() {
+  border: 1px solid black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $text-primary;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited, &:active {
+    color: $link-color;
+  }
+}
+
+p, li {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $czblue;
+}
+
+h1, h2 {
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.intro {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.intro-image {
+  width: 15rem;
+  height: 15rem;
+  padding-top: 2rem;
+  flex: 0 0 auto;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.intro-title {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 3.5rem;
+}
+
+.intro-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 880px) {
+  .intro {
+    padding: 1rem 3rem;
+    flex-flow: row nowrap;
+  }
+
+  .intro-image {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .intro-text {
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .intro-title {
+    font-size: 4rem;
+  }
+}
+
+.courses {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.course-tile {
+  text-align: center;
+  flex: 1 0 100%;
+}
+
+@media only screen and (min-width: 880px) { 
+  .courses {
+    flex-flow: row nowrap;
+  }
+  
+  .course-tile {
+    flex: 1 0 50%;
+  }
+}
+
+.course-picture {
+  width: 10rem;
+  height: 10rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.course-link {
+  display: block;
+  max-width: 20rem;
+  margin: 0 auto;
+  
+  p {
+    color: $text-primary;
+  }
+
+  &:hover {
+    p {
+      text-decoration: none;
+    }
+  }
+}
+
+.course-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+.chapters {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.chapter-tile {
+  display: flex;
+  flex: 0 0 100%;
+  padding: 2rem 0;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width: 880px) { 
+  .chapters {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .chapter-tile {
+    flex: 0 0 50%;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.chapter-tile-title {
+  font-size: 1.5rem;
+  margin: 0.7rem 0;
+}
+
+.chapter-tile-desc {
+  margin: 0;
+}
+
+.chapter-tile-num {
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  background: transparent url('/img/brush.svg') center/contain no-repeat;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
