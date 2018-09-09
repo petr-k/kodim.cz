@@ -35,7 +35,7 @@
   <pre>&gt;&gt;&gt; 3.141592
 3.141592</pre>
 
-  <h2>Aritmetické operátory</h1>
+  <h2>Aritmetické operátory</h2>
   <p>Nyní už máme prostředky k tomu, abycho mohli pomocí Pythonu něco spočítat. V Python máme k dispozici běžné aritmetické operátory:</p>
 
   <ul>

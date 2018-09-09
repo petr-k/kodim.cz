@@ -23,7 +23,7 @@ print(cena)
 <pre>$ python program.py</pre>
 
   <%self:alert_warning>
-    <p>Pozor na znak dolaru na začátku tohoto příkazu. Tento znak napíšeme! Znak dolaru pouze naznačuje, že tento příkaz musíme zadat do termínálu operačního systému, nikoliv do Python konzole. Pokud tedy váš příkazový řádek stále začíná třemi zobáčky jste ještě pořád uvnitř Python konzole a musíte z ní vyskočit pomocí funkce <code>exit()</code>.
+    <p>Pozor na znak dolaru na začátku tohoto příkazu. Tento znak napíšeme! Znak dolaru pouze naznačuje, že tento příkaz musíme zadat do termínálu operačního systému, nikoliv do Python konzole. Pokud tedy váš příkazový řádek stále začíná třemi zobáčky jste ještě pořád uvnitř Python konzole a musíte z ní vyskočit pomocí funkce <code>exit()</code>.</p>
   </%self:alert_warning>
 
 </%self:lesson>
@@ -42,7 +42,7 @@ print(cena)
         <p>Program spusťte na konzoli a vyzkoušejte, že dělá co má.</p>
       </li>
       <li>
-        <p>Upravte tento program tak, že do proměnné <var>nazev</var> uložíte název nějakého divadelního představení a do proměnné <var>cas</var> uložte čas konání totoho představení. Nyní pomocí funkce <code>print()</code> nechte program vypsat na obrazovku na jeden řádek náazev představení a čas konání, např.</p>
+        <p>Upravte tento program tak, že do proměnné <var>nazev</var> uložíte název nějakého divadelního představení a do proměnné <var>cas</var> uložte čas konání totoho představení. Nyní pomocí funkce <code>print()</code> nechte program vypsat na obrazovku na jeden řádek název představení a čas konání, např.</p>
         
         <pre>Zkrocení zlé ženy - 19:30</pre>
       </li>
@@ -84,7 +84,7 @@ print(cena)
     <ul>
       <li>Generování náhodných čísel dělá funkce <code>random.randint()</code>.</li>
       <li>
-        <p>Pokud chcete ve vašem programu použít knihovnu <code>random,</code> musíte na jeho úplném začátku napsat příkaz </p>
+        <p>Pokud chcete ve vašem programu použít modul <code>random</code>, musíte na jeho úplném začátku napsat příkaz </p>
         <pre>import random</pre>
       </li>
     </ul>
