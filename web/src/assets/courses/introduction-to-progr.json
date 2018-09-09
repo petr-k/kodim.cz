@@ -1,0 +1,94 @@
+{
+  "title": "Introduction to Programming",
+  "subtitle": "Introduction to programming in the Python programming language for total beginners",
+  "link": "introduction-to-progr",
+  "sections": [
+    {
+      "name": "basics",
+      "chapters": [
+        {
+          "link": "programming",
+          "title": "What is Programming",
+          "desc": "We'll explain what programming is, how computers works and we'll see what problems programming helps us to solve.",
+          "ready": true
+        },
+        {
+          "link": "languages-tools",
+          "title": "Languages and Tools",
+          "desc": "We'll install the Python programming language and tools that we'll need to program on our own computer.",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "name": "getting-started",
+      "chapters": [
+        {
+          "link": "numbers-strings",
+          "title": "Numbers and Strings",
+          "desc": "Now we start programming for real and we'll try our first commands in the Python programming language.",
+          "ready": true
+        },
+        {
+          "link": "variables",
+          "title": "Variables",
+          "desc": "We need variables to remember some values for later user.",
+          "ready": true
+        },
+        {
+          "link": "functions-modules",
+          "title": "Functions and Modules",
+          "desc": "We'll learn how to use functions and import modules so we don't have to write everything from scratch.",
+          "ready": true
+        },
+        {
+          "link": "input-output",
+          "title": "Input and Output",
+          "desc": "We use input and output to teach the program how to communicate with users.",
+          "ready": true
+        },
+        {
+          "link": "conditions",
+          "title": "Conditions",
+          "desc": "In this chapter we teach our programs to decide and change their behaviour based on user's input.",
+          "ready": true
+        },
+        {
+          "link": "sequences",
+          "title": "Sequential values",
+          "desc": "Thanks to sequences we can store multiple values inside a single variable.",
+          "ready": true
+        },
+        {
+          "link": "loops",
+          "title": "Loops",
+          "desc": "We will teach our programs to repeat a certain activity.",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "name": "level2",
+      "chapters": [
+        {
+          "link": "dictionaries",
+          "title": "Dictionaries",
+          "desc": "New data structure that allows us to better organizer more complex data.",
+          "ready": false
+        },
+        {
+          "link": "custom-function",
+          "title": "Custom Functions",
+          "desc": "We learn how to write custom functions and split our programs into smaller parts.",
+          "ready": false
+        },
+        {
+          "link": "tips",
+          "title": "Tips",
+          "desc": "Small but useful tips from Python that did not fit elsewhere.",
+          "ready": false
+        }
+      ]
+    }
+  ]
+}
