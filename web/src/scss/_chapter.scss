@@ -160,6 +160,10 @@
   height: auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 @media only screen and (min-width: 880px) {
   .text-img-right, .text-img-left {
     flex-flow: row nowrap;

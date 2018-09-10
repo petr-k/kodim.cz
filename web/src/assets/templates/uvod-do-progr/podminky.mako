@@ -51,6 +51,8 @@ else:
 
 <%self:exercises>
 
+  <h2>Cvičení</h2>
+
   <%self:exrc title="Jednoduché podmínky">
     <ol>
       <li>

@@ -63,6 +63,8 @@
 
 <%self:exercises>
 
+  <h2>Cvičení</h2>
+
   <%self:exrc title="Délka názvu">
     <p>Uložte si do proměnné <var>nazev</var> řetezec s názvem "Divadlo Pěst na oko". Pokud použijeme designové písmo nad hlavná vchod bodovy, jeden znak (i mezera) bude široký 30 cm. Použijte funkci <var>len()</var> abyste zjistili počet znaků v názvu galerie a spočíteje délku nápisu v centimetrech.</p>
   </%self:exrc>
