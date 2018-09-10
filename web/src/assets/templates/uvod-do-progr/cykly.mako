@@ -126,7 +126,7 @@ mesice = [
     <ol>
       <li>Pomocí cyklu projděte tento seznam a vypište na výstup názvy všech her.</li>
       <li>Vypište na výstup názvy všech her, které trvají více než 120 minut.</li>
-      <li>Vypište na výstup názvy všech her spolu s jejidh trváním v hodinách a minutách.</li>
+      <li>Vypište na výstup názvy všech her spolu s jejich trváním v hodinách a minutách.</li>
     </ol>
   </%self:exrc>
 

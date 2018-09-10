@@ -16,7 +16,7 @@ else:
   print('Odpal, holomku!')</pre>
 
   <h2>Bloky</h2>
-  <p>Všimněte si, že všechny některé řádky v naší podmínce jsou odsazené kousek doprava. Tímto poprvé narážíme na takzvané bloky kódu. Blok je způsob jak seskupit několik příkazů do jednoho celku. Takový celek pak může být součástí podmínky nebo, jak později uvidíme, například cyklu. Blok vždy začiná dvojtečkou na konci předchozího řádku. Tím říkáme k jaké kunstrukci (v našem případě <code>if</code>) náš blok příkazů patří.</p>
+  <p>Všimněte si, že některé řádky v naší podmínce jsou odsazené kousek doprava. Tímto poprvé narážíme na takzvané bloky kódu. Blok je způsob jak seskupit několik příkazů do jednoho celku. Takový celek pak může být součástí podmínky nebo, jak později uvidíme, například cyklu. Blok vždy začiná dvojtečkou na konci předchozího řádku. Tím říkáme k jaké kunstrukci (v našem případě <code>if</code>) náš blok příkazů patří.</p>
 
   <p>Odsazování bloků se nejčastěji provádí pomocí několika mezer. Mnoho programátorů preferuje čtyři mezery, někteří (jako já) preferují dvě mezery. Jsou i tací, kteří odsazují bloky pomocí jednoho tabulátoru. Podobně jako v případě jmen proměnných, opět zde přichází do hry různé programovací styly. Opět je to na jakímsi vašem estetickém citění. Já budu v tomto kurzu vždy doporučovat dvě mezery.</p>
 
@@ -64,7 +64,7 @@ else:
       </li>
       <li>
         <p>Upravte tento program tak, by vypsal </p>
-        x
+
         <pre>Vstup nepovolen</pre>
         
         <p>pokud uživatel zadá špatné heslo.</p>

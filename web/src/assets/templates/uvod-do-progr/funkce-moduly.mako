@@ -33,7 +33,7 @@
   <h2>Moduly</h2>
   <p>Python sice obsahuje mnoho užitečných funkcí, ale vzhledem k množství problémů, které chceme pomocí Pythonu řešit, je to pořád málo a různých funkcí potřebujeme opravdu hodně. Abychom se v tom všem vyznali, třídíme funkce do takzvaných modulů.</p>
 
-  <p>Jeden z užitečných modulů nese název <code>math</code>, a obsahuje mnoho standardních matematíckých funkcí. Mimo jiné obsahuje funkce pro zaokrouhlování nahoru a dolů. Pokud chceme modul <code>math</code> použít, musíme jej nadříve importovat příkaze</p>
+  <p>Jeden z užitečných modulů nese název <code>math</code>, a obsahuje mnoho standardních matematíckých funkcí. Mimo jiné obsahuje funkce pro zaokrouhlování nahoru a dolů. Pokud chceme modul <code>math</code> použít, musíme jej nadříve importovat příkazem</p>
 
 <pre>&gt;&gt;&gt; import math</pre>
 
@@ -66,19 +66,19 @@
   <h2>Cvičení</h2>
 
   <%self:exrc title="Délka názvu">
-    <p>Uložte si do proměnné <var>nazev</var> řetezec s názvem "Divadlo Pěst na oko". Pokud použijeme designové písmo nad hlavná vchod bodovy, jeden znak (i mezera) bude široký 30 cm. Použijte funkci <var>len()</var> abyste zjistili počet znaků v názvu galerie a spočíteje délku nápisu v centimetrech.</p>
+    <p>Uložte si do proměnné <var>nazev</var> řetezec s názvem "Divadlo Pěst na oko". Pokud použijeme designové písmo nad hlavní vchod bodovy, jeden znak (i mezera) bude široký 30 cm. Použijte funkci <var>len()</var> abyste zjistili počet znaků v názvu divadla a spočíteje délku nápisu v centimetrech.</p>
   </%self:exrc>
 
   <%self:exrc title="Zaokrouhlování">
-    <p>Divadlo chce mít ceny vstupenek jak v eurech tak v celých korunách. Uložte do proměné <var>eura</var> cenu studentské vstupenky (65% z 12 euro). Použíje funkci <var>round()</var> a do proměnné <var>koruny</var> spočítejte kolik činí studentské vstupné v korunách jestliže kurz eura je 24 korun.</li>
+    <p>Divadlo chce mít ceny vstupenek jak v eurech tak v celých korunách. Uložte do proměné <var>eura</var> cenu studentské vstupenky (65% z 12 euro). Použíje funkci <var>round()</var> a do proměnné <var>koruny</var> spočítejte kolik činí studentské vstupné v korunách jestliže kurz eura je 24 korun.</p>
   </%self:exrc>
 
   <%self:exrc title="Zaokrouhlování nahoru">
-    <p>Importujte knihovnu <code>math</code> a vyzkoušejte si funkci <code>math.ceil()</code>, která slouží k zakrouhlování směrem nahoru. Proveďte zaokrouhlování z předchozího cvíčení na celé koruny směrem nahoru.</p>
+    <p>Importujte modul <code>math</code> a vyzkoušejte si funkci <code>math.ceil()</code>, která slouží k zakrouhlování směrem nahoru. Proveďte zaokrouhlování z předchozího cvíčení na celé koruny směrem nahoru.</p>
   </%self:exrc>
 
   <%self:exrc title="Náhodná čísla">
-    <p>Na informačním panelu v předsálí divadla se zobrazují informace o náhodných představeních. Pro tento panel potřebujeme generátor náhodných čísel, který bude generovat čísla představení mezi 1 až 24. Importujte knihovnu <code>random</code> a použijte funkci <code>randint()</code> pro vygenerování několika náhodných čísel z tohoto rozsahu.</p>
+    <p>Na informačním panelu v předsálí divadla se zobrazují informace o náhodných představeních. Pro tento panel potřebujeme generátor náhodných čísel, který bude generovat čísla představení mezi 1 až 24. Importujte modul <code>random</code> a použijte funkci <code>randint()</code> pro vygenerování několika náhodných čísel z tohoto rozsahu.</p>
   </%self:exrc>
 
   ${self.alert_done()}
