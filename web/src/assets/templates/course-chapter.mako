@@ -40,6 +40,12 @@
   </%self:alert>
 </%def>
 
+<%def name="alert_done_en()">
+  <%self:alert type="done" title="Hotovo!">
+    Huray! If you have this far, it means you are done. Put a sticker on you monitor and if you feel like it continue with the bonus exercises.
+  </%self:alert>
+</%def>
+
 <%def name="alert_warning()">
   <%self:alert type="warning" title="Pozor!">
     ${caller.body()}
@@ -57,8 +63,6 @@
     </div>
   </div>
 </%def>
-
-
 
 <%block name="header">
   <div class="chapter-intro container">
