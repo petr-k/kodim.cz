@@ -7,7 +7,7 @@
   <div class="text-img-right">
     <p>Naše divadlo obsahuje některé lechtivé kusy s obsahem pouze pro dospělé. Na takové představení chceme pustit pouze uživatele starší 18ti let. Náš program tedy musí být schopný se podle zadaného věku rozhodnout, zda uživateli umožní koupit si lístek nebo nikoliv. Takový program by pak mohl vypadat například takto:</p>
 
-    <img src="/img/uvod-do-progr/adult-only.png" alt="Adult only" />
+    <img src="/img/intro-to-progr/adult-only.png" alt="Adult only" />
   </div>
 
 <pre>if vek >= 18:
@@ -105,7 +105,7 @@ else:
     <p>Na obrázku vidíte rozložení čísel na klasické Francouzské ruletě. Ruleta obsahuje čísla 0 - 36. Každé číslo s výjimkou nuly je buď sudé nebo liché a zároveň červené nebo černé. Pro čísla 1 až 10 a 19 až 28 platí, že lichá čísla jsou červená a sudá jsou černá. Pro zbytek platí obrácené pravidlo, tedy lichá jsou černá a sudá červená. Nula není ani lichá ani sudá, ani černá ani červená.</p>
 
     <div class="text-center">
-      <img src="/img/uvod-do-progr/roulette.png"/>
+      <img src="/img/intro-to-progr/roulette.png"/>
     </div>
 
     <p>Napište program, kterému uživatel zadá číslo a program odpoví jestli jde o číslo sudé nebo liché, černé nebo červené, nebo je to nula.</p>

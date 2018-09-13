@@ -62,8 +62,8 @@
 
 <%block name="header">
   <div class="chapter-intro container">
-    <div class="chapter-number">${chapter.num}</div>
-    <h1 class="chapter-title">${chapter.title}</h1>
+    <div class="chapter-number">${chapter.nums[lang]}</div>
+    <h1 class="chapter-title">${chapter.title[lang]}</h1>
   </div>
 </%block>
 

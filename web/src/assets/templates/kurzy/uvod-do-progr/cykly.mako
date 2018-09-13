@@ -22,7 +22,7 @@ for jmeno in jmena:
   <p>Takto vytiskneme na obrazovku maily jednotlivých lidí, každý na jeden řádek. Následující animace ukazuje, jakým způsobem Python prochází tento progam.</p>
 
   <div class="figure">
-    <img src="/img/uvod-do-progr/for-cycle.gif" />
+    <img src="/img/intro-to-progr/for-cycle.gif" />
   </div>
 
   <p>Jak už bylo napsáno výše, cyklus může obsahovat libovolný blok příkazů, takže se můžeme opravdu rozparádit a vložit do bloku v cyklu FOR třeba podmínku.</p>

@@ -1,0 +1,248 @@
+{
+  "langs": ["cz", "en"],
+  "title": {
+    "cz": "Úvod do programování", 
+    "en": "Introduction to programming"
+  },
+  "subtitle": {
+    "cz": "Základy programování v jazyce Python pro úplné nováčky.",
+    "en": "The basics of programming in Python for complete beginners."
+  },
+  "link": {
+    "cz": "uvod-do-progr",
+    "en": "intro-to-progr"
+  },
+  "sections": [
+    {
+      "name": "basics",
+      "chapters": [
+        {
+          "link": {
+            "cz": "programovani",
+            "en": "programming"
+          },
+          "title": {
+            "cz": "Co je to programování",
+            "en": "What is programming?"
+          },
+          "desc": {
+            "cz": "Povíme si co je to programování, jak funguje počítač a vyzkoušíme si jaké problémy se v programování řeší.",
+            "en": "We will talk about what programming is, how computers works and we will also experience some real-life programming problems."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "jazyky-nastroje",
+            "en": "languages-tools"
+          },
+          "title": {
+            "cz": "Jazyky a nástroje",
+            "en": "Languages and Tools"
+          },
+          "desc": {
+            "cz": "Nainstalujeme jazyk Python a nástroje, které budete pro programování na vlastním počítači potřebovat.",
+            "en": "We will install the Python language along with tools you will need for coding on your own computer."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "lets-start",
+      "chapters": [
+        {
+          "link": {
+            "cz": "cisla-retezce",
+            "en": "numbers-strings"
+          },
+          "title": {
+            "cz": "Čísla a řetězce",
+            "en": "Numbers and Strings"
+          },
+          "desc": {
+            "cz": "Nyní už skutečně začneme programovat a vyzkoušíme si první příkazy v jazyce Python.",
+            "en": "Now we are finally ready to start coding and try our first Python commands."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "promenne",
+            "en": "variables"
+          },
+          "title": {
+            "cz": "Proměnné",
+            "en": "Variables"
+          },
+          "desc": {
+            "cz": "Proměnné potřebujeme k tomu, abychom si mohli nějakou hodnotu zapamatovat pro pozdější použití.",
+            "en": "We need variables to save or remember some value for later use."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "funkce-moduly",
+            "en": "functions-modules"
+          },
+          "title": {
+            "cz": "Funkce a moduly",
+            "en": "Functions and Modules"
+          },
+          "desc": {
+            "cz": "Ukážeme si, jak používat funkce a importovat moduly, abychom nemuseli všechno v Pythonu psát od píky.",
+            "en": "We will see how to use function and import modules so that we do not have to write everything in Python from scratch."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "vstup-vystup",
+            "en": "input-output"
+          },
+          "title": {
+            "cz": "Vstup a výstup",
+            "en": "Input and Output"
+          },
+          "desc": {
+            "cz": "Vstup a výstup potřebujeme aby program dokázal komunikovat s uživatelem.",
+            "en": "We need input and output so that our program can communicate with the user."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "podminky",
+            "en": "conditions"
+          },
+          "title": {
+            "cz": "Podmínky",
+            "en": "Conditions"
+          },
+          "desc": {
+            "cz": "V této kapitole naučíme naše programy rozhodovat se a měnit svoje chování podle zadaného vstupu.",
+            "en": "In this chapter we will teach our programs to make decisions and be able to change their behaviour according to the input."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "sekvence",
+            "en": "sequences"
+          },
+          "title": {
+            "cz": "Sekvenční hodnoty",
+            "en": "Sequential values"
+          },
+          "desc": {
+            "cz": "Díky sekvencím můžeme do jedné proměnné uložít více hodnot najednou.",
+            "en": "Thanks to sequences we can store multiple values into one variable."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "cykly",
+            "en": "cycles"
+          },
+          "title": {
+            "cz": "Cykly",
+            "en": "Cycles"
+          },
+          "desc": {
+            "cz": "Naučíme naše programy provádět opakovaně nějakou činnost.",
+            "en": "We will teach our programs to do some work repeatedly."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "next-level",
+      "chapters": [
+        {
+          "link": {
+            "cz": "slovniky",
+            "en": "dictionaries"
+          },
+          "title": {
+            "cz": "Slovníky",
+            "en": "Dictionaries"
+          },
+          "desc": {
+            "cz": "Nová datová struktura, která nám umožní lépe organizovat stukrutovaná data.",
+            "en": "New data structure that will help us to better organize structured data"
+          },
+          "ready": {
+            "cz": false,
+            "en": false
+          }
+        },
+        {
+          "link": {
+            "cz": "vlastni-funkce",
+            "en": "own-functions"
+          },
+          "title": {
+            "cz": "Vlastní funkce",
+            "en": "Own functions"
+          },
+          "desc": {
+            "cz": "Naučíme se jak psát vlastní funkce a rozčlenit tak větší programy na manší kousky.",
+            "en": "We will learn how to write our own functions to break bigger programs into smaller pieces."
+          },
+          "ready": {
+            "cz": false,
+            "en": false
+          }
+        },
+        {
+          "link": {
+            "cz": "drobnosti",
+            "en": "bits-pieces"
+          },
+          "title": {
+            "cz": "Drobnosti na závěr",
+            "en": "Bits and Pieces"
+          },
+          "desc": {
+            "cz": "Drobné ale užitečné věci z jazyka Python, které se jinam nevešly.",
+            "en": "Small but useful bits from the Python language that did no fit elsewhere."
+          },
+          "ready": {
+            "cz": false,
+            "en": false
+          }
+        }
+      ]
+    }
+  ]
+}

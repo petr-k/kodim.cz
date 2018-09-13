@@ -7,8 +7,8 @@
   
   <section class="container">
     <h2>Základy</h2>
-    ${self.section('zaklady')}
+    ${self.section('basics')}
     <h2>Začínáme programovat</h2>
-    ${self.section('zaciname')}
+    ${self.section('lets-start')}
   </section>  
 </%block>
