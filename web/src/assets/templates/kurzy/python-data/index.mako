@@ -2,6 +2,7 @@
 
 <%block name="main">
   <section class="container">
-    Na obsahu se pracuje.
-  </section>
+    <h2>Základy programování</h2>
+    ${self.section('basics')}
+  </section> 
 </%block>

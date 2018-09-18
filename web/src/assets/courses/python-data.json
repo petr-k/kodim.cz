@@ -1,7 +1,47 @@
 {
   "langs": ["cz"],
-  "title": "Datová analýza v Pythonu",
-  "subtitle": "Zpracování dat pomocí jazyka Python pro úplné nováčky.",
-  "link": "python-data",
-  "sections": []
+  "title": {
+    "cz": "Datová analýza v Pythonu"
+  },
+  "subtitle": {
+    "cz": "Zpracování dat pomocí jazyka Python pro úplné nováčky."
+  },
+  "link": {
+    "cz": "python-data"
+  },
+  "sections": [
+    {
+      "name": "basics",
+      "chapters": [
+        {
+          "link": {
+            "cz": "uvod"
+          },
+          "title": {
+            "cz": "Než začneme programovat"
+          },
+          "desc": {
+            "cz": "Abychom mohli začít programovat musíme nainstalovat potřebné néstroje a seznámit se s příkazovou řádkou."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "hodnoty-promenne-funkce"
+          },
+          "title": {
+            "cz": "Hodnoty, proměnné, funkce"
+          },
+          "desc": {
+            "cz": "Ukážeme si jak Pythonu posílat jednoduché příkazy a uvidíme, co nám odpoví."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -20,6 +20,7 @@
     
     <div class="courses">
       ${index.courseTile('kurzy', courses.get('cz', 'uvod-do-progr'))}
+      ${index.courseTile('kurzy', courses.get('cz', 'python-data'))}
     </div>
   </section>
 

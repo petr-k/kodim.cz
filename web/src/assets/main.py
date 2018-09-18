@@ -93,6 +93,8 @@ class Courses:
     self.courses_dict['cz:uvod-do-progr'] = introToProgr
     self.courses_dict['en:intro-to-progr'] = introToProgr
 
+    self.courses_dict['cz:python-data'] = Course('python-data')
+
   def get(self, lang, link):
     key = f'{lang}:{link}'
     if key in self.courses_dict:
