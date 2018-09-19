@@ -21,7 +21,7 @@ for name in names:
   <p>This program will print out emails of individual people, one per line. The following animation shows how Python executes this program.</p>
 
   <div class="figure">
-    <img src="/img/uvod-do-progr/for-cycle.gif" />
+    <img src="/img/intro-to-progr/for-cycle.gif" />
   </div>
 
   <p>As said above, a loop can contain an arbitrary block of commands so we can really go wild and put a condition into into a FOR loop block.</p>

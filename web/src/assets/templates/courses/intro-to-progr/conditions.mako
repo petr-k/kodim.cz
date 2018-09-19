@@ -6,7 +6,7 @@
   <div class="text-img-right">
     <p>Our theatre has some adult content plays. We can't let any users younger than 18 year old to see such plays. Our program has to be able to decide whether the user is allowed to buy a ticket or not based on their age. Such program could look like this:</p>
 
-    <img src="/img/uvod-do-progr/adult-only.png" alt="Adult only" />
+    <img src="/img/intro-to-progr/adult-only.png" alt="Adult only" />
   </div>
 
 <pre>if age >= 18:
@@ -102,7 +102,7 @@ else:
     <p>You can see they layout of numbers on classical French roulette. The roulette contains numbers 0 to 36. Each number excluding zero is either even or odd and red or black. Numbers 1 to 10 and 19 to 28 are red when odd and black when even. For the rest the rule is reverse, that is odd numbers are black and even are red. Zero is neither odd nor even, neither red nor black.</p>
 
     <div class="text-center">
-      <img src="/img/uvod-do-progr/roulette.png"/>
+      <img src="/img/intro-to-progr/roulette.png"/>
     </div>
 
     <p>Write a program where user enters a number and the program will tell them whether the number is odd or even, red or black or whether it's a zero.</p>
