@@ -22,16 +22,16 @@ print(price)
 
 <pre>$ python program.py</pre>
 
-  <%self:alert_warning>
+  <%self:alert_warning_en>
     <p>Beware the dollar sign at the beginning of the command. Do not type this character! The dollar sign indicates that this command is typed into the operating system command line, not into the Python console. So if your command line still starts with three arrows (<code>&gt;&gt;&gt;</code>) you are still inside of Python console and you need to terminate it with the <code>exit()</code> function.</p>
-  </%self:alert_warning>
+  </%self:alert_warning_en>
 
 </%self:lesson>
 
 <%self:exercises>
   <h2>Excercises</h2>
 
-  <%self:exrc title="Jednoduchý výstup">
+  <%self:exrc title="Simple Output">
     <p>Our very first program won't do anything else but output text onto the screen.</p>
     <ol>
       <li>
@@ -71,7 +71,7 @@ print(price)
     </ol>
   </%self:exrc>
 
-  ${self.alert_done()}
+  ${self.alert_done_en()}
 
   <h2>Bonuses</h2>
 

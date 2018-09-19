@@ -90,7 +90,7 @@ else:
     </ol>
   </%self:exrc>
 
-  ${self.alert_done()}
+  ${self.alert_done_en()}
 
   <h2>Bonuses</h2>
 

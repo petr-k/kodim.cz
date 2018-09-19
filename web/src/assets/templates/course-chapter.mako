@@ -41,7 +41,7 @@
 </%def>
 
 <%def name="alert_done_en()">
-  <%self:alert type="done" title="Hotovo!">
+  <%self:alert type="done" title="Done!">
     Huray! If you have this far, it means you are done. Put a sticker on you monitor and if you feel like it continue with the bonus exercises.
   </%self:alert>
 </%def>
@@ -52,11 +52,17 @@
   </%self:alert>
 </%def>
 
+<%def name="alert_warning_en()">
+  <%self:alert type="warning" title="Warning!">
+    ${caller.body()}
+  </%self:alert>
+</%def>
+
 <%def name="exrc(title)">
   <div class="exercise">
     <div class="exercise-title">
       <div class="exercise-num">${counter.next()}</div>
-      <h3>${title}</h3>      
+      <h3>${title}</h3>
     </div>
     <div class="exercise-body">
       ${caller.body()}

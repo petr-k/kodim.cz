@@ -133,7 +133,7 @@ months = [
     <p>Write a loop that will go over a list of decimal numbers and calculate their average. Create the list of the numbers at the beginning of the program.</p>
   </%self:exrc>
 
-  ${self.alert_done()}
+  ${self.alert_done_en()}
 
   <h2>Bonuses</h2>
   
