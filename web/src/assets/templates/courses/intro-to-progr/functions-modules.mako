@@ -3,17 +3,16 @@
 <%self:lesson>
   <p>So far we were only able to work with numbers and strings using arithmetic operators. But soon that will not be enough for us and we will need more complex operations which we call <em>functions</em>.</p>
 
-  <p>A function as a more complicated calculation or a small program packed into sort of a box. We can give a name to this box so that we can use it in different places in our program. You can image a function like a toaster. Toaster does something useful (makes delicious toasts) which would otherwise be boring and tedious had we do it ourselves. Each function has itrs own name and usually a some input (toast bread) and output (toasted bread). We start a function by so called <em>calling</em> it.</p>
+  <p>A function is a more complicated calculation or a small program packed into sort of a box. We can give a name to this box so that we can use it in different places in our program. You can image a function to be like a toaster. Toaster does something useful (makes delicious toasts) which would otherwise be boring and tedious had we do it ourselves. Each function has its own name and usually some input (toast bread) and output (toasted bread). We start a function by <em>calling</em> it.</p>
 
-  <p>Good example of a function in Python is <code>round()</code> which can round numbers for us. We can type the then</p>
-  <p>Dobrým příkladem v jazyce Python je funkce <code>round()</code>, která pro nás dělá zaokrouhlování. Můžeme tedy psát</p>
+  <p>Good example of a function in Python is <code>round()</code> which can round numbers for us. We use it like this:</p>
 
 <pre>&gt;&gt;&gt; round(3.141592)
 3</pre>
 
-  <p>A function is always called by writing its name followed by parenthesis with the function's input (also called arguments). In our case we call the function with only one argument (input), the number 3.141592. When we call the function with an argument, the function will <em>return</em> a result.</p>
+  <p>A function is always called by writing its name followed by parenthesis with the function's input (also called arguments or parameters). In our case we call the function with only one argument, the number 3.141592. When we call the function with an argument, the function will <em>return</em> a result.</p>
 
-  <p>Mind that round in Python behaves slightly differently than what we are used to from school. For example try out the following commands:</p>
+  <p>Mind that rounding in Python behaves slightly differently than what we are used to from school. For example try out the following commands:</p>
 
 <pre>&gt;&gt;&gt; round(3.5)
 4
@@ -23,7 +22,7 @@
 
   <p>The <code>round()</code> function always rounds to a nearest even number if the function input is exactly in between two values. For example 3.5 is exactly in the middle between 3 and 4. Because of this rule instead of always rounding up Python rounds up in half of the cases and down in the other half. It is an attempt for rounding to be more fair, but so far I haven't seen any other programming language that would do it this way.</p>
 
-  <p>In addition to the <code>round()</code> function Pyton contains many more useful functions, some of which we will see later in this course. For now we can mention for example the function <code>len()</code> which returns the number of characters in a string. For example:</p>
+  <p>In addition to the <code>round()</code> function Python contains many more useful functions, some of which we will see later in this course. For now we can mention the function <code>len()</code> which returns the number of characters in a string. For example:</p>
 
 <pre>&gt;&gt;&gt; name = 'Theodor Baldyhead'
 &gt;&gt;&gt; len(name)
@@ -32,16 +31,16 @@
   <h2>Modules</h2>
   <p>Python may contain a lot of useful functions, but considering the number of problems we want to solve using Python it is still not enough and we really need a lot more of them. To make things more organized we put functions into so called <em>modules</em>.</p>
 
-  <p>One useful module is called <code>math</code> and contains many standard mathematical functions. Among others it contains functions to round up and round down. If we want to use functions from the <code>math</code> module we have to import it first using the following command:</p>
+  <p>One useful module is called <code>math</code> and contains many standard mathematical functions. Among others it contains functions to round up and round down. If we want to use functions from the <code>math</code> module we have to <em>import</em> it first using the following command:</p>
 
 <pre>&gt;&gt;&gt; import math</pre>
 
-  <p>After writing this command to the Python console we can call all functions from this module by writing the name of the module follow by a period and the nthe name of the function, like this:</p>
+  <p>After writing this command to the Python console we can call all functions from this module by writing the name of the module follow by a period and then the name of the function, like this:</p>
 
 <pre>&gt;&gt;&gt; math.ceil(3.14)
 4</pre>
 
-  <p>Another useful module is called <code>random</code> which contains functions to generate random numbers. One of these functions is called <code>randint()</code>. It can generate random numbers within given boundaries. We can use it to simulate rolling a die.</p>
+  <p>Another useful module is called <code>random</code> and contains functions to generate random numbers. One of these functions is called <code>randint()</code>. It can generate random numbers within given boundaries. We can use it for example to simulate rolling a die.</p>
 
 <pre>&gt;&gt;&gt; import random
 &gt;&gt;&gt; random.randint(1, 6)
@@ -87,7 +86,7 @@
 
     <ol>
       <li>Try to come up with a command (using the functions you already know) that will round a number in the variable <var>number</var> to an integer using the traditional rounding.</li>
-      <li>If you want to test your solution you can generate the content of the <var>number</var> variable randomly using <code>random.uniform()</code> function. This function has the same input as the <code>random.randint()</code> function but it generates decimal numbers.</li>
+      <li>If you want to test your solution you can generate the content of the <var>number</var> variable randomly using <code>random.uniform()</code> function. This function has the same input as <code>random.randint()</code> but it generates decimal numbers.</li>
     </ol>
   </%self:exrc>
 </%self:exercises>
