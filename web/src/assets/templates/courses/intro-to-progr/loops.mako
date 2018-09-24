@@ -1,10 +1,10 @@
 <%inherit file="/course-chapter.mako"/>
 
 <%self:lesson>
-  <p>Computers and programming languages have been created to save people from boring and repetitive work. Therefor we want to be able to tell the computer that it should repeat certain activity over and over again. For that programming languages have a concept called loops or cycles.</p>
+  <p>Computers and programming languages have been created to save people from boring and repetitive work. Therefor we want to be able to tell the computer that it should repeat certain activity over and over again. To do that programming languages have a concept called loops or cycles.</p>
 
   <h2>FOR Loop</h2>
-  <p>One of the most common loops in almost all programming languages is o called <em>for loop</em>. This loop can go over all items in a given list and execute a certain block of code for each item. Imagine that for for example we have list of grades of a particular student and we want to print them out onto the screen, each one on a new line. To do that we only have to write this piece of code.</p>
+  <p>One of the most common loops in almost any programming language is called the <em>for loop</em>. This loop can go over all items in a given list and execute a certain block of code for each item. For example imagine that we have a list of grades of a particular student and we want to print them out onto the screen, one per line. To do that we only have to write this piece of code.</p>
 
 <pre>grades = [1, 3, 2, 1, 1, 2]
 for g in grades:
@@ -15,7 +15,7 @@ for g in grades:
 
 <pre>names = ['peter', 'paul', 'judith', 'jane']
 for name in names:
-  email = name + '@gmail.com'	
+  email = name + '@gmail.com'
   print(email)</pre>
 
   <p>This program will print out emails of individual people, one per line. The following animation shows how Python executes this program.</p>
@@ -24,7 +24,7 @@ for name in names:
     <img src="/img/intro-to-progr/for-cycle.gif" />
   </div>
 
-  <p>As said above, a loop can contain an arbitrary block of commands so we can really go wild and put a condition into into a FOR loop block.</p>
+  <p>As said above, a loop can contain an arbitrary block of commands so we can really go wild and put a condition into a FOR loop block.</p>
 
 <pre>names = ['peter', 'paul', 'judith', 'jane']
 for name in names:
@@ -34,7 +34,7 @@ for name in names:
     email = name + '@seznam.cz'
   print(email)</pre>
 
-  <p>This explains basically everything that we need to know about the FOR loop for now. It may not seem so at the first sight, but by adding a loop into our programmer arsenal we have opened a Pandora's box full of possiblities of what we can do in our programs. But we've also opened a gate into the hell itself, because thanks to loops we can now solve more complex and difficult problems that will make makes us think really hard.</p>
+  <p>This explains basically everything that we need to know about the FOR loop for now. It may not seem so at the first sight, but by adding a loop into our programmer arsenal we have opened a Pandora's box full of possiblities of what we can do in our programs. But we've also opened a gate into the hell itself, because thanks to loops we can now solve more complex and difficult problems that will make us think really hard.</p>
 
   <p>Let's see how we could use a loop to sum all numbers in a list for example.</p>
 
@@ -42,7 +42,7 @@ for name in names:
 for num in numbers:
   s = s + num</pre>
 
-  <p>Not that we actually need this loop, Python has a function called <code>sum()</code> which does exactly this. This example is more about showing that you can do all kinds of interesting thinks with loops.</p>
+  <p>Not that we actually need this loop, Python has a function called <code>sum()</code> which does exactly this. This example is more about showing that you can do all kinds of interesting things with loops.</p>
 </%self:lesson>
 
 <%self:exercises>
