@@ -70,7 +70,7 @@
   </%self:exrc>
 
   <%self:exrc title="Rounding Up">
-    <p>Import the <code>math</code> module and try the function <code>math.ceil()</code> which does rounding up. Modify the previous excercise to round up the price of the ticket.</p>
+    <p>Import the <code>math</code> module and try the function <code>math.ceil()</code> which does rounding up. Modify the previous exercise to round up the price of the ticket.</p>
   </%self:exrc>
 
   <%self:exrc title="Random Numbers">

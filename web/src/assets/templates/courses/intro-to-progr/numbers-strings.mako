@@ -1,13 +1,13 @@
 <%inherit file="/course-chapter.mako"/>
 
 <%self:lesson>
-  <p>In this chapter we will introduce you to programming basics in Python. We won't write entire programs yet but we will only send individual commands to Python and we'll se what answers it gives to us. As we said before computers are basically just slightly smarter and freakishly fast calculators. So the easiest way to get familiar with programming is to let Python to calculate something for us.</p>
+  <p>In this chapter we will introduce you to programming basics in Python. We won't write entire programs yet but we will only send individual commands to Python and we'll see what answers it gives to us. As we said before computers are basically just slightly smarter and freakishly fast calculators. So the easiest way to get familiar with programming is to let Python to calculate something for us.</p>
 
   <h2>Python Console</h2>
 
   <p>In order to talk to Python we need to start so called <em>Python console</em>. It is an environment where we can communicate with Python and send commands to it.</p>
 
-  <p>If you are on Windows, run Python console by typoing the following command int ote command line.</p>
+  <p>If you are on Windows, run Python console by typing the following command into the command line.</p>
 
   <pre>$ python</pre>
 
@@ -24,13 +24,13 @@
 
   <h3>Integers</h3>
 
-  <p>The simples data type are <em>integers</em>. This type includes values like 12, 1321500, -5, 0 etc. If you type a value into Python terminal, Python will print it back to you, which means that it understands you :-)</p>
+  <p>The simplest data type are <em>integers</em>. This type includes values like 12, 1321500, -5, 0 etc. If you type a value into Python terminal, Python will print it back to you, which means that it understands you :-)</p>
 
   <pre>&gt;&gt;&gt; 127
 127</pre>
 
   <h3>Decimal Numbers</h3>
-  <p>We wouldn't last very long only with integers. The next data type are <em>decimal numers</em> like 13.4, 6.0, -0.0001, 0.0, etc. Beware that programmers always use a dot for decimal point, not a comma.</p>
+  <p>We wouldn't last very long with only integers. The next data type are <em>decimal numbers</em> like 13.4, 6.0, -0.0001, 0.0, etc. Beware that programmers always use a dot for decimal point, not a comma.</p>
 
   <pre>&gt;&gt;&gt; 3.141592
 3.141592</pre>
@@ -63,7 +63,7 @@
   <pre>&gt;&gt;&gt; 2 ** 8
 256</pre>
 
-  <p>Using integer division we can divide integers</p>
+  <p>Using the integer division we can get the integer part of the result of regular division</p>
 
   <pre>&gt;&gt;&gt; 14 // 4
 3</pre>
@@ -74,7 +74,7 @@
 2</pre>
 
   <h2>Strings</h2>
-  <p>If we want to input a piece of text into Python we use a so called <em>string</em>. Strings in Python are enclosed into single our double quotes. For example:
+  <p>A piece of text in Python is called a <em>string</em>. Strings in Python are enclosed into single our double quotes. For example:
 
   <div class="verbatim">
     <pre>&gt;&gt;&gt; 'martin'</pre>
@@ -83,7 +83,7 @@
     <pre>&gt;&gt;&gt; "Don't panic"</pre>
   </div>
 
-  <p>Strings partially behaves similar to numbers, for example we can add and multiply them</p>
+  <p>Strings behave similar to numbers in some cases, for example we can add and multiply them</p>
 
   <pre>&gt;&gt;&gt; 'martin' + ' ' + 'podloucký'
 martin podloucký
@@ -92,13 +92,13 @@ martin podloucký
 </%self:lesson>
 
 <%self:exercises>
-  <h2>Excercises</h2>
+  <h2>Exercises</h2>
 
   <%self:exrc title="Simple Arithmetics">
     <p>Use the Python terminal as a calculator:</p>
     <ol>
-      <li>A single ticket for a Sore Thumb Theatre performance costs aroud €12. Calculate the theatre's monthly income from ticket sales if there's 174 visitors for one performance in average and the theatre runs 15 performances per month.</li>
-      <p>The theatre has decided to offer discounts to students. A single student ticket costs 65% of a full ticket cost. How much will the theatre's income change if we know that students are 30% of the audience.</li>
+      <li>A single ticket for a Sore Thumb Theatre performance costs aroud €12. Calculate the theatre's monthly income from ticket sales if there's on average 174 visitors per one performance and the theatre plays 15 performances per month.</li>
+      <p>The theatre has decided to offer discounts to students. A single student ticket costs 65% of the full ticket price. How much will the theatre's income change if we know that students represent 30% of the audience.</li>
     </ol>
   </%self:exrc>
 
@@ -106,7 +106,7 @@ martin podloucký
     <ol>
       <li>Create a string containing the name of the theatre.</li>
       <li>Create a string containing the name of the theatre by adding together individual words of the name.</li>
-      <li>Try to multiply a string by an integer. Createa a string that contains the character 1 a hundred times followed by a hundred 0 charecters.</li>
+      <li>Try to multiply a string by an integer. Create a string that contains the character 1 a hundred times followed by a hundred 0 charecters.</li>
     </ol>
   </%self:exrc>
 
@@ -115,17 +115,17 @@ martin podloucký
   <h2>Bonuses</h2>
   
   <%self:exrc title="Interest Rates">
-    <p>Whoa bank Ltd. offers a savings account with 2.4% interest rate on their website. When you deposit €50 000  on such account, how much money will you have in 10 years?</p>
+    <p>Whoa Bank Ltd. offers a savings account with 2.4% interest rate on their website. How much money will you have in 10 years if you deposit €50,000 to such account?</p>
   </%self:exrc>
 
   <%self:exrc title="New Carpet">
-    <p>We need to buy a new carpet for a small theatre hall. The hall is square-shaped with an area of 30m<sup>2</sup>. What is the length of a side of the caret? Will the rolled carped fit into a wagon which has 5 metres long cargo space?</p>
+    <p>We need to buy a new carpet for a small theatre hall. The hall is square-shaped with an area of 30m<sup>2</sup>. What is the length of a side of the carpet? Will the rolled carped fit into a wagon with cargo space 5 metres long?</p>
   </%self:exrc>
 
   <%self:exrc title="Shannon Number">
     <ol>
       <li>The so called <em>Shannon number</em> has a value of 10<sup>120</sup> and it tells us how many different chess games there are at least. Create a string that contains this number written normally using digits. For example 10<sup>3</sup> is 1000, 10<sup>6</sup> is 1000000 and so on.</li>
-      <li>It is common to separate thousands in large numbers by a comma. That is one million is written as 1,000,000. Create a string that contains the Shannon number from the previous excercise written in this format.
+      <li>It is common to separate thousands in large numbers by a comma. That is one million is written as 1,000,000. Create a string that contains the Shannon number from the previous exercise written in this format.
     </ol>
   </%self:exrc>
 </%self:exercises>

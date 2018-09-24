@@ -83,7 +83,7 @@ else:
   <%self:exrc title="Ticket Price">
     <p>And now we return back to work on our reservation system.</p>
     <ol>
-      <li>Copy the program <code>tickets01.py</code>, which you have written in a previous excercise, to <code>tickets02.py</code> so that we can further extend it and calculate the prices of tickets.</p>
+      <li>Copy the program <code>tickets01.py</code>, which you have written in a previous exercise, to <code>tickets02.py</code> so that we can further extend it and calculate the prices of tickets.</p>
       <li>When you have read the age of the user, create a variable called <var>fullPrice</var> and store the value 12 into it.</li>
       <li>Create a condition which will store the price calculated based on the age of the user into variable <code>price</code>. Remember to round the results so that we have the price in whole euros.</li>
       <li>At the end write out the final price with some pretty message to the output.</li>
