@@ -36,7 +36,7 @@ print(price)
     <ol>
       <li>
         <p>Create a program called <code>input-output.py</code>. Use the <code>print()</code> function in this program to print on the following onto the screen:</p>
-        <pre>Sore Thumb Theatre</pre>
+        <pre>Fist up your Eye Theatre</pre>
 
         <p>Run the program in the terminal and check that it does what it is supposed to do.</p>
       </li>
@@ -66,7 +66,7 @@ print(price)
     <p>The theatre needs an online ticket reservation system. Your goal on this job is to create a registration for new users of this system.</p>
     <ol>
       <li>Create a program called <code>tickets01.py</code>. It will be the first version of our program for selling tickets.</li>
-      <li>Write the program so that it prints "Sore Thumb Theatre" on the first line and on the third line it prints "You have to sign up to enter the system".</li>
+      <li>Write the program so that it prints "Fist up your Eye Theatre" on the first line and on the third line it prints "You have to sign up to enter the system".</li>
       <li>On the next line ask user for their username and age. Save those into some variables.</li>
     </ol>
   </%self:exrc>

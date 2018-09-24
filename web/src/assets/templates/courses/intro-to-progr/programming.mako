@@ -5,15 +5,15 @@
 
   <h2>Computers</h2>
   <div class="text-img-right">
-    <p>Computers are one of the mankind's most important inventions of the 20th century. Computers are the laptop on our tables, the mobile phones in our pockets, our watches, televisions, cars, airplanes, simply everywhere. They permeat our lives, help us solving large variety of problems and provide us with entertainment.</p>
+    <p>Computers are one of the mankind's most important inventions of the 20th century. Computers are the laptops on our tables, the mobile phones in our pockets, our watches, televisions, cars, airplanes, simply everywhere around us. They permeat our lives, help us solving large variety of problems and provide us with entertainment.</p>
 
     <img src="/img/intro-to-progr/computer.jpg" alt="Notebook" />
   </div>
 
-  <p>But computers still need people to tell them what to do. We are not yet in a time when computers could think for themselves a so they still look like boxes with black screen, like on the picture above. They sit there silently, awaiting our instructions. If a computer should solve a problem for us (for instance finding us a route from a pub at the city outskirts into our warm bed), we have to exactly tell it how it should do it. If we want to play a game on a computer we have to describe the games rules and behavior to it in extreme detail.</p>
+  <p>But computers still need people to tell them what to do. We are not yet in a time when computers could think for themselves and so they still look like boxes with black screen, like on the picture above. They sit there silently, awaiting our instructions. If a computer should solve a problem for us (for instance finding us a route from a pub downtown into our warm bed), we have to exactly tell it how it should do it. If we want to play a game on a computer we have to describe the games rules and behavior to it in extreme detail.</p>
 
   <h2>Programming</h2>
-  <p>In order to explain to the computer what to do, we need a language that the computer will understand. Our human language is too complex for that, however. Therefor we have so called programming languages which have much more strict structure and are much simpler than natural langauges and are designed based on how computers actually work.</p>
+  <p>In order to explain to the computer what it should do, we need a language that the computer will understand. Our human language is too complex for that, however. Therefor we have so called programming languages which have much more strict structure, are much simpler than natural langauges and are designed based on how computers actually work.</p>
 
   <p>There are hundreds of different programming languages. They are all based on more or less the same principles so if you learn one langauge it won't be that hard to learn another. Each language is suited for a different purpose - some are good for writing web sites, other are suited for scientific calculations and artificial intelligence, others are great for game development.</p>
 

@@ -105,21 +105,21 @@ months = [
   </%self:exrc>
 
   <%self:exrc title="Plays">
-    <p>The following contains list of all game plays shown in the Sore Thumb Theatre. Each play has its duration in minutes.</p>
+    <p>The following contains list of all game plays shown in the Fist your Eye Theatre. Each play has its duration in minutes.</p>
 <pre>games = [
-  ['Ňadro na ňadru na nádru', 180],
+  ['Bufallo bufallo bufallo Bufallo bufallo', 180]
   ['Attack of Plush Crocodiles', 95],
   ['Journey to the Cabbage Land', 128],
-  ['Romance on a Romance na zdymadle', 144],
-  ['Still Life wit an Alien', 135],
-  ['Four slaps and a cupcake', 100],
+  ['Romance on a Floodgate', 144],
+  ['Quiet Life with an Alien', 135],
+  ['Four Slaps and a Cupcake', 100],
   ['Power Cucumber', 165],
   ['Johnny Noir', 140],
-  ['Pražská kavárna vrací úder', 130],
-  ['Pět sester ve vratech', 111],
+  ['Intellectuals Strike Back', 130],
+  ['Five Sisters in a Gate', 111],
   ['Old Man and a Python', 187],
   ['Pink Disease', 210],
-  ['Death in Live Stream', 265]
+  ['Death Live', 265]
 ]</pre>
 
     <ol>
