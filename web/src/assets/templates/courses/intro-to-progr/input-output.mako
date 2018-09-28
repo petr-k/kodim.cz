@@ -57,7 +57,7 @@ print(price)
   <%self:exrc title="Simple Input">
     <p>Now we want the program to be able to get input from the user.</p>
     <ol>
-      <li>Write a program called <code>name.py</cpde> which will obtain user's first and last names using the <code>input()</code> function. Print them out on the screen similar to how you did in previous exercise.</li>
+      <li>Write a program called <code>name.py</code> which will obtain user's first and last names using the <code>input()</code> function. Print them out on the screen similar to how you did in previous exercise.</li>
       <li>Let the user input their age as well. Beware that the <code>input()</code> function always returns a string but we want the variable <var>age</var> to contain an integer. Use the <code>int()</code> function to convert the value from a string to an integer. Again, print out the full name and age like you did in the previous version.</li>
     </ol>
   </%self:exrc>
