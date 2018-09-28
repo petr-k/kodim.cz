@@ -1,35 +1,31 @@
 <%inherit file="/course-chapter.mako"/>
 
 <section class="container chapter-section">
-  <p>This course will guide you through the very basics of programming. To start the course, no other experience is requiered besides very basic computer skills. We will be advancing at a slow pace, step by step. I will strive to explaing every little thing in such a way that you will be able to really understand it.</p>
+  <p>This course will introduce you to basics of programming. You don't need to have any other knowledge other than very basic computer literacy. Together we will slowly advance step by step and I'll explain each topic to you so that you can really understand it.</p>
 
   <h2>Computers</h2>
   <div class="text-img-right">
-    <p>One of the most important inventions of human kind of the 20th century are computers. There sit on our tables in the form of notebooks, we have them in our pockets as mobile phones, in our watches, in tv sets, in cars, in plains, simply everywhere. They pervade our lives, solve tremendous amount of problems for us, and they also provide fun and entertainment.</p>
+    <p>Computers are one of the mankind's most important inventions of the 20th century. Computers are the laptops on our tables, the mobile phones in our pockets, our watches, televisions, cars, airplanes, simply everywhere around us. They permeat our lives, help us solving large variety of problems and provide us with entertainment.</p>
 
     <img src="/img/intro-to-progr/computer.jpg" alt="Notebook" />
   </div>
 
-  <p>Interestingly, computers still need us humans to tell them what to do.</p> 
-  
-  <!--
-   Zatím ještě nejsme v době, kdy by počítače uměly myslet sami za sebe a proto se pořád nejvíce podobují těm krabicím s černou obrazovkou jako na obrázku výše. Tiše sedí a očekávají naše instrukce. Pokud má počítač za nás vyřešit nějaký problém (například najít ranní spojení z hospody na okraji města do vyhřáté postele), musíme mu přesně popsat, jak to má udělat. Pokud chceme na počítači hrát hru, musíme extrémně detailně popsat její pravidla a chování. 
+  <p>But computers still need people to tell them what to do. We are not yet in a time when computers could think for themselves and so they still look like boxes with black screen, like on the picture above. They sit there silently, awaiting our instructions. If a computer should solve a problem for us (for instance finding us a route from a pub downtown into our warm bed), we have to exactly tell it how it should do it. If we want to play a game on a computer we have to describe the games rules and behavior to it in extreme detail.</p>
 
-  <h2>Programování</h2>
-  <p>Abychom počítači dokázali vysvětlit, co má dělat, potřebujeme k tomu nějaký jazyk, kterému bude počítač rozumět. Náš lidský jazyk je na to ovšem příliš složitý. Máme proto takzvané programovací jazyky, které mají mnohem přísnější strukturu a jsou mnohem jednodušší než jazyky přirozené a jsou vymyšlené přesně podle toho jakým způsobem počítače pracují. </p>
+  <h2>Programming</h2>
+  <p>In order to explain to the computer what it should do, we need a language that the computer will understand. Our human language is too complex for that, however. Therefor we have so called programming languages which have much more strict structure, are much simpler than natural langauges and are designed based on how computers actually work.</p>
 
-  <p>Různých programovacích jazyků existují desítky, možná bychom se dostali až ke stovce. Všechny jsou založeny víceméně na podobných principech, takže pokud se naučíte jeden, nebude už pro vás problém naučit se další. Každý jazyk se hodí na něco jiného. V některém se dobře píší webové stránky, jiný se hodí na vědecké výpočty a umělou inteligenci, v jiných se zase dobře píší hry.</p>
+  <p>There are hundreds of different programming languages. They are all based on more or less the same principles so if you learn one langauge it won't be that hard to learn another. Each language is suited for a different purpose - some are good for writing web sites, other are suited for scientific calculations and artificial intelligence, others are great for game development.</p>
 
-  <img class="img-fluid" src="/img/intro-to-progr/programming-languages.png" alt="Programovací jazyky" />
+<img class="img-fluid" src="/img/intro-to-progr/programming-languages.png" alt="Programming languages" />
 
-  <p>Žádný dobrý programátor neumí pouze jeden jazyk. Jak budete získávat zkušenosti, naučíte se postupně více jazyků. Běžné je rozumět dvěma až třema jazykům na dobré úrovni a mít alespoň nějaké zkušenosti třeba s dalšími pěti. </p>
+  <p>Every good programmer knows more than one language. As you gain more experience you will eventually learn more languages as well. It's common to have a good understanding of two or three programming languages and have at last some experience in another maybe five languages.</p>
 
-  <h2>Programátoři</h2>
+  <h2>Programmers</h2>
   <div class="text-img-right">
-    <p>Aby se člověk stal programátorem, nepotřebuje v podstatě nic jiného než chuť učit se nové věci a trochu lásky k technice a počítačům. Rozhodně není třeba být zdatný v matematice, mít vystudovanou technickou vysokou školu nebo dokonce být mužem. Počítače jsou ohromně mocné hračky, se kterými je možné prostě si hrát a zkoušet, co všechno pomocí nich dokážeme. </p>
-    <img src="/img/intro-to-progr/baby.jpg" alt="Dítě programuje" />
+    <p>For a person to become a programmer they don't need anything else but a will to learn new things and a bit of love for technology and computers. You definitely don't have to be a math prodigy, have a university degree or even be a man. Computers are very powerful toys that you can basically just play with and try what all we can do with them.</p>
+    <img src="/img/intro-to-progr/baby.jpg" alt="Kid programmer" />
   </div>
 
-  <p>Pro řešení některých složitějších problémů v praxi nebo například pro psaní her je znalost matematiky nebo nějaké hlubší technické vzdělání skoro nutností. Ale k takovým věcem můžete dojít postupně a zcela vlastním tempem, pokud vás budou lákat a bavit.</p>
-  -->
+  <p>To solve some harder problems from the real world or to e.g. develop games you will need a pretty good background in mathematics and some formal technical education. But you can get to that eventually on your own if you find it interesting and enjoyable.</p>
 </section>

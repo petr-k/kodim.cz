@@ -23,3 +23,6 @@ web/public
 # Temporary files
 
 temp
+
+# Vim & Friends
+*.swp
