@@ -23,7 +23,7 @@
           },
           "title": {
             "cz": "Co je to programování",
-            "en": "What is programming?"
+            "en": "What is Programming?"
           },
           "desc": {
             "cz": "Povíme si co je to programování, jak funguje počítač a vyzkoušíme si jaké problémy se v programování řeší.",
@@ -154,7 +154,7 @@
           },
           "title": {
             "cz": "Sekvenční hodnoty",
-            "en": "Sequential values"
+            "en": "Sequential Values"
           },
           "desc": {
             "cz": "Díky sekvencím můžeme do jedné proměnné uložít více hodnot najednou.",
@@ -168,11 +168,11 @@
         {
           "link": {
             "cz": "cykly",
-            "en": "cycles"
+            "en": "loops"
           },
           "title": {
             "cz": "Cykly",
-            "en": "Cycles"
+            "en": "Loops"
           },
           "desc": {
             "cz": "Naučíme naše programy provádět opakovaně nějakou činnost.",
@@ -209,11 +209,11 @@
         {
           "link": {
             "cz": "vlastni-funkce",
-            "en": "own-functions"
+            "en": "custom-functions"
           },
           "title": {
             "cz": "Vlastní funkce",
-            "en": "Own functions"
+            "en": "Custom Functions"
           },
           "desc": {
             "cz": "Naučíme se jak psát vlastní funkce a rozčlenit tak větší programy na manší kousky.",
