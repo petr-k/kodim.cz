@@ -15,9 +15,9 @@
 
   <pre>$ python3</pre>
 
-  <%self:alert_warning_en>
+  <%self:alert_warning>
     If you use the Windows command on Linux or Mac OS it will very likely launch a wrong version of Python in which the following lessons won't work.</p>
-  </%self:alert_warning_en>
+  </%self:alert_warning>
 
   <h2>Values</h2>
   <p><em>Values</em> represent all possible kinds of data that our programs can work with. Based on their usage values are split into multiple categories called <em>data types</em>. There's a large amount of data types. Right now we will introduce you to the most basic ones - integers and decimal numbers.</p>
@@ -110,7 +110,7 @@ martin podloucký
     </ol>
   </%self:exrc>
 
-  ${self.alert_done_en()}
+  ${self.alert_done()}
 
   <h2>Bonuses</h2>
   

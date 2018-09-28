@@ -26,7 +26,7 @@
     </ol>
   </%self:exrc>
 
-  ${self.alert_done_en()}
+  ${self.alert_done()}
 
   <h2>Bonuses</h2>
 </%self:exercises>

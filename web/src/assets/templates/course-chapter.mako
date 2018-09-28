@@ -35,27 +35,27 @@
 </%def>
 
 <%def name="alert_done()">
-  <%self:alert type="done" title="Hotovo!">
-    Hurá, pokud jste dorazili až sem, máte hotovo. Nalepte se lísteček a pokud chcete, můžete pokračovat bonusovými příklady.
-  </%self:alert>
-</%def>
-
-<%def name="alert_done_en()">
-  <%self:alert type="done" title="Done!">
-    Huray! If you have this far, it means you are done. Put a sticker on you monitor and if you feel like it continue with the bonus exercises.
-  </%self:alert>
+  %if lang == 'en':
+    <%self:alert type="done" title="Done!">
+      Huray! If you have this far, it means you are done. Put a sticker on you monitor and if you feel like it continue with the bonus exercises.
+    </%self:alert>
+  %else:
+    <%self:alert type="done" title="Hotovo!">
+      Hurá, pokud jste dorazili až sem, máte hotovo. Nalepte se lísteček a pokud chcete, můžete pokračovat bonusovými příklady.
+    </%self:alert>
+  %endif
 </%def>
 
 <%def name="alert_warning()">
-  <%self:alert type="warning" title="Pozor!">
-    ${caller.body()}
-  </%self:alert>
-</%def>
-
-<%def name="alert_warning_en()">
-  <%self:alert type="warning" title="Warning!">
-    ${caller.body()}
-  </%self:alert>
+  %if lang == 'en':
+    <%self:alert type="warning" title="Warning!">
+      ${caller.body()}
+    </%self:alert>
+  %else:
+    <%self:alert type="warning" title="Pozor!">
+      ${caller.body()}
+    </%self:alert>
+  %endif
 </%def>
 
 <%def name="exrc(title, type='lesson')">

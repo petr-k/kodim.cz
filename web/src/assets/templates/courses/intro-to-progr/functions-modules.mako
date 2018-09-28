@@ -77,7 +77,7 @@
     <p>An information panel in the foayer of the theatre shows information about random plays. We need a random number generator for this panel which will generate random number a performance between 1 and 24. Import the module <code>random</code> and use its function <code>randint()</code> to generate several random numbers from this range.</p>
   </%self:exrc>
 
-  ${self.alert_done_en()}
+  ${self.alert_done()}
 
   <h2>Bonuses</h2>
 
