@@ -1,10 +1,16 @@
-$text-primary: #444;
-$link-color: #88f;
-$czblue: #1f2b70;
+$bg-primary: white;
 $bg-secondary: #6a6ac3;
-$bgorange: #d56868;
+$bg-alert: #d56868;
+$bg-caution: #dc3b3b;
+$text-primary: #444;
+$text-secondary: #1f2b70;
+$link-color: #88f;
+
+$extra-bold: 900;
 
 @import "normalize/import-now";
 @import "layout";
+@import "landing";
+@import "course";
 @import "chapter";
 

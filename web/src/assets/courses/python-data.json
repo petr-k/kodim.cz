@@ -25,7 +25,9 @@
           },
           "ready": {
             "cz": true
-          }
+          },
+          "exkey": "Gdf-NMPd",
+          "hwkey": "oJmwI8Py"
         },
         {
           "link": {
@@ -39,7 +41,25 @@
           },
           "ready": {
             "cz": true
-          }
+          },
+          "exkey": "cOGzlsyM",
+          "hwkey": "xrQbamV7"
+        },
+        {
+          "link": {
+            "cz": "text-chroustani"
+          },
+          "title": {
+            "cz": "Práce s textem, chroustání seznamů"
+          },
+          "desc": {
+            "cz": "Přídáme nový datový typ, který nám umožní pracovat s textem a naučíme se zpracovávat seznamy."
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "SEfAovol",
+          "hwkey": "EMtENY_k"
         }
       ]
     }

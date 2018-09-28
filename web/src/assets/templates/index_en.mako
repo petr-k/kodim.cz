@@ -5,8 +5,8 @@
   <div class="intro container">
     <img class="intro-image" src="/img/notebook.svg" alt="Notebook" />
     <div class="intro-text">
-      <h1 class="intro-title">Kódím.cz</h1>
-      <p class="intro-subtitle">
+      <h1>Kódím.cz</h1>
+      <p>
         Introduction to programming for all those who are playful and want to enjoy learning.
       </p>
     </div>
@@ -14,7 +14,7 @@
 </%block>
 
 <%block name="main">
-  <section class="container">
+  <section class="container tiles-section">
     <h2>Czechitas</h2>
     <p>Courses done in cooperation with <a href="https://www.czechitas.cz/en/">Czechitas</a>, who help women, girls and children to explore the world of information technologies.</p>
 

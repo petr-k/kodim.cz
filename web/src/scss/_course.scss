@@ -1,0 +1,56 @@
+.course-intro > h1 {
+  font-size: 2.5rem;
+}
+
+.chapters {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.chapter-tile {
+  display: flex;
+  flex: 0 0 100%;
+  padding: 2rem 0;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 0.7rem 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 880px) { 
+  .chapters {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .chapter-tile {
+    flex: 0 0 50%;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.chapter-tile-num {
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  background: transparent url('/img/brush.svg') center/contain no-repeat;
+  color: white;
+  font-weight: $extra-bold;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}

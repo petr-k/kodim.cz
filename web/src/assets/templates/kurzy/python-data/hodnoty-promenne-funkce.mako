@@ -54,16 +54,49 @@
 
 <pre>&gt;&gt;&gt; celkem = 1 + 2 + 4 + 1 + 6
 &gt;&gt;&gt; prumer = celkem / 5</pre>
+
+  <h3>Jména proměnných</h3>
+  <p>Už od úplných začátků s programováním je dobré učit se dobrým návykům, které budou později prospěšné nejen vám ale hlavně lidem ve vašem okolí. Jedním z takových návyků je správné pojmenovávání proměnných. </p>
+
+  <ul>
+    <li>Název proměnné by neměl začínat velkým písmenem, např. <var class="wrong">Pocet</var>. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu nedostaneme. </li>
+    <li>Název proměnné by neměl obsahovat diakritiku, např. <var class="wrong">počet</var>. Programovací jazyky vznikaly v Anglickém prostředí, kde se diakritika napoužívá, takže si s ní většina jazyků neporadí. </li>
+    <li>Víceslovné proměnné nesmí obsahovat mezeru, např. <var class="wrong">pocet hodin</var>. To by si Python myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použíjte takzvanou velbloudí notaci <var >pocetHodin</var> nebo hadí notaci <var>pocet_hodin</var>.</li>
+    <li>Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var class="wrong">pcthd</var> aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavout do stolu cože proboha znamená zkratka <code>pcthdn</code>.</li>
+    <li>Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>numberOfHours</var>.</li>
+  </ul>
 </%self:lesson>
 
 <%self:exercises>
   <h2>Cvičení</h2>
   <%self:exrc title="Výplata">
-  <ol>
-    <li>Spočítejte svoji měsíční příjem víte-li, že pracujete 7 hodin denně se mzdou 450 kč na hodinu. Řekněme, že měsíc má 21 pracovních dní.</li>
-    <li>Uložte si počet pracovnich hodin za den do proměnné <var>hodin</var>, hodinovou mzdu do proměnné <var>mzda</var> a počet pracovních dní do proměnné <var>dni</var>. Spočítejte vaši výplatu s použitím těchto promenných.</li>
-    <li>Pokud pracujete na živnostenský list, můžete si odečíst 60% příjmů jako poušál a ze zbytku zaplatíte 15% daň. Uložte si tyto hodnoty do proměnných <var>pausal</var> a <var>dan</var> a spočíteje váš příjem po zdanění.</li>
-  </ol>
+    <ol>
+      <li>Spočítejte svůj měsíční příjem víte-li, že pracujete 7 hodin denně se mzdou 450 kč na hodinu. Řekněme, že měsíc má 21 pracovních dní.</li>
+      <li>Uložte si počet pracovnich hodin za den do proměnné <var>hodin</var>, hodinovou mzdu do proměnné <var>mzda</var> a počet pracovních dní do proměnné <var>dni</var>. Spočítejte vaši výplatu s použitím těchto promenných.</li>
+      <li>Pokud pracujete na živnostenský list, můžete si odečíst 60% příjmů jako poušál a ze zbytku zaplatíte 15% daň. Uložte si tyto hodnoty do proměnných <var>pausal</var> a <var>dan</var> a spočíteje váš příjem po zdanění.</li>
+    </ol>
+    <%def name="solution()">
+      <ol>
+        <li>
+<pre>&gt;&gt;&gt; 450 * 7 * 21
+66150</pre>
+        </li>
+        <li>
+<pre>&gt;&gt;&gt; hodin = 7
+&gt;&gt;&gt; mzda = 450
+&gt;&gt;&gt; dni = 21
+&gt;&gt;&gt; mzda * hodin * dni
+66150</pre>
+        </li>
+        <li>
+<pre>&gt;&gt;&gt; hruba = mzda * hodin * dni
+&gt;&gt;&gt; pausal = 0.6
+&gt;&gt;&gt; dan = 0.15
+&gt;&gt;&gt; dan_kc = hruba * (1 - pausal) * dan
+&gt;&gt;&gt; cista = hruba - dan_kc
+        </li>
+    </ol>
+    </%def>
   </%self:exrc>
 
   ${self.alert_done()}
@@ -96,14 +129,14 @@
 
   <p><strong>POZOR!</strong> Programátoři jsou podivné bytosti, které vždy počítají od nuly, nikoliv od jedničky. Proto také první hodnota v našem seznamu má index 0.</p>
 
-  <p>Chceme-li přistoupit k jednotlivým hodnotám uvnitř seznamu, používáme k tomu hranaté závorky. </p>
+  <p>Chceme-li přistoupit k jednotlivým hodnotám uvnitř seznamu, použijeme k tomu hranaté závorky. </p>
 
 <pre>&gt;&gt;&gt; venecky[0]
 1
 &gt;&gt;&gt; venecky[4]
 6</pre>
 
-  <p>Snadno také můžeme některou hodnotu v seznamu změnit. Napříkald když si vzpomeneme, že jsme trošku zalhali ohledně komzumace věnečků v sobotu:</p>
+  <p>Snadno také můžeme některou hodnotu v seznamu změnit. Například když si vzpomeneme, že jsme trošku zalhali ohledně konzumace věnečků v sobotu:</p>
 
   <pre>&gt;&gt;&gt; venecky[5] = 12</pre>
 
@@ -127,7 +160,6 @@
   <pre>&gt;&gt;&gt; seznam[2][0]</pre>
   <pre>&gt;&gt;&gt; seznam[1:][1]</pre>
   <pre>&gt;&gt;&gt; seznam[:1][2]</pre>
-
 
   <h3>Užitečné funkce nad seznamy</h3>
   <p>Pro práci se seznamy se nám může hodit několik funkcí:</p>
@@ -170,9 +202,24 @@
         Pomocí volání vhodných funkcí vypište nejvyšší a nejnižší pohyb. 
       </li>
       <li>
-        Spočítejte celkový přírustek na účtu za dané období.
+        Spočítejte celkový přírustek na účtu za dané období. Pozor, že přírůstek může vyjít i záporný.
       </li>
     </ol>
+    <%def name="solution()">
+      <ol>
+        <li>
+<pre>&gt;&gt;&gt; pohyby[2]
+-800</pre>
+        </li>
+        <li>
+<pre>&gt;&gt;&gt; pohyby[2:]
+[-800, 540, 721, -613, -222]</pre>
+        </li>
+        <li>
+<pre>&gt;&gt;&gt; len(pohyby)
+7</pre>
+        </li>
+    </%def>
   </%self:exrc>
 
   <%self:exrc title="Známky z písemek">
@@ -189,6 +236,9 @@
         Zjistěte průměrnou známku ze všech písemek pro druhého účastníka v seznamu.
       </li>
     </ol>
+    <%def name="solution()">
+      Řešení zatím není k dispozici
+    </%def>
   </%self:exrc>
 </%self:exercises>
 
@@ -230,21 +280,28 @@
 </%self:lesson>
 
 <%self:exercises>
-  
   <h2>Domácí úložky - povinné</h2>
   <p>Povinné v tomto případě znamená, že budu na další hodině přepokládat, že jste tyto úkoly alespoň zkusili, ne že se budu na vás zle mračit, když je neuděláte :-)</p>
 
-  <%self:exrc title="Úroky">
+  <%self:exrc title="Úroky" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
     <p>Fíha banka a.s. nabízí na svých stránkách spořící účet s úrokem 2,4%. Když si na takový účet uložíte 1&nbsp;000&nbsp;000 kč, kolik peněz nastřádáte za 10 let?</p>
+    
+    <%def name="solution()">
+      Řešení zatím není k dispozici
+    </%def>
   </%self:exrc>
 
-  <%self:exrc title="Délka filmu">
+  <%self:exrc title="Délka filmu" type="home">
     <p><strong>Obtížnost: pohodička</strong></p>
     <p>V programu kin se často uvádí délka filmu v minutách. Například rozšířená verze filmu <em>Pán prstenů: Dvě věže</em> trvá 223 minut. My bychom ovšem délku filmu raději věděli v hodinách a minutách. Použijte operátory celočíselného dělení a dělení se zbytkem, abyste spočetli, kolik hodin a minut trvá film <em>Pán prstenů: Dvě věže.</em></p>
+    
+    <%def name="solution()">
+      Řešení zatím není k dispozici
+    </%def>
   </%self:exrc>
 
-  <%self:exrc title="Průměrné teploty">
+  <%self:exrc title="Průměrné teploty" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
     <p>Následující tabulka obsahuje průměrné roční teploty v České republice za roky 2001 až 2010 (zdroj: Český hydrometeorologický úřad). </p>
 
@@ -325,39 +382,74 @@
         Použitím proměnné <var>sloupce</var> vypište seznam teplot setřízený vzestupně podle velikosti. Šlo by to i pomocí proměnné <var>radky</var>, ale to ještě neumíme.
       </li>
     </ol>
+    
+    <%def name="solution()">
+      Řešení zatím není k dispozici
+    </%def>
   </%self:exrc>
 
-  <%self:exrc title="Průměr">
+  <%self:exrc title="Průměr" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
     <p>Mějme proměnnou <var>s</var>, ve které předpokládáme uložený nějaký seznam. Sestavte v Python konzoli výraz (vzoreček), který spočítá průměrnou hodnotu v takovém seznamu. Otestuje jej na seznamech různých délek. </p>
+
+    <%def name="solution()">
+<pre>&gt;&gt;&gt; sum(s)/len(s)</pre>
+    </%def>
   </%self:exrc>
 
   <h2>Domácí úložky - nepovinné</h1>
   <p>Konzumujte, pokud si chcete dál procvičovat Python.</p>
 
-  <%self:exrc title="Nový koberec">
+  <%self:exrc title="Nový koberec" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
     <p>Do místnosti tvaru čtverce o rozloze 30m<sup>2</sup> 
     potřebujeme koupit nový koberec. Jakou délku má mít strana koberce? Vejde se nám srolovaný do dodávky s nákladovým prostorem dlouhým 5m?</p>
+
+    <%def name="solution()">
+      <p>Strana koberce je odmocnina z jeho obsahu.</p>
+<pre>&gt;&gt;&gt; 30 ** 0.5
+5.477225575051661
+</pre>
+      <p>Strana koberce má tedy délku téměř pět a půl metru. Do dodávky se nám tedy nevejde.</p>
+    </%def>
   </%self:exrc>
 
-  <%self:exrc title="Rozpětí">
+  <%self:exrc title="Rozpětí" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
     <p>Postupujte obdobně jako v úložce <strong>Průměr</strong>, ale tentokrát sestavte výraz pro výpočet <em>rozpětí</em>, tedy rozdílu mezi minimální a maximální hodnotou. </p>
+
+    <%def name="solution()">
+<pre>&gt;&gt;&gt; max(s) - min(s)</pre>
+    </%def>
   </%self:exrc>
 
-  <%self:exrc title="Vlastní minimum a maximum">
+  <%self:exrc title="Vlastní minimum a maximum" type="home">
     <p><strong>Obtížnost: roztoč mozkové závity</strong></p>
     <p>Prohlédněte si funkce pro práci se seznamy uvedené dřive v obsahu lekce. Představte si, že bychom neměli k dispozici funkce <code>min()</code> a <code>max()</code>. Dokázali byste vytvořit výraz, který zjistí minimální resp. maximální hodnotu v seznamu <var>s</var>? Můžete v tomto vzorečku použít cokoliv, co jsme probrali na lekci kromě samotných funkcí <code>min()</code> a <code>max()</code>.</p>
+
+    <%def name="solution()">
+      <p>Minimum:</p>
+      <pre>&gt;&gt;&gt; sorted(s)[0]</pre>
+      <p>Maximum:</p>
+      <pre>&gt;&gt;&gt; sorted(s)[-1]</pre>
+    </%def>
   </%self:exrc>
 
-  <%self:exrc title="Střed seznamu">
+  <%self:exrc title="Střed seznamu" type="home">
     <p><strong>Obtížnost: pro drsňáky</strong></p>
     <p>Sestavte výraz, který vrátí číslo nacházející se přesně uprostřed v zadaném seznamu <var>s</var>. U seznamů liché délky je střed jasně definovaný, ovšem u seznamů sudé délky nám padne mezi dvě čísla. V takovém případě vyberte jako střed číslo blíž ke konci seznamu. </p>
+
+    <%def name="solution()">
+<pre>&gt;&gt;&gt; s[len(s)//2]</pre>
+    </%def>
   </%self:exrc>
 
-  <%self:exrc title="Střed seznamu podruhé">
+  <%self:exrc title="Střed seznamu podruhé" type="home">
     <p><strong>Obtížnost: smrt v přímém přenosu</strong></p>
     <p>Sestavte vzoreček, který vrátí číslo nacházející se přesně uprostřed v zadaném seznamu <var>s</var>. Tentokrát však u seznamů sudé délky vyberte jako střed číslo blíž k <em>začátku</em> seznamu. </p>
+
+    <%def name="solution()">
+<pre>&gt;&gt;&gt; s[(len(s)-1)//2]</pre>
+    </%def>
   </%self:exrc>
 </%self:exercises>

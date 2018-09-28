@@ -52,15 +52,46 @@
   </%self:alert>
 </%def>
 
-<%def name="exrc(title)">
+<%def name="exrc(title, type='lesson')">
   <div class="exercise">
     <div class="exercise-title">
       <div class="exercise-num">${counter.next()}</div>
-      <h3>${title}</h3>      
+      <h3>${title}</h3>
     </div>
     <div class="exercise-body">
       ${caller.body()}
     </div>
+    %if (type == 'lesson' and exkey == chapter.exkey) or (type == 'home' and hwkey == chapter.hwkey):
+      <div class="exercise-buttons">
+        <button
+          onclick="open_solution('solution${counter.value}');"
+        >
+          Řešení
+        </button>
+      </div>
+      <div id="solution${counter.value}" class="modal">
+        <div class="container exercise-solution">
+          <div class="solution-header">
+            <h3>Řešení</h3>
+            <button
+              onclick="close_solution('solution${counter.value}');"
+            >
+              Zavřít
+            </button>
+          </div>
+          <div class="solution-body">
+            ${caller.solution()}
+          </div>
+          <div class="solution-footer">
+            <button
+              onclick="close_solution('solution${counter.value}');"
+            >
+              Zavřít
+            </button>
+          </div>
+        </div>
+      </div>
+    %endif
   </div>
 </%def>
 

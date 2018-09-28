@@ -1,4 +1,4 @@
-from flask import Flask, redirect
+from flask import Flask, redirect, request
 from flask_mako import MakoTemplates, render_template
 import json
 from collections import OrderedDict
@@ -21,6 +21,17 @@ class Chapter:
     self.desc = chapter_json['desc']
     self.link = chapter_json['link']
     self.ready = chapter_json['ready']
+    
+    if 'exkey' in chapter_json:
+      self.exkey = chapter_json['exkey']
+    else:
+      self.exkey = ''
+
+    if 'hwkey' in chapter_json:
+      self.hwkey = chapter_json['hwkey']
+    else:
+      self.hwkey = ''
+
     self.nums = nums
 
 class Section:
@@ -131,7 +142,7 @@ def index_en():
 def course_index(courses_url, course_link):
   return redirect(f'/{courses_url}/{course_link}/index')
 
-@app.route("/<courses_url>/<course_link>/<chapter_link>/")
+@app.route("/<courses_url>/<course_link>/<chapter_link>/", methods=['GET'])
 def course_chapter(courses_url, course_link, chapter_link):
   lang = courses.langs[courses_url]
   course = courses.get(lang, course_link)
@@ -147,5 +158,7 @@ def course_chapter(courses_url, course_link, chapter_link):
       f'{courses_url}/{course_link}/{chapter_link}.mako', 
       chapter=course.get_chapter(lang, chapter_link),
       counter=Counter(),
-      lang=lang
+      lang=lang,
+      exkey=request.args.get('exkey'),
+      hwkey=request.args.get('hwkey')
     )
