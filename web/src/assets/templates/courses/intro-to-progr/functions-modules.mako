@@ -60,7 +60,8 @@
 </%self:lesson>
 
 <%self:exercises>
-
+  <h2>Exercises</h2>
+  
   <%self:exrc title="Name Length">
     <p>Save the string "Fist up your Eye Theatre" into a variable called <var>name</var>. If we use a design font on a sign on the side of the building, one character (including spaces) will be 30 cm wide. Use the <var>len()</var> function to find out how many characters there are in the name of the theatre and calculate the width of the sign in centimeters.</p>
   </%self:exrc>
