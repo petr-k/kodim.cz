@@ -48,7 +48,7 @@
   <h2>Bonusy</h2>
 
   <%self:exrc title="Příjem">
-    <p>Do proměnné <var>prijem1</var> spočítejte příjem divadla ze vstupného na jedno představneí dle cvičení 1.a), do proměnné <var>prijem2</var> spočítejte příjem ze vstupného dle cvičení 1.b). Do proměnné <var>rozdil</span> uložte rozdíl těchto dvou hodnot.</p>
+    <p>Do proměnné <var>prijem1</var> spočítejte příjem divadla ze vstupného na jedno představneí dle cvičení 1.a), do proměnné <var>prijem2</var> spočítejte příjem ze vstupného dle cvičení 1.b). Do proměnné <var>rozdil</var> uložte rozdíl těchto dvou hodnot.</p>
   </%self:exrc>
 
   <%self:exrc title="Sedačky v sále">
