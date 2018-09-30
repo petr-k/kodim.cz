@@ -12,6 +12,9 @@
   "sections": [
     {
       "name": "basics",
+      "title": {
+        "cz": "Základy"
+      },
       "chapters": [
         {
           "link": {

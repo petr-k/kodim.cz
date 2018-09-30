@@ -15,6 +15,10 @@
   "sections": [
     {
       "name": "basics",
+      "title": {
+        "cz": "Základy",
+        "en": "Basics"
+      },
       "chapters": [
         {
           "link": {
@@ -56,6 +60,10 @@
     },
     {
       "name": "lets-start",
+      "title": {
+        "cz": "Začínáme programovat",
+        "en": "Starting to Code"
+      },
       "chapters": [
         {
           "link": {
@@ -187,6 +195,10 @@
     },
     {
       "name": "next-level",
+      "title": {
+        "cz": "Další úroveň",
+        "en": "Next Level"
+      },
       "chapters": [
         {
           "link": {

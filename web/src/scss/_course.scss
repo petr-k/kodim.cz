@@ -1,44 +1,24 @@
-.course-intro > h1 {
-  font-size: 2.5rem;
+.course-picture {
+  width: 10rem;
+  height: 10rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
-.chapters {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.chapter-tile {
-  display: flex;
-  flex: 0 0 100%;
-  padding: 2rem 0;
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    margin: 0.7rem 0;
-  }
-
+.course-link {
+  display: block;
+  max-width: 20rem;
+  margin: 0 auto;
+  
   p {
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 880px) { 
-  .chapters {
-    display: flex;
-    flex-flow: row wrap;
+    color: $text-primary;
   }
 
-  .chapter-tile {
-    flex: 0 0 50%;
-    padding: 2rem 1.5rem;
+  &:hover {
+    p {
+      text-decoration: none;
+    }
   }
 }
 

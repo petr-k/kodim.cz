@@ -1,25 +1,20 @@
 <%inherit file="/layout.mako"/>
 
 <%def name="chapterTile(chapter)">
-  <div class="chapter-tile">
+  <div class="my-3 col-md-6 d-flex align-items-baseline">
     <div class="chapter-tile-num">${chapter.nums[lang]}</div>
-    <div class="chapter-info">
-      <a href="../${chapter.link[lang]}"><h3>${chapter.title[lang]}</h3></a>
+    <div>
+      <a href="${chapter.link[lang]}/"><h3>${chapter.title[lang]}</h3></a>
       <p>${chapter.desc[lang]}</p>
     </div>
   </div>
 </%def>
 
-<%def name="section(name)">
-  <div class="chapters">
-    %for chapter in course.get_section(name).all_chapters():
-      ${chapterTile(chapter)}
-    %endfor
-  </div>
-</%def>
-
 <%block name="header">
-  <%self:pageIntro title="${course.title[lang]}" display="4">
+  <%self:pageIntro display="4">
+    <%def name="title()">
+      ${course.title[lang]}
+    </%def>
     <%def name="logo()">
       <img class="logo" src="/img/${course.id}/intro-icon.svg" alt="${course.title[lang]}" />
     </%def>
@@ -27,4 +22,23 @@
       ${course.subtitle[lang]}
     </%def>
   </%self:pageIntro>
+</%block>
+
+<%block name="main">
+  <section class="container my-5">
+    <%block name="courseLead"></%block>
+  </section>
+  <section class="container my-5">
+    %for section in course.all_sections():
+      <h2 class="my-5 text-center">${section.title[lang]}</h2>
+      <div class="row">
+        %for i, chapter in enumerate(section.all_chapters()):
+          ${chapterTile(chapter)}
+            %if i % 2 == 1:
+              <div class="w-100"></div>
+            %endif
+        %endfor
+      </div>
+    %endfor
+  </section>
 </%block>

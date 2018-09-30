@@ -1,9 +1,10 @@
 $bg-primary: white;
-$bg-secondary: #6a6ac3;
+$bg-secondary: #476fc2;
 $bg-alert: #d56868;
 $bg-caution: #dc3b3b;
-$text-primary: #444;
-$text-heading: #1f2b70;
+$text-primary: #494947;
+$text-heading: #476fc2;
+$text-emphasis: #e3c567;
 $link-color: #88f;
 
 // Bootstrap
@@ -14,12 +15,12 @@ $font-size-base:              1rem !default;
 $spacer:                      1rem !default;
 
 $font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
+$font-weight-normal:          500 !default;
 $font-weight-bold:            700 !default;
 $font-weight-extra:           900 !default;
 
 $h1-font-size:                $font-size-base * 3.5 !default;
-$h2-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.35 !default;
 $h4-font-size:                $font-size-base * 1.2 !default;
 $h5-font-size:                $font-size-base * 1.1 !default;

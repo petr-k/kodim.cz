@@ -38,6 +38,7 @@ class Section:
   def __init__(self, section_json, langs, start_nums):
     self.name = section_json['name']
     self.chapters = []
+    self.title = section_json['title']
     self.chapters_dict = OrderedDict()
 
     nums = start_nums
@@ -146,27 +147,27 @@ def index_en():
     courses=courses
   )
 
-@app.route('/<courses_url>/<course_link>')
+@app.route('/<courses_url>/<course_link>/')
 def course_index(courses_url, course_link):
-  return redirect(f'/{courses_url}/{course_link}/index')
+  lang = courses.langs[courses_url]
+  course = courses.get(lang, course_link)
+
+  return render_template(
+    f'{courses_url}/{course_link}/index.mako',
+    course=course,
+    lang=lang
+  )
 
 @app.route("/<courses_url>/<course_link>/<chapter_link>/", methods=['GET'])
 def course_chapter(courses_url, course_link, chapter_link):
   lang = courses.langs[courses_url]
   course = courses.get(lang, course_link)
 
-  if chapter_link == 'index':
-    return render_template(
-      f'{courses_url}/{course_link}/index.mako',
-      course=course,
-      lang=lang
-    )
-  else:
-    return render_template(
-      f'{courses_url}/{course_link}/{chapter_link}.mako', 
-      chapter=course.get_chapter(lang, chapter_link),
-      counter=Counter(),
-      lang=lang,
-      exkey=request.args.get('exkey'),
-      hwkey=request.args.get('hwkey')
-    )
+  return render_template(
+    f'{courses_url}/{course_link}/{chapter_link}.mako', 
+    chapter=course.get_chapter(lang, chapter_link),
+    counter=Counter(),
+    lang=lang,
+    exkey=request.args.get('exkey'),
+    hwkey=request.args.get('hwkey')
+  )
