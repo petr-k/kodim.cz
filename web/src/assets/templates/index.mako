@@ -1,7 +1,9 @@
+<%inherit file="/layout.mako"/>
+
 <%def name="courseTile(url, course)">
   <% lang = courses.langs[url] %>
   
-  <div class="course-tile">
+  <div class="col-md-6 text-center">
     <style>
       .course-link .icon-${course.id} {
         background-image: url('/img/${course.id}/intro-outline.svg');
@@ -18,4 +20,13 @@
       <p>${course.subtitle[lang]}</p>
     </a>
   </div>
+</%def>
+
+<%def name="section(title)">
+  <section class="container">
+    <h2 class="my-5 text-center">${title}</h2>
+    ${caller.lead()}
+    
+    ${caller.body()}
+  </section>
 </%def>

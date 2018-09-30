@@ -1,46 +1,3 @@
-.intro {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.intro-image {
-  width: 15rem;
-  height: 15rem;
-  padding-top: 2rem;
-  flex: 0 0 auto;
-}
-
-.intro-text {
-  text-align: center;
-
-  & > h1 {
-    margin-top: 3.5rem;
-  }
-
-  & > p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-}
-
-.tiles-section {
-  h2 {
-    text-align: center;
-  }
-}
-
-.courses {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.course-tile {
-  text-align: center;
-  flex: 1 0 100%;
-}
-
 .course-picture {
   width: 10rem;
   height: 10rem;
@@ -62,35 +19,5 @@
     p {
       text-decoration: none;
     }
-  }
-}
-
-@media only screen and (min-width: 880px) { 
-  .intro {
-    padding: 1rem 3rem;
-    flex-flow: row nowrap;
-  }
-
-  .intro-image {
-    width: 13rem;
-    height: 13rem;
-  }
-
-  .intro-text {
-    text-align: left;
-    padding-left: 2rem;
-
-    & > h1 {
-      font-size: 4rem;
-      margin-bottom: 1rem;
-    }
-  }
-
-  .courses {
-    flex-flow: row nowrap;
-  }
-  
-  .course-tile {
-    flex: 1 0 50%;
   }
 }

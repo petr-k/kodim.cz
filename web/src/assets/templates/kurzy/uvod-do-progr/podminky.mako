@@ -39,7 +39,7 @@ else:
 
   <ul>
     <li>rovno: <strong>==</strong></li>
-    <li>nerovno: <strong>!==</strong></li>
+    <li>nerovno: <strong>!=</strong></li>
     <li>větší: <strong>&gt;</strong></li>
     <li>větší nebo rovno: <strong>&gt;=</strong></li>
     <li>menší: <strong>&lt;</strong></li>

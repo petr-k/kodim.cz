@@ -38,7 +38,7 @@ else:
 
   <ul>
     <li>equal: <strong>==</strong></li>
-    <li>not equal: <strong>!==</strong></li>
+    <li>not equal: <strong>!=</strong></li>
     <li>greater than: <strong>&gt;</strong></li>
     <li>greater than or equal: <strong>&gt;=</strong></li>
     <li>less than: <strong>&lt;</strong></li>

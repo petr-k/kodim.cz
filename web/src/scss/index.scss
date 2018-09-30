@@ -1,16 +1,46 @@
-$bg-primary: white;
-$bg-secondary: #6a6ac3;
-$bg-alert: #d56868;
-$bg-caution: #dc3b3b;
-$text-primary: #444;
-$text-secondary: #1f2b70;
-$link-color: #88f;
+// Customization
+@import "custom-variables";
 
-$extra-bold: 800;
+// Boostrap requiered
+@import "functions";
+@import "variables";
+@import "mixins";
 
-@import "normalize/import-now";
+// Bootstrap optional
+@import "root";
+@import "print";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+//@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+//@import "input-group";
+//@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+//@import "breadcrumb";
+//@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+//@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+//@import "tooltip";
+//@import "popover";
+//@import "carousel";
+@import "utilities";
+
 @import "layout";
 @import "landing";
 @import "course";
 @import "chapter";
-

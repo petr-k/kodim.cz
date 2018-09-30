@@ -19,13 +19,12 @@
 </%def>
 
 <%block name="header">
-  <div class="intro container">
-    <img class="intro-image" src="/img/${course.id}/intro-icon.svg" alt="${course.title[lang]}" />
-    <div class="intro-text course-intro">
-      <h1>${course.title[lang]}</h1>
-      <p>
-        ${course.subtitle[lang]}
-      </p>
-    </div>
-  </div>
+  <%self:pageIntro title="${course.title[lang]}" display="4">
+    <%def name="logo()">
+      <img class="logo" src="/img/${course.id}/intro-icon.svg" alt="${course.title[lang]}" />
+    </%def>
+    <%def name="lead()">
+      ${course.subtitle[lang]}
+    </%def>
+  </%self:pageIntro>
 </%block>

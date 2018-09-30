@@ -131,6 +131,14 @@ def index_cz():
     courses=courses
   )
 
+@app.route('/kurzy')
+def kurzy():
+  return redirect('/')
+
+@app.route('/courses')
+def courses_en():
+  return redirect('/')
+
 @app.route('/en')
 def index_en():
   return render_template(

@@ -21,7 +21,7 @@
   line-height: 6rem;
   background: transparent url('/img/brush.svg') center/contain no-repeat;
   color: white;
-  font-weight: $extra-bold;
+  font-weight: $font-weight-extra;
   text-align: center;
   font-size: 3rem;
   margin-top: 3rem;
@@ -94,7 +94,7 @@ pre {
 
 .lesson-section, .exercise-solution {
   var {
-    color: $text-secondary;
+    color: $text-heading;
   }
   
   pre {
@@ -163,7 +163,7 @@ table {
   width: 2.5rem;
   height: 2.5rem;
   line-height: 2.5rem;
-  font-weight: $extra-bold;
+  font-weight: $font-weight-extra;
   text-align: center;
   font-size: 1.2rem;
   margin-right: 1rem;

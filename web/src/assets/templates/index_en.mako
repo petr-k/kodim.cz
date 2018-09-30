@@ -1,16 +1,14 @@
-<%inherit file="/layout.mako"/>
-<%namespace name="index" file="index.mako"/>
+<%inherit file="/index.mako"/>
 
 <%block name="header">
-  <div class="intro container">
-    <img class="intro-image" src="/img/notebook.svg" alt="Notebook" />
-    <div class="intro-text">
-      <h1>Kódím.cz</h1>
-      <p>
-        Introduction to programming for all those who are playful and want to enjoy learning.
-      </p>
-    </div>
-  </div>
+  <%self:pageIntro title="Kódím.cz">
+    <%def name="logo()">
+      <img class="logo" src="/img/notebook.svg" alt="Notebook" />
+    </%def>
+    <%def name="lead()">
+      Introduction to programming for all those who are playful and want to enjoy learning.
+    </%def>
+  </%self:pageIntro>
 </%block>
 
 <%block name="main">
@@ -19,7 +17,7 @@
     <p>Courses done in cooperation with <a href="https://www.czechitas.cz/en/">Czechitas</a>, who help women, girls and children to explore the world of information technologies.</p>
 
     <div class="courses">
-      ${index.courseTile('courses', courses.get('en', 'intro-to-progr'))}
+      ${self.courseTile('courses', courses.get('en', 'intro-to-progr'))}
     </div>
   </section>
 </%block>

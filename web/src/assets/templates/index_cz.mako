@@ -1,28 +1,26 @@
-<%inherit file="/layout.mako"/>
-<%namespace name="index" file="index.mako"/>
+<%inherit file="/index.mako"/>
 
 <%block name="header">
-  <div class="intro container">
-    <img class="intro-image" src="/img/notebook.svg" alt="Notebook" />
-    <div class="intro-text">
-      <h1>Kódím.cz</h1>
-      <p>
-        Základy programování pro všechny, kteří si chtějí hrát a mít radost z učení.
-      </p>
-    </div>
-  </div>
+  <%self:pageIntro title="Kódím.cz">
+    <%def name="logo()">
+      <img class="logo" src="/img/notebook.svg" alt="Notebook" />
+    </%def>
+    <%def name="lead()">
+      Základy programování pro všechny, kteří si chtějí hrát a mít radost z učení.
+    </%def>
+  </%self:pageIntro>
 </%block>
 
 <%block name="main">
-  <section class="container tiles-section">
-    <h2>Czechitas</h2>
-    <p>Kurzy pořádané ve spolupráci s <a href="https://www.czechitas.cz">Czechitas</a>, kteří pomáhají holkám, ženám i dětem poznat svět informačních technologií.</p>
-    
-    <div class="courses">
-      ${index.courseTile('kurzy', courses.get('cz', 'uvod-do-progr'))}
-      ${index.courseTile('kurzy', courses.get('cz', 'python-data'))}
+  <%self:section title="Czechitas">
+    <%def name="lead()">
+      <p>Kurzy pořádané ve spolupráci s <a href="https://www.czechitas.cz">Czechitas</a>, kteří pomáhají holkám, ženám i dětem poznat svět informačních technologií.</p>
+    </%def>
+    <div class="row my-5">
+      ${self.courseTile('kurzy', courses.get('cz', 'uvod-do-progr'))}
+      ${self.courseTile('kurzy', courses.get('cz', 'python-data'))}
     </div>
-  </section>
+  </%self:section>
 
   <%doc>
     <section class="container">
