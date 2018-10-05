@@ -1,0 +1,25 @@
+version: '3'
+services:
+  app:
+    build: ./docker
+    environment:
+      UWSGI_PY_AUTORELOAD: '1'
+      UWSGI_NEED_APP: '1'
+    ports:
+      - "8080:80"
+    volumes:
+      - web-public:/app
+    # in tandem with the need-app flag above, this will make uwsgi eventually
+    # start once the web-builder service copies over the required .py files
+    # and other assets upon build
+    restart: on-failure
+  web-builder:
+    build:
+      context: ./web
+      dockerfile: dev.Dockerfile
+    command: start
+    volumes:
+      - ./web/src:/web/src
+      - web-public:/web/public
+volumes:
+  web-public:
