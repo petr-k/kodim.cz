@@ -24,6 +24,41 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:500,800,900|Ubuntu+Mono:400,700&amp;subset=latin-ext" rel="stylesheet" />
   <link rel="stylesheet" href="/index.css" />
+  <link 
+    id="favicon" 
+    rel="shortcut icon" 
+    href="/img/icons/notebook16.png" 
+    sizes="16x16"
+    type="image/png"
+  />
+  <link 
+    id="favicon" 
+    rel="shortcut icon" 
+    href="/img/icons/notebook24.png" 
+    sizes="24x24"
+    type="image/png"
+  />
+  <link 
+    id="favicon" 
+    rel="shortcut icon" 
+    href="/img/icons/notebook32.png" 
+    sizes="32x32"
+    type="image/png"
+  />
+  <link 
+    id="favicon" 
+    rel="shortcut icon" 
+    href="/img/icons/notebook48.png" 
+    sizes="48x48"
+    type="image/png"
+  />
+  <link
+    rel="icon"
+    href="/img/icons/notebook256.png"
+    sizes="256x256"
+    type="image/png"
+  />
+
   <title>Kódím.cz</title>
 </head>
 <body>
