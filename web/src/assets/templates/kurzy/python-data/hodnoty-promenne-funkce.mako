@@ -5,7 +5,7 @@
   
   <p>Abychom si mohli s Pythonem povídat, musíme spustit takzvanou <em>Python konzoli</em>. To je prostředí, ve kterém můžeme s Pythonem komunikovat a posílat mu příkazy. </p>
 
-  <p>Pokud pracujete pod Windows, Python konzoli spustít tak, že do termínálu napíšeme příkaz</p>
+  <p>Pokud pracujete pod Windows, Python konzoli spustíte tak, že do termínálu napíšete příkaz</p>
 
   <pre>$ python</pre>
 
@@ -13,10 +13,10 @@
 
   <pre>$ python3</pre>
 
-  <p><strong>POZOR!</strong> Pokud v Linuxu nebo na Macu spustít příkaz jako ve Windows, pravděpodobně se vám spustí jiná verze Pythonu, se kterou vám následující lekce nebudou fungovat.</p>
+  <p><strong>POZOR!</strong> Pokud v Linuxu nebo na Macu spustíte příkaz jako ve Windows, pravděpodobně se vám spustí jiná verze Pythonu, se kterou vám následující lekce nebudou fungovat.</p>
 
   <h2>Hodnoty</h2>
-  <p><em>Hodnoty</em> představují všechny možné druhy dat, se kterými můžou naše programy pracavat. Hodnoty se dle způsobu použití dělí do různých kategoríí zvaných <em>datové typy</em>. Datových typů existuje velké množství. V tuto chvíli si představíme ty nejzákladnější - celá čísla a destinná čísla.</p>
+  <p><em>Hodnoty</em> představují všechny možné druhy dat, se kterými můžou naše programy pracovat. Hodnoty se dle způsobu použití dělí do různých kategoríí zvaných <em>datové typy</em>. Datových typů existuje velké množství. V tuto chvíli si představíme ty nejzákladnější - celá čísla a destinná čísla.</p>
 
   <h3>Celá čísla</h3>
 
@@ -31,7 +31,7 @@
   <p>S celými čísly bychom si dlouho nevystačili. Dalším datovým typem tedy budou <em>desetinná čísla</em>, např. 13.4, 6.0, -0.0001, 0.0 apod. Pozor, že programátoři vždycky píší desetinná čísla s tečkou, nikoliv s čárkou.</p>
 
   <h2>Aritmetické operátory</h2>
-  <p>Nyní už máme prostředky k tomu, abycho mohli pomocí Pythonu něco spočítat. V Python máme k dispozici běžné aritmetické operátory:</p>
+  <p>Nyní už máme prostředky k tomu, abychom mohli pomocí Pythonu něco spočítat. V Pythonu máme k dispozici běžné aritmetické operátory:</p>
 
   <ul>
     <li>sčítání: <strong>+</strong></li>
@@ -50,20 +50,20 @@
 
   <p>Proměnná je jakási pojmenovaná krabička nebo šuplík, do kterého si můžeme uložit nějakou hodnotu, abychom ji neztratili a mohli ji používat v dalších výpočtech.</p>
 
-  <p>Můžeme například v rámci dietního programu spočítat kolik vanilkových věnečků denně jsme spořádali za posledních 5 dní. </p>
+  <p>Můžeme například v rámci dietního programu spočítat, kolik vanilkových věnečků denně jsme spořádali za posledních 5 dní. </p>
 
 <pre>&gt;&gt;&gt; celkem = 1 + 2 + 4 + 1 + 6
 &gt;&gt;&gt; prumer = celkem / 5</pre>
 
   <h3>Jména proměnných</h3>
-  <p>Už od úplných začátků s programováním je dobré učit se dobrým návykům, které budou později prospěšné nejen vám ale hlavně lidem ve vašem okolí. Jedním z takových návyků je správné pojmenovávání proměnných. </p>
+  <p>Už od úplných začátků s programováním je dobré učit se dobrým návykům, které budou později prospěšné nejen vám, ale hlavně lidem ve vašem okolí. Jedním z takových návyků je správné pojmenovávání proměnných. </p>
 
   <ul>
     <li>Název proměnné by neměl začínat velkým písmenem, např. <var class="wrong">Pocet</var>. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu nedostaneme. </li>
-    <li>Název proměnné by neměl obsahovat diakritiku, např. <var class="wrong">počet</var>. Programovací jazyky vznikaly v Anglickém prostředí, kde se diakritika napoužívá, takže si s ní většina jazyků neporadí. </li>
+    <li>Název proměnné by neměl obsahovat diakritiku, např. <var class="wrong">počet</var>. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika napoužívá, takže si s ní většina jazyků neporadí. </li>
     <li>Víceslovné proměnné nesmí obsahovat mezeru, např. <var class="wrong">pocet hodin</var>. To by si Python myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použíjte takzvanou velbloudí notaci <var >pocetHodin</var> nebo hadí notaci <var>pocet_hodin</var>.</li>
     <li>Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var class="wrong">pcthd</var> aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavout do stolu cože proboha znamená zkratka <code>pcthdn</code>.</li>
-    <li>Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>numberOfHours</var>.</li>
+    <li>Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.</li>
   </ul>
 </%self:lesson>
 
@@ -72,9 +72,9 @@
   <a name="vyplata" />
   <%self:exrc title="Výplata">
     <ol>
-      <li>Spočítejte svůj měsíční příjem víte-li, že pracujete 7 hodin denně se mzdou 450 kč na hodinu. Řekněme, že měsíc má 21 pracovních dní.</li>
-      <li>Uložte si počet pracovnich hodin za den do proměnné <var>hodin</var>, hodinovou mzdu do proměnné <var>mzda</var> a počet pracovních dní do proměnné <var>dni</var>. Spočítejte vaši výplatu s použitím těchto promenných.</li>
-      <li>Pokud pracujete na živnostenský list, můžete si odečíst 60% příjmů jako poušál a ze zbytku zaplatíte 15% daň. Uložte si tyto hodnoty do proměnných <var>pausal</var> a <var>dan</var> a spočíteje váš příjem po zdanění.</li>
+      <li>Spočítejte svůj měsíční příjem víte-li, že pracujete 7 hodin denně se mzdou 450 Kč na hodinu. Řekněme, že měsíc má 21 pracovních dní.</li>
+      <li>Uložte si počet pracovních hodin za den do proměnné <var>hodin</var>, hodinovou mzdu do proměnné <var>mzda</var> a počet pracovních dní do proměnné <var>dni</var>. Spočítejte svou výplatu s použitím těchto promenných.</li>
+      <li>Pokud pracujete na živnostenský list, můžete si odečíst 60&nbsp;% příjmů jako paušál a ze zbytku zaplatíte 15% daň. Uložte si tyto hodnoty do proměnných <var>pausal</var> a <var>dan</var> a spočítejte svůj příjem po zdanění.</li>
     </ol>
     <%def name="solution()">
       <ol>
@@ -107,24 +107,24 @@
   <h2>Funkce</h2>
   <p>S čísly jsme zatím byli schopní pracovat pouze pomocí aritmetických operátorů. To nám ale brzy nebude stačit a budeme potřebovat složitejší operace, kterým říkáme <em>funkce</em>.</p>
 
-  <p>Funkce je nějaký komplikovanější výpočet zabalený do jakési krabičky. Této krabičce dáme nějaké jméno, abychom jej mohli  používat na různých místech v našem programu.</p>
+  <p>Funkce je nějaký komplikovanější výpočet zabalený do jakési krabičky. Této krabičce dáme nějaké jméno, abychom jej mohli používat na různých místech v našem programu.</p>
 
   <p>Dobrým příkladem je funkce <code>round()</code>, která pro nás dělá zaokrouhlování. Můžeme tedy psát</p>
 
 <pre>&gt;&gt;&gt; round(3.4)
 3</pre>
 
-  <p>Tomuto zápisu se říká <em>volání funkce</em>. Když funkci voláme předáváme jí takzvaný <em>argument</em>, v našem případě číslo 3.4. Když funkci zavoláme s nějakým argumentem, funkce takzvaně <em>vrátí</em> výsledek.</p>
+  <p>Tomuto zápisu se říká <em>volání funkce</em>. Když funkci voláme, předáváme jí takzvaný <em>argument</em>, v našem případě číslo 3.4. Když funkci zavoláme s nějakým argumentem, funkce takzvaně <em>vrátí</em> výsledek.</p>
 
   <div class="text-img-right">
-    <p>Funkci si můžeme představit například jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost, kterou chceme často opakovat (opéká topinky). Má svoje jméno (topinkovač). Do topinkovače dáme cheba (argument) a spustíme je (zavoláme). Topinkovač chvíli pracuje a pak nám vrátí výsledek - topinky. Důležité je, že nemusíme řešit jak to topinkovač vlastné dělá, že dokáže opéct chleba. Důležíté pro nás je, že to umí a že jej můžeme kdykoliv použít.</p>
+    <p>Funkci si můžeme představit například jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost, kterou chceme často opakovat (opéká topinky). Má svoje jméno (topinkovač). Do topinkovače dáme cheba (argument) a spustíme je (zavoláme). Topinkovač chvíli pracuje a pak nám vrátí výsledek - topinky. Důležité je, že nemusíme řešit jak to topinkovač vlastné dělá, že dokáže opéct chleba. Důležité pro nás je, že to umí a že jej můžeme kdykoliv použít.</p>
     <img class="pic-left-30" src="/img/python-data/toaster.jpg" alt="Toaster" />
   </div>
 
   <h2>Seznamy</h2>
   <p>Zatím jsme byli schopní do jedné proměnné uložit pouze jednu hodnotu. Pro práci s daty ale budeme potřebovat pracovat s větším množstvím hodnot než pouze s jednou. K tomu nám poslouží takzvané <em>seznamy</em></p>
 
-  <p>Představme si, že si chci zaznamenat počet vanilkových věnečků snězených za posledních 7 dní. V Pythonu si můžu pro tento účel vytvořit seznam, který si uložím do vhodně pojmenované proměnné proměnné.</p>
+  <p>Představme si, že si chci zaznamenat počet vanilkových věnečků snězených za posledních 7 dní. V Pythonu si můžu pro tento účel vytvořit seznam, který si uložím do vhodně pojmenované proměnné.</p>
 
   <pre>&gt;&gt;&gt; venecky = [1, 2, 4, 1, 6, 0, 1]</pre>
 
@@ -286,7 +286,7 @@
 
   <%self:exrc title="Úroky" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
-    <p>Fíha banka a.s. nabízí na svých stránkách spořící účet s úrokem 2,4%. Když si na takový účet uložíte 1&nbsp;000&nbsp;000 kč, kolik peněz nastřádáte za 10 let?</p>
+    <p>Fíha banka a.s. nabízí na svých stránkách spořící účet s úrokem 2,4&nbsp;%. Když si na takový účet uložíte 1&nbsp;000&nbsp;000 kč, kolik peněz nastřádáte za 10 let?</p>
     
     <%def name="solution()">
       Řešení zatím není k dispozici
@@ -304,7 +304,7 @@
 
   <%self:exrc title="Průměrné teploty" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
-    <p>Následující tabulka obsahuje průměrné roční teploty v České republice za roky 2001 až 2010 (zdroj: Český hydrometeorologický úřad). </p>
+    <p>Následující tabulka obsahuje průměrné roční teploty v České republice za roky 2001 až 2010 (zdroj: Český hydrometeorologický ústav). </p>
 
     <table>
       <thead>
@@ -391,7 +391,7 @@
 
   <%self:exrc title="Průměr" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
-    <p>Mějme proměnnou <var>s</var>, ve které předpokládáme uložený nějaký seznam. Sestavte v Python konzoli výraz (vzoreček), který spočítá průměrnou hodnotu v takovém seznamu. Otestuje jej na seznamech různých délek. </p>
+    <p>Mějme proměnnou <var>s</var>, ve které předpokládáme uložený nějaký seznam. Sestavte v Python konzoli výraz (vzoreček), který spočítá průměrnou hodnotu v takovém seznamu. Otestujte jej na seznamech různých délek. </p>
 
     <%def name="solution()">
 <pre>&gt;&gt;&gt; sum(s)/len(s)</pre>
@@ -403,8 +403,8 @@
 
   <%self:exrc title="Nový koberec" type="home">
     <p><strong>Obtížnost: to dáš</strong></p>
-    <p>Do místnosti tvaru čtverce o rozloze 30m<sup>2</sup> 
-    potřebujeme koupit nový koberec. Jakou délku má mít strana koberce? Vejde se nám srolovaný do dodávky s nákladovým prostorem dlouhým 5m?</p>
+    <p>Do místnosti tvaru čtverce o rozloze 30&nbsp;m<sup>2</sup> 
+    potřebujeme koupit nový koberec. Jakou délku má mít strana koberce? Vejde se nám srolovaný do dodávky s nákladovým prostorem dlouhým 5&nbsp;m?</p>
 
     <%def name="solution()">
       <p>Strana koberce je odmocnina z jeho obsahu.</p>
@@ -426,7 +426,7 @@
 
   <%self:exrc title="Vlastní minimum a maximum" type="home">
     <p><strong>Obtížnost: roztoč mozkové závity</strong></p>
-    <p>Prohlédněte si funkce pro práci se seznamy uvedené dřive v obsahu lekce. Představte si, že bychom neměli k dispozici funkce <code>min()</code> a <code>max()</code>. Dokázali byste vytvořit výraz, který zjistí minimální resp. maximální hodnotu v seznamu <var>s</var>? Můžete v tomto vzorečku použít cokoliv, co jsme probrali na lekci kromě samotných funkcí <code>min()</code> a <code>max()</code>.</p>
+    <p>Prohlédněte si funkce pro práci se seznamy uvedené dříve v obsahu lekce. Představte si, že bychom neměli k dispozici funkce <code>min()</code> a <code>max()</code>. Dokázali byste vytvořit výraz, který zjistí minimální resp. maximální hodnotu v seznamu <var>s</var>? Můžete v tomto vzorečku použít cokoliv, co jsme probrali na lekci kromě samotných funkcí <code>min()</code> a <code>max()</code>.</p>
 
     <%def name="solution()">
       <p>Minimum:</p>

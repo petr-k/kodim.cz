@@ -33,7 +33,7 @@ rozdily = [abs(t - prumer) for t in teploty]
 min_rozdil = min(rozdily)
 index = rozdily.index(min_rozdil)</pre>
 
-  <p>Pokud chceme takovýto program spustit, musíme nejdříve náš terminál nasměrovat na složku, ve které máme uložen náš soubor <code>teploty.py</code>. Poté napíšeme do termínálu, <strong>pozor, nikoliv do Python konzole</strong>, následující příkaz.</p>
+  <p>Pokud chceme takovýto program spustit, musíme nejdříve náš terminál nasměrovat na složku, ve které máme uložen náš soubor <code>teploty.py</code>. Poté napíšeme do terminálu, <strong>pozor, nikoliv do Python konzole</strong>, následující příkaz.</p>
 
 <pre>$ python3 teploty.py</pre>
 
@@ -43,13 +43,13 @@ index = rozdily.index(min_rozdil)</pre>
     <pre>$ python teploty.py</pre>
   </div>
   
-  <p>Náš program se sice spustí, ale nevypíše žádný výsledek. To je proto, že když spouštíme programy, Python žádné vysledky sám od sebe nevypisuje. Musíme to provést sami pomocí funkce <code>print()</code>. Na konec našeho programu tedy přídáme řádek</p>
+  <p>Náš program se sice spustí, ale nevypíše žádný výsledek. To je proto, že když spouštíme programy, Python žádné vysledky sám od sebe nevypisuje. Musíme to provést sami pomocí funkce <code>print()</code>. Na konec našeho programu tedy přidáme řádek</p>
 
   <pre>print(index)</pre>
   
   <p>Pokud náš program spustíme znovu, vypíše nám index, na kterém se nachází den s teplotou nejblíže k průměru.</p>
 
-  <p>Možná bychom ale chtěli, aby program místo índexu vypsal spíše název dne v týdnu. To zařidíme tak, že poslední řádek změníme na </p>
+  <p>Možná bychom ale chtěli, aby program místo indexu vypsal spíše název dne v týdnu. To zařídíme tak, že poslední řádek změníme na </p>
 
   <pre>print(mereni[index][0])</pre>
 
@@ -64,7 +64,7 @@ index = rozdily.index(min_rozdil)</pre>
 <%self:exercises>
   <h2>Cvičení</h2>
   <%self:exrc title="Jméno a město">
-    <p>Napište program, ve který na obrazovku vypíše vaše jméno a na nový řádek město, ze kterého pocházíte.</p>
+    <p>Napište program, který na obrazovku vypíše vaše jméno a na nový řádek město, ze kterého pocházíte.</p>
   </%self:exrc>
 
   <%self:exrc title="Výplata jako program">
@@ -84,7 +84,7 @@ index = rozdily.index(min_rozdil)</pre>
   
   <p><code>abs()</code>, <code>round()</code>, <code>len()</code>, <code>sum()</code>, <code>min()</code>, <code>max()</code>, <code>sorted()</code>, <code>int()</code>, <code>float()</code>, <code>str()</code>, <code>print()</code>.</p>
 
-  <p>Později si ukážeme, že jich ještě několik přibude, ale o moc víc jich už k dispozici není. S takto omezeným množstvím funkcí bychom si dlouho nevystačili. Python naštěsí nabízí mnoho takzvaných <em>modulů</em>, které obsahují spousty dalších užitečných funkcí.</p>
+  <p>Později si ukážeme, že jich ještě několik přibude, ale o moc víc jich už k dispozici není. S takto omezeným množstvím funkcí bychom si dlouho nevystačili. Python naštěstí nabízí mnoho takzvaných <em>modulů</em>, které obsahují spousty dalších užitečných funkcí.</p>
 
   <p>Moduly jsou v podstatě balíčky funkcí zaměřených na nějaké konkrétní téma, například statistika, zpracování textu, práce se soubory na disku apod. Pokud chceme používat funkce z nějakého modulu, musíme jej nejdřív takzvaně <em>importovat</em>.</p>
 
@@ -116,13 +116,13 @@ index = rozdily.index(min_rozdil)</pre>
   <p>Poslední avšak velmi důležitý modul, jenž si v tuto chvíli představíme, je modul <code>sys</code>. Ten obsahuje funkce, které umožňují Pythonu komunikovat s operačním systémem, ve kterém je spuštěný. Nás z tohoto modulu bude zajímat především proměnná (ano, moduly mohou obsahovat kromě funkcí také proměnné) s názvem <code>argv</code> Ta nám umožní přistupovat k tazvaným <em>parametrům příkazové řádky</em>.</p>
 
   <h2>Parametry příkazové řádky</h1>
-  <p>Všechny programy, které jsme zatím společně vytvořili, obsahovaly všechna nezbytná data jaksi natvrdo přímo uvnitř kódu programu. Možná vás napadne, že například program, který má naměřené teploty z minulého týdne zadrátovené přímo uvnitř kódu nám, je jen pramálo k užitku, když mu nemůžeme předat nově naměřené teploty jinak, než upravit jeho zdrojový kód. Do skutečně užitečného program musíme být schopni dostat data jaksi z venku. K tomu máme vícero možností ‒ například nahrát data ze souboru na disku, což se naučíme v příští lekci, můžeme je stáhnout z internetu (také se časem naučíme), ale také je můžeme programu předat přímo na příkazové řádce, když jej spouštíme.</p>
+  <p>Všechny programy, které jsme zatím společně vytvořili, obsahovaly všechna nezbytná data jaksi natvrdo přímo uvnitř kódu programu. Možná vás napadne, že například program, který má naměřené teploty z minulého týdne zadrátovené přímo uvnitř kódu nám, je jen pramálo k užitku, když mu nemůžeme předat nově naměřené teploty jinak, než upravit jeho zdrojový kód. Do skutečně užitečného programu musíme být schopni dostat data jaksi z venku. K tomu máme vícero možností ‒ například nahrát data ze souboru na disku, což se naučíme v příští lekci, můžeme je stáhnout z internetu (také se časem naučíme), ale také je můžeme programu předat přímo na příkazové řádce, když jej spouštíme.</p>
   
   <p>Představme si například program, kterému bychom chtěli předat počet minut a on by nám vypsal v hezkém formátu kolik to dohromady dělá hodin a zbylých minut. Pojmenujme náš program například <code>cas.py</code>. Pokud chceme zjistit, jaký čas představuje 325 minut, zavoláme náš program takto: </p>
   
   <pre>$ python3 cas.py 325</pre>
 
-  <p>Číslo 325 v tomto příkazu je právě to, čemu říkáme <em>parametr</em>. Teď už jen zvbývá se k tomuto číslu nějak dostat zevnitř našeho programu.</p>
+  <p>Číslo 325 v tomto příkazu je právě to, čemu říkáme <em>parametr</em>. Teď už jen zbývá se k tomuto číslu nějak dostat zevnitř našeho programu.</p>
 
 <pre>import sys
 celkem = int(sys.argv[1])
@@ -134,7 +134,7 @@ print(str(hodin) + ':' + str(minut))</pre>
 
   <pre>['cas.py', '325']</pre>
 
-  <p>Tedy na prvním místě je název programu a na druhém ja náš parametr, který jsme prve zadali na příkazové řádce. Všimněte si ovšem, že nás parametr je řetězec. Python totiž všechny parametry na příkazové řádce bere jako řetězce, nehledě na to, jestli jsou to čísla nebo cokoliv jiného. My chceme ale v našem programu čas jako číslo, neboť s ním chceme provádět různá matematická cvičení. Proto musíme náš parametr převést na číslo pomocí již známé funkce <code>int()</code>, což právě provádíme na druhém řádku našeho programu.</p>
+  <p>Tedy na prvním místě je název programu a na druhém je náš parametr, který jsme prve zadali na příkazové řádce. Všimněte si ovšem, že nás parametr je řetězec. Python totiž všechny parametry na příkazové řádce bere jako řetězce, nehledě na to, jestli jsou to čísla nebo cokoliv jiného. My chceme ale v našem programu čas jako číslo, neboť s ním chceme provádět různá matematická cvičení. Proto musíme náš parametr převést na číslo pomocí již známé funkce <code>int()</code>, což právě provádíme na druhém řádku našeho programu.</p>
 
   <h3>Nač se držet při zemi</h3>
   <p>Zatím jsme na příkazové řádce předali pouze jeden parametr. Nebuďme ale troškaři. Na příkazové řádce si můžeme dovolit předávat zajímavější věci, například celý seznam hodnot. Můžeme kupříkladu napsat program, který spočítá součet všech zadaných hodnot. Pozor ovšem na to, že hodnoty na příkazové řádce jsou vždy řetězce, takže pokud je to potřeba, musíme si je sami převést na čísla.</p>
@@ -149,14 +149,14 @@ print('Součet zadaných čísel: ' + str(sum(cisla)))
 <pre>$ python3 soucet.py 57 41 37 22 12
 Součet zadaných čísel: 169</pre>
 
-  <p>Všimněte si, že na druhém řádku našeho programu používáme <code>sys.argv[1:]</code>. Je to proto, abychom se zbavili názvu programu, který vždy zabírá první prvek seznamu paramterů. Naše čísla se tedy nacházejí až do prvního indexu nahoru.</p>
+  <p>Všimněte si, že na druhém řádku našeho programu používáme <code>sys.argv[1:]</code>. Je to proto, abychom se zbavili názvu programu, který vždy zabírá první prvek seznamu parametrů. Naše čísla se tedy nacházejí až do prvního indexu nahoru.</p>
 </%self:lesson>
 
 <%self:exercises>
   <h2>Cvičení</h2>
 
   <%self:exrc title="Čas v minutách">
-    <p>Napište program <code>minuty.py</code>, která dělá obrácenou věc jako program <code>cas.py</code> z textu výše. Když mu na příkazové řádce předáme dva parametry ‒ počet hodin a počet minut ‒ například takto </p>
+    <p>Napište program <code>minuty.py</code>, která dělá obrácenou věc než program <code>cas.py</code> z textu výše. Když mu na příkazové řádce předáme dva parametry ‒ počet hodin a počet minut ‒ například takto </p>
     <pre>$ python3 minuty.py 2 54</pre>
     <p>program nám vrátí délku tohoto času minutách. V tomto případě tedy číslo 174.</p>
     <ol>
@@ -187,13 +187,13 @@ Medián: 5.5</pre>
   <%self:exrc title="Klasické zaokrouhlování">
     <p>Překvapivě Python neobsahuje žádnou funkci, která by dělala klasické zaokrouhlování, tedy takové, na které jsme všichni zvyklí ze školy. S něčím takovým se nemůžeme spokojit.</p>
 
-    <p>Napište program, který dostane na vstupu číslo a zaokrouhlí jej klasickým zaorouhlováním. Zkuste vymyslet jak to udělat co nejúspronějí s použitím zaokrouhlovacích funkcí, které už znáte.</p>
+    <p>Napište program, který dostane na vstupu číslo a zaokrouhlí jej klasickým zaokrouhlováním. Zkuste vymyslet jak to udělat co nejúsporněji s použitím zaokrouhlovacích funkcí, které už znáte.</p>
   </%self:exrc>
 </%self:exercises>
 
 <%self:lesson>
   <h2>Podmínky</h2>
-  <p>Podmínky slouží k tomu, abychom nějaký kus kódu mohli vykonat jen v případě, že je splněna nějaká podmínka. Nejjednodušší použítí podmínek najdeme při zpracování seznamů. Mějme napříkald seznam uběhnutých kilometrů a chceme z něj jen nenulové hodnoty.</p>
+  <p>Podmínky slouží k tomu, abychom nějaký kus kódu mohli vykonat jen v případě, že je splněna nějaká podmínka. Nejjednodušší použítí podmínek najdeme při zpracování seznamů. Mějme například seznam uběhnutých kilometrů a chceme z něj jen nenulové hodnoty.</p>
 
 <pre>&gt;&gt;&gt; ubehnuto = [12, 0, 4, 5, 0, 6]
 &gt;&gt;&gt; [beh for beh in ubehnuto if beh != 0]
@@ -226,7 +226,7 @@ Medián: 5.5</pre>
   <p>Opět je zde pro vás malá samozvdělávací lekce. Nejdříve se podíváme na to, jak se generují náhodná čísla a potom si představíme další zajímavou hodnotu.</p>
 
   <h3>Náhodná čísla</h3>
-  <p>Jeden z velmi zajímavých a užitečnách modulů v Pythnu, který jsme na hodině nezmínili, je modul zvaný <code>random</code>. Slouží ke generování náhodných čísel a jiných náhodných věcí. Podíváme se na funkce <code>randint()</code> a <code>uniform().</code></p> 
+  <p>Jeden z velmi zajímavých a užitečných modulů v Pythonu, který jsme na hodině nezmínili, je modul zvaný <code>random</code>. Slouží ke generování náhodných čísel a jiných náhodných věcí. Podíváme se na funkce <code>randint()</code> a <code>uniform().</code></p>
   
   <p>Funkce <code>randint(a, b)</code> generuje náhodná celá čísla ze zadaného intervalu. Můžeme tak simulovat například hody šestistěnnou hrací kostkou:</p>
 
@@ -250,7 +250,7 @@ Medián: 5.5</pre>
   <p>Tyto funkce se nám mohou hodit pro generování náhodných dat nebo pro psaní různých her a hříček.</p>
 
   <h3>Rozsahy</h3>
-  <p>Za posledních pár lekcí už jsme se naučili používat pěknou řádku hodnot:</p>
+  <p>Za posledních pár lekcí už jsme se naučili používat pěknou řádku typů hodnot:</p>
 
   <ul>
     <li>celá čísla,</li>
@@ -278,13 +278,13 @@ Medián: 5.5</pre>
 range(1, 11)
 </pre>
 
-  <p>Python nám prostě odpověděl totéž, co jsme napsali, úplně stajně jako kdybychom napsali prostě číslo 50 nebo řetězec <code>'ahoj'</code>. Rozsah je prostě hodnota, ve které si Python pamatuje dolní a horní mez a to je všechno. Výhodou rozsahů však je, že je můžeme používat všude tam, kde bychom normálně použili seznam. Pokdu n8s například zajímá součet hodnot od 1 do 20, můžeme prostě napsat</p>
+  <p>Python nám prostě odpověděl totéž, co jsme napsali, úplně stejně jako kdybychom napsali prostě číslo 50 nebo řetězec <code>'ahoj'</code>. Rozsah je prostě hodnota, ve které si Python pamatuje dolní a horní mez a to je všechno. Výhodou rozsahů však je, že je můžeme používat všude tam, kde bychom normálně použili seznam. Pokud nás například zajímá součet hodnot od 1 do 20, můžeme prostě napsat</p>
 
 <pre>&gt;&gt;&gt; sum(range(1, 21))
 210
 </pre>
 
-  <p>Všimněte si, že jsme takto spočítali součet aniž bychom museli vypisovat všechny hodnoty mezi 1 a 20. Náš nejsilnější kanón je teď samozřejmě chroustání seznamů a ano, i tam můžeme s výhodou použít rozsahy. Pokud bychom například chtěli všchny násobky trojky mezi 1 a 100, stačí napsat</p>
+  <p>Všimněte si, že jsme takto spočítali součet aniž bychom museli vypisovat všechny hodnoty mezi 1 a 20. Náš nejsilnější kanón je teď samozřejmě chroustání seznamů a ano, i tam můžeme s výhodou použít rozsahy. Pokud bychom například chtěli všechny násobky trojky mezi 1 a 100, stačí napsat</p>
 
   <pre>&gt;&gt;&gt; [x for x in range(1, 101) if x % 3 == 0]</pre>
 
@@ -298,13 +298,13 @@ range(1, 11)
   <h2>Domácí úložky ‒ povinné</h2>
   
   <%self:exrc title="Fahrnheit vs. Celsius">
-    <p>Pokud pečete podle anglických receptů, často se po váš požaduje rozehřát troubu na uvedenou teplotu. Pokud si ovšem neuvědomíte, že američané používají pro měření teploty stupně Fahrnheita namísto Celsia, bude vás na konci pečení čekat nemilé překvapení. </p>
+    <p>Pokud pečete podle anglických receptů, často se po váš požaduje rozehřát troubu na uvedenou teplotu. Pokud si ovšem neuvědomíte, že Američané používají pro měření teploty stupně Fahrenheita namísto Celsia, bude vás na konci pečení čekat nemilé překvapení. </p>
 
-    <p>Nastudujte si na <a href="https://cs.wikipedia.org/wiki/Stupe%C5%88_Fahrenheita">České Wikipedii</a>  jak se převádějí stupně Fahrnheita na stupně Celsia a napište program, který takový převod provede. Váš porgram dostane na příkazové řádce teplotu ve stupních Fahrnheita a vypíše její ekvivalent ve stupních Celsia.</p>
+    <p>Nastudujte si na <a href="https://cs.wikipedia.org/wiki/Stupe%C5%88_Fahrenheita">České Wikipedii</a>  jak se převádějí stupně Fahrenheita na stupně Celsia a napište program, který takový převod provede. Váš program dostane na příkazové řádce teplotu ve stupních Fahrenheita a vypíše její ekvivalent ve stupních Celsia.</p>
   </%self:exrc>
 
   <%self:exrc title="Cesta k souboru">
-    <p>Ve Windows se cesty k soborům zapisují pomocí zpětných lomítek, tedy například takto</p>
+    <p>Ve Windows se cesty k souborům zapisují pomocí zpětných lomítek, tedy například takto</p>
     
     <pre>cesta\do\rise\smazenych\krevet</pre>
 
@@ -319,7 +319,7 @@ range(1, 11)
     <ol>
       <li>Napište program, který při každém spustění hodí šestistěnnou kostkou ‒ tedy vypíše náhodné číslo mezi 1 až 6.</li>
       <li>Upravte program tak, aby jako parametr dostal počet stěn kostky. Bude tedy umět házet třeba sedmistěnnou nebo devítistěnnou kostkou podle toho, jaké číslo dostane na vstupu.</li>
-      <li>Předejte programu další parametr, který bude udávat kolik hodů má program provést. Program pak na výstup vytiskne seznam tolika hodů, kolik jste zadali na vstupu. Cílem je tedy vymsylet, jak vyrobit seznam náhodných čísel. Jistě se nám k tomu bude hodit chroustání seznamů.</li>
+      <li>Předejte programu další parametr, který bude udávat kolik hodů má program provést. Program pak na výstup vytiskne seznam tolika hodů, kolik jste zadali na vstupu. Cílem je tedy vymyslet, jak vyrobit seznam náhodných čísel. Jistě se nám k tomu bude hodit chroustání seznamů.</li>
     </ol>
   </%self:exrc>
 

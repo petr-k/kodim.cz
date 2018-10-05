@@ -1,7 +1,7 @@
 <%inherit file="/course-chapter.mako"/>
 
 <%self:lesson>
-  <p>V předchozí kapitole jsme si představili tři důležité hodnoty: celá čísla, desetinná čísla a seznamy. Dnes přídáme další důležitou hodnotu abychom v Pythonu mohli pracovat nejen se čísly ale i s texty. </p>
+  <p>V předchozí kapitole jsme si představili tři důležité typy hodnot: celá čísla, desetinná čísla a seznamy. Dnes přidáme další důležitý typ hodnot, abychom v Pythonu mohli pracovat nejen s čísly, ale i s texty. </p>
 
   <h2>Řetězce</h2>
   <p>Pokud chceme v Pythonu zadat nějak kousek textu, použijeme takzvaný <em>řetězec</em>. Řetězce se v Pythonu uzavírají do jednoduchých nebo dvojitých uvozovek. Například:</p>
@@ -57,7 +57,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
   <p>Touto zprávou se nám snaží Python říct, že neví, jak má sečíst řetězec a číslo. Python umí sečíst dvě čísla nebo dva řetězce, ale sčítat řetězec a číslo je jako byste po něm chtěli spočítat <code>'ahoj' + 1</code>. Takový výpočet nedává smysl. </p>
   
   <h3>Převod z řetězce na číslo a zpět</h3>
-  <p>S výše uvedeným problémem si můžeme poradit pomocí několika nových funkcí. První se jmenuje <code>int()</code>. Pokud této funkci dá<div class="verbatim"></div>te řetězec, jež obsahuje celé číslo, vrátí vám tato funkce hodnotu typu celé číslo.</p>
+  <p>S výše uvedeným problémem si můžeme poradit pomocí několika nových funkcí. První se jmenuje <code>int()</code>. Pokud této funkci dáte řetězec, jenž obsahuje celé číslo, vrátí vám tato funkce hodnotu typu celé číslo.</p>
 
 <pre>&gt;&gt;&gt; int('18')
 18</pre>
@@ -197,7 +197,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
 
 <%self:lesson>
   <h2>Chroustání seznamů</h2>
-  <p>Často se může stát, že potřebujeme nějakým způsobme zpracovat všechny hodnoty v nějakém seznamu a vyrobit tak seznam nový.</p>
+  <p>Často se může stát, že potřebujeme nějakým způsobem zpracovat všechny hodnoty v nějakém seznamu a vyrobit tak seznam nový.</p>
   
   <p>Představme se, že zpracováváme známky z písemek a protože písemky hodnotili programátoři, tak místo známek 1 až 5 používali známky 0 až 4.</p>
   
@@ -226,7 +226,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
 
   <h2>Seznamy seznamů</h2>
   
-  <p>Ještě zajímavější situace nastane, budem-li chtít zchroustat seznam seznamů. Minulý týden jsme vyráběli seznam známek ze čtyř písemek pro šest účastníků kurzu. Mohl by vypadat například takto:</p>
+  <p>Ještě zajímavější situace nastane, budeme-li chtít zchroustat seznam seznamů. Minulý týden jsme vyráběli seznam známek ze čtyř písemek pro šest účastníků kurzu. Mohl by vypadat například takto:</p>
   
   <div class="verbatim">
 <pre>pisemky = [
@@ -238,9 +238,9 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
   [1, 4, 1, 3]
 ]</pre>
   
-  <p>Pokud chcem<%def name="solution()">
+  <p>Pokud chceme<%def name="solution()">
       Řešení zatím není k dispozici
-    </%def>e získat dejme tomu všechny známky z první písemky, chceme vlastně všechny první hodnoty ze všech seznamů uvnitř seznamu <var>pisemky</var>. To můžete udělat takto:</p>
+    </%def>získat dejme tomu všechny známky z první písemky, chceme vlastně všechny první hodnoty ze všech seznamů uvnitř seznamu <var>pisemky</var>. To můžete udělat takto:</p>
   
   <div class="verbatim">
 <pre>&gt;&gt;&gt; prvni = [znamky[0] for znamky in pisemky]
@@ -399,7 +399,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
   
   <pre>vysledek = False</pre>
   
-  <p>nebo je používat v seznamech. Zkusme například vyjádřit který den v týdnu je pracovní.</p>
+  <p>nebo je používat v seznamech. Zkusme například vyjádřit, který den v týdnu je pracovní.</p>
   
   <pre>[True, True, True, True, True, False, False]</pre>
   
@@ -438,7 +438,7 @@ True
 &gt;&gt;&gt; 4 &lt; 3
 False</pre>
 
-  <p>Takovéto otázky jsou dost zbytečné, protože odpověď již známe předem. Pokud ovšem použijeme proměnné a funkce, můžeme se ptát na zajímvější věci.</p>
+  <p>Takovéto otázky jsou dost zbytečné, protože odpověď již známe předem. Pokud ovšem použijeme proměnné a funkce, můžeme se ptát na zajímavější věci.</p>
 
   <pre>&gt;&gt;&gt; vek &gt;= 18</pre>
 
@@ -701,7 +701,7 @@ delky = [136, 105, 82]</pre>
       <li>Ve kterých krajích byla nejvyšší a nejnižší volební účast</li>
       <li>Vytvořte tabulku, která ukazuje který kandidát vyhrál v kterém kraji.</li>
       <li>Využijte tabulku počtů obyvatel v krajích a vytvořte tabulku podobnou té z tohoto cvičení, která místo čísel bude obsahovat kolik procent hlasů získal každý kandidát v daném kraji.</li>
-      <li>Vytvořte seznam pravdivostních hodnot, který bude říkat ve kterých krajích překročila volební účast 50%.</li>	
+      <li>Vytvořte seznam pravdivostních hodnot, který bude říkat ve kterých krajích překročila volební účast 50&nbsp;%.</li>	
     </ol>
   </%self:exrc>
 </%self:exercises>
