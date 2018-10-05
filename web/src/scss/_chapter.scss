@@ -1,21 +1,5 @@
-.chapter-intro {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding-bottom: 3rem;
-}
-
-@media only screen and (min-width: 880px) {
-  .chapter-intro {
-    padding: 2rem 3rem;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: baseline;
-  }
-}
-
 .chapter-number {
-  flex: 0 0 6rem;
+  display: inline-block;
   width: 6rem;
   height: 6rem;
   line-height: 6rem;
@@ -24,36 +8,17 @@
   font-weight: $font-weight-extra;
   text-align: center;
   font-size: 3rem;
-  margin-top: 3rem;
-}
-
-.chapter-title {
-  font-size: 3rem; 
-  margin-left: 2rem;
-  text-align: center;
-}
-
-.lesson-section, .exercises-section {
-  padding: 1rem 0rem 0rem 0rem;
-  /* Trick to prevent parent/child margin-bottom collapsing. */
-  border-bottom: 1px solid transparent;
-
-  h2 {
-    text-align: left;
-  }
-
-  h3 {
-    margin-top: 3rem;
-  }
 }
 
 code {
-  font-family: 'Ubuntu Mono', monospace;
+  font-size: 110%;
 }
 
 var {
   font-family: 'Ubuntu Mono', monospace;
   font-style: normal;
+  font-size: 110%;
+  color: $text-emphasis;
 }
 
 pre {
@@ -62,6 +27,7 @@ pre {
   border-radius: 5px;
   margin-bottom: 1rem;
   overflow-x: auto;
+  font-size: 110%;
 }
 
 .wrong {
@@ -69,54 +35,41 @@ pre {
   text-decoration: line-through;
 }
 
-.exercise-solution {
-  background-color: $bg-primary;
-  color: $text-primary;
-  margin: 5% auto; 
-  padding: 2rem;
-  border-radius: 5px;
+.lesson-section, .exercises-section {
+  padding: 1rem 0rem 0rem 0rem;
+  /* Trick to prevent parent/child margin-bottom collapsing. */
+  border-bottom: 1px solid transparent;
 }
 
-.solution-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h3 {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-}
-
-.solution-footer {
-  text-align: right;
-}
-
-.lesson-section, .exercise-solution {
-  var {
-    color: $text-heading;
-  }
+.lesson-section, .solution-body {
+  color: $text-primary !important;
   
   pre {
     background-color: #eee !important;
+    color: $text-primary !important;
   } 
 }
 
 .exercises-section {
-  color: white;
+  color: $white;
   background-color: $bg-secondary;
 
   h2 {
     color: white;
   }
 
-  var {
-    color: #caff7a;
-  }
-
   pre {
     background-color: #555;
+    color: white;
   } 
+
+  a {
+    color: $gray-400;
+  }
+
+  code {
+    color: white;
+  }
 
   tr:nth-child(even) {
     background-color: #5151b9;
@@ -218,70 +171,4 @@ table {
   color: white;
   background-color: $bg-caution;
   margin-top: 3rem;
-}
-
-.text-img-right, .text-img-left {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-
-  img {
-    width: 100%;
-    height: auto;
-    margin: 2rem 0;
-  }
-}
-
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
-
-.text-center {
-  text-align: center;
-}
-
-@media only screen and (min-width: 880px) {
-  .chapter-title {
-    text-align: left;
-  }
-  
-  .text-img-right, .text-img-left {
-    flex-flow: row nowrap;
-  
-    img {
-      flex: 0 0 40%;    
-      width: 40%;
-    }
-  }
-
-  .text-img-right img {
-    margin: 0 0 2rem 3rem;
-  }
-
-  .text-img-left img {
-    margin: 0 3rem 2rem 0;
-  }
-}
-
-.exercise-buttons {
-  text-align: right;
-}
-
-.figure {
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-  text-align: left;
 }

@@ -63,6 +63,22 @@
           },
           "exkey": "SEfAovol",
           "hwkey": "EMtENY_k"
+        },
+        {
+          "link": {
+            "cz": "prvni-programy"
+          },
+          "title": {
+            "cz": "První programy"
+          },
+          "desc": {
+            "cz": "Místo psaní příkazů do konzole se naučíme psát opravdové programy. Taky si ukážeme, jak číst data se souborů na disku."
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "0VjP8MLd",
+          "hwkey": "qLZVHKYo"
         }
       ]
     }

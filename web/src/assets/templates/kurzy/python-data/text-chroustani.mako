@@ -144,7 +144,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
     <p>Mějme seznam desetinných čísel zadaných jako text</p>
 
     <pre>hodnoty = ['12', '1', '7', '-11']</pre>
-	
+  
     <p>Potřebujeme k třetímu číslu v seznamu přičíst 4, aby vysledek vypadal takto:
         
     <pre>hodnoty = ['12', '1', '11', '-11']</pre>
@@ -197,38 +197,38 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
 
 <%self:lesson>
   <h2>Chroustání seznamů</h2>
-	<p>Často se může stát, že potřebujeme nějakým způsobme zpracovat všechny hodnoty v nějakém seznamu a vyrobit tak seznam nový.</p>
-	
-	<p>Představme se, že zpracováváme známky z písemek a protože písemky hodnotili programátoři, tak místo známek 1 až 5 používali známky 0 až 4.</p>
-	
-	<div class="verbatim">
-		<pre>pisemky = [0, 2, 0, 1, 1, 3]</pre>
-	</div>
+  <p>Často se může stát, že potřebujeme nějakým způsobme zpracovat všechny hodnoty v nějakém seznamu a vyrobit tak seznam nový.</p>
+  
+  <p>Představme se, že zpracováváme známky z písemek a protože písemky hodnotili programátoři, tak místo známek 1 až 5 používali známky 0 až 4.</p>
+  
+  <div class="verbatim">
+    <pre>pisemky = [0, 2, 0, 1, 1, 3]</pre>
+  </div>
 
-	<p>Z takového zápisu nás bolí hlava, takže chceme známky převést do běžného formátu, tedy ke každé z nich přičíst jedničku. To provedeme pomocí takzvaného <em>generátoru:</em></p>
-	
-	<div class="verbatim">
+  <p>Z takového zápisu nás bolí hlava, takže chceme známky převést do běžného formátu, tedy ke každé z nich přičíst jedničku. To provedeme pomocí takzvaného <em>generátoru:</em></p>
+  
+  <div class="verbatim">
 <pre>&gt;&gt;&gt; [znamka+1 for znamka in pisemky]
 [1, 3, 1, 2, 2, 4]</pre>
-	</div>
+  </div>
 
-	<p>Seznam můžeme zchroustat jakýmkoliv výrazem. Když si například půjdeme v záchvatu zodpovědnosti zaběhat, abychom vyvážili špatné svědomí z jezení věnečků, můžeme si například takto zaznamenat uběhnuté kilometry v prvních pěti dnech.</p>
-	
-	<div class="verbatim">
-		<pre>&gt;&gt;&gt; kilometry = [2.4, 2.6, 0, 3.5, 1.8]</pre>
-	</div>
+  <p>Seznam můžeme zchroustat jakýmkoliv výrazem. Když si například půjdeme v záchvatu zodpovědnosti zaběhat, abychom vyvážili špatné svědomí z jezení věnečků, můžeme si například takto zaznamenat uběhnuté kilometry v prvních pěti dnech.</p>
+  
+  <div class="verbatim">
+    <pre>&gt;&gt;&gt; kilometry = [2.4, 2.6, 0, 3.5, 1.8]</pre>
+  </div>
 
-	<p>Pokud se pak rozhodneme, že bychom chtěli jen celé kilometry bez desetinných čísel, napíšeme</p>
-	
-	<div class="verbatim">
-		<pre>&gt;&gt;&gt; [round(beh) for beh in kilometry]</pre>
-	</div>
+  <p>Pokud se pak rozhodneme, že bychom chtěli jen celé kilometry bez desetinných čísel, napíšeme</p>
+  
+  <div class="verbatim">
+    <pre>&gt;&gt;&gt; [round(beh) for beh in kilometry]</pre>
+  </div>
 
-	<h2>Seznamy seznamů</h2>
-	
-	<p>Ještě zajímavější situace nastane, budem-li chtít zchroustat seznam seznamů. Minulý týden jsme vyráběli seznam známek ze čtyř písemek pro šest účastníků kurzu. Mohl by vypadat například takto:</p>
-	
-	<div class="verbatim">
+  <h2>Seznamy seznamů</h2>
+  
+  <p>Ještě zajímavější situace nastane, budem-li chtít zchroustat seznam seznamů. Minulý týden jsme vyráběli seznam známek ze čtyř písemek pro šest účastníků kurzu. Mohl by vypadat například takto:</p>
+  
+  <div class="verbatim">
 <pre>pisemky = [
   [1, 3, 2, 1],
   [3, 1, 1, 2],
@@ -237,16 +237,16 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
   [1, 2, 2, 1],
   [1, 4, 1, 3]
 ]</pre>
-	
-	<p>Pokud chcem<%def name="solution()">
+  
+  <p>Pokud chcem<%def name="solution()">
       Řešení zatím není k dispozici
     </%def>e získat dejme tomu všechny známky z první písemky, chceme vlastně všechny první hodnoty ze všech seznamů uvnitř seznamu <var>pisemky</var>. To můžete udělat takto:</p>
-	
-	<div class="verbatim">
+  
+  <div class="verbatim">
 <pre>&gt;&gt;&gt; prvni = [znamky[0] for znamky in pisemky]
 &gt;&gt;&gt; prvni
 [1, 3, 4, 1, 1, 1]</pre>
-	</div>
+  </div>
 </%self:lesson>
 
 <%self:exercises>
@@ -309,6 +309,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
     </%def>
   </%self:exrc>
 
+  <a name="seznam-teplot" />
   <%self:exrc title="Seznam teplot">
     <p>Mějme zadaný následující seznam naměřených teplot. Seznam obsahuje teploty naměřené pro každý den v týdnu ve čtyřech časech - ráno, v poledne, večer a v noci.</p>
 
@@ -356,7 +357,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
       <li><pre>[[x // 2, x % 2] for x in seznam]</pre></li>
     </ol>
 
-	  <pre>seznam = ['12.03.2014', '10.01.2015', '06.06.1986']</pre>
+    <pre>seznam = ['12.03.2014', '10.01.2015', '06.06.1986']</pre>
 
     <ol>
       <li><pre>[int(datum[3:5]) for datum in seznam]</pre></li>
@@ -382,28 +383,28 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
 
 <%self:lesson>
   <h2>Čtení na doma</h2>
-	<p>Prozatím jsme na svých poutích po krajině Pythonu potkali následující hodnoty:</p>
-	
-	<ul>
-		<li>Celá čísla: 1, 57, -61, 0, ...</li>
-		<li>Desetinná čísla: 1.13, 3.01548, -0.0001, 0.0, ...</li>
-		<li>Řetězce: 'Martin', "ahoj", '51', "20.7.2014", ...</li>
-		<li>Seznamy: [1, 2, 3], ['po', 'ut', 'st'], ...</li>
-	</ul>
-	
-	<p>Abychom mohli začít dělat opravdu zajímavé věci, budeme potřebovat ještě další typ hodnoty...</p>
-	
-	<h3>Pravdivostní hodnoty</h3>
-	<p>Datový typ <em>pravdivostní hodnota</em> slouží k tomu, abychom mohli v našem programu vyjádřit, zda je něco pravda či nepravda. Proto nám pro tento typ stačí pouze dvě hodnoty: <code>True</code> (pravda) a <code>False</code> (nepravda). Pravdivostní hodnoty jsou opět hodnoty jako každé jiné. Můžeme je tady ukládat do proměnných</p>
-	
-	<pre>vysledek = False</pre>
-	
-	<p>nebo je používat v seznamech. Zkusme například vyjádřit který den v týdnu je pracovní.</p>
-	
-	<pre>[True, True, True, True, True, False, False]</pre>
-	
-	<p>Mnoho užitečných operátorů v Pythonu vrací právě pravdivostní hodnoty. Například operátor <code>in</code>, vrátí <code>True</code>, pokud se daný prvek nachází uvnitř seznamu nebo řetězce.</p>
-	
+  <p>Prozatím jsme na svých poutích po krajině Pythonu potkali následující hodnoty:</p>
+  
+  <ul>
+    <li>Celá čísla: 1, 57, -61, 0, ...</li>
+    <li>Desetinná čísla: 1.13, 3.01548, -0.0001, 0.0, ...</li>
+    <li>Řetězce: 'Martin', "ahoj", '51', "20.7.2014", ...</li>
+    <li>Seznamy: [1, 2, 3], ['po', 'ut', 'st'], ...</li>
+  </ul>
+  
+  <p>Abychom mohli začít dělat opravdu zajímavé věci, budeme potřebovat ještě další typ hodnoty...</p>
+  
+  <h3>Pravdivostní hodnoty</h3>
+  <p>Datový typ <em>pravdivostní hodnota</em> slouží k tomu, abychom mohli v našem programu vyjádřit, zda je něco pravda či nepravda. Proto nám pro tento typ stačí pouze dvě hodnoty: <code>True</code> (pravda) a <code>False</code> (nepravda). Pravdivostní hodnoty jsou opět hodnoty jako každé jiné. Můžeme je tady ukládat do proměnných</p>
+  
+  <pre>vysledek = False</pre>
+  
+  <p>nebo je používat v seznamech. Zkusme například vyjádřit který den v týdnu je pracovní.</p>
+  
+  <pre>[True, True, True, True, True, False, False]</pre>
+  
+  <p>Mnoho užitečných operátorů v Pythonu vrací právě pravdivostní hodnoty. Například operátor <code>in</code>, vrátí <code>True</code>, pokud se daný prvek nachází uvnitř seznamu nebo řetězce.</p>
+  
 <pre>&gt;&gt;&gt; 3 in [1, 2, 3]
 True
 &gt;&gt;&gt; 4 in [1, 2, 3]
@@ -413,25 +414,25 @@ True
 &gt;&gt;&gt; 'x' in 'Martin'
 False</pre>
 
-	<p>Existuje také obrácený operátor <code>not in</code>, který vrací <code>True</code>, pokud daný seznam nebo retězec prvek <em>neobsahuje.</em></p>
-	
+  <p>Existuje také obrácený operátor <code>not in</code>, který vrací <code>True</code>, pokud daný seznam nebo retězec prvek <em>neobsahuje.</em></p>
+  
 <pre>&gt;&gt;&gt; 3 not in [1, 2, 3]
 False
 &gt;&gt;&gt; 4 not in [1, 2, 3]
 True</pre>
-	
-	<p>Velmi užitečné jsou také následující porovnávací operátory</p>
-	
-	<ul>
-		<li><code>&gt;</code> větší než</li>
-		<li><code>&gt;=</code> větší nebo rovno</li>
-		<li><code>&lt;</code> menší než</li>
-		<li><code>&lt;=</code> menší nebo rovno</li>
-		<li><code>==</code> rovno</li>
-		<li><code>!=</code> nerovno</li>
-	</ul>
-	
-	<p>Můžeme se tedy ptát například takto</p>
+  
+  <p>Velmi užitečné jsou také následující porovnávací operátory</p>
+  
+  <ul>
+    <li><code>&gt;</code> větší než</li>
+    <li><code>&gt;=</code> větší nebo rovno</li>
+    <li><code>&lt;</code> menší než</li>
+    <li><code>&lt;=</code> menší nebo rovno</li>
+    <li><code>==</code> rovno</li>
+    <li><code>!=</code> nerovno</li>
+  </ul>
+  
+  <p>Můžeme se tedy ptát například takto</p>
 <pre>&gt;&gt;&gt; 4 &gt; 3
 True
 &gt;&gt;&gt; 4 &lt; 3
@@ -442,39 +443,39 @@ False</pre>
   <pre>&gt;&gt;&gt; vek &gt;= 18</pre>
 
   <p>Výsledek bude <code>True</code> pokud proměnná <var>věk</var> obsahuje hodnotu větší nebo rovnu 18.</p>
-	
-	<pre>&gt;&gt;&gt; jmeno == 'Martin'</pre>
-	
-	<p>Výsledek <code>True</code>, pokud proměnná <var>jmeno</var> obsahuje hodnotu <code>'Martin'</code>.</p>
-	
-	<pre>&gt;&gt;&gt; len(seznam) != 4</pre>
-	
-	<p>Výsledek <code>True</code>, pokud je délka seznamu různá od 4.</p>
+  
+  <pre>&gt;&gt;&gt; jmeno == 'Martin'</pre>
+  
+  <p>Výsledek <code>True</code>, pokud proměnná <var>jmeno</var> obsahuje hodnotu <code>'Martin'</code>.</p>
+  
+  <pre>&gt;&gt;&gt; len(seznam) != 4</pre>
+  
+  <p>Výsledek <code>True</code>, pokud je délka seznamu různá od 4.</p>
 </%self:lesson>
 
 <%self:exercises>
-  <h2>Domácí úkoly - povinné</h2>
-	<p><strong>Obtížnost: pohodička</strong></p>
-	
-	<%self:exrc title="Ověřování věku" type="home">
-		<p>Následující seznam obsahuje věky uživatelů naší malé sociální sítě.</p>
-	
-		<pre>veky = [35, 12, 44, 11, 18, 21, 28, 18]</pre>
-	
-		<ol>
-			<li>Vytvořte pomocí chroustání seznamů seznam celých čísel, které udávají, kolik jednotlivým uživatelům zbývá do 18ti let. Záporná čísla budou znamenat, že uživatel už věk překročil.</li>
-			<li>Vytvořte pomocí chroustání seznamů seznam pravdivostních hodnot, které udávají, který uživatel je starší 18ti let.</li>
-			<li>Vytvořte pomocí chroustání seznamů seznam pravdivostních hodnot, které udávají, který uživatel má přesně 18 let.</li>
-		</ol>
+  <h2>Domácí úkoly ‒ povinné</h2>
+  <p><strong>Obtížnost: pohodička</strong></p>
+  
+  <%self:exrc title="Ověřování věku" type="home">
+    <p>Následující seznam obsahuje věky uživatelů naší malé sociální sítě.</p>
+  
+    <pre>veky = [35, 12, 44, 11, 18, 21, 28, 18]</pre>
+  
+    <ol>
+      <li>Vytvořte pomocí chroustání seznamů seznam celých čísel, které udávají, kolik jednotlivým uživatelům zbývá do 18ti let. Záporná čísla budou znamenat, že uživatel už věk překročil.</li>
+      <li>Vytvořte pomocí chroustání seznamů seznam pravdivostních hodnot, které udávají, který uživatel je starší 18ti let.</li>
+      <li>Vytvořte pomocí chroustání seznamů seznam pravdivostních hodnot, které udávají, který uživatel má přesně 18 let.</li>
+    </ol>
     <%def name="solution()">
       Řešení zatím není k dispozici
     </%def>
-	</%self:exrc>
-	
-	<%self:exrc title="Promítání">
-		<p><strong>Obtížnost: to dáš</strong></p>
-		<p>V letním kině Šmajchl mají program na každý den uložený jako dva seznamy. První seznam obsahuje názvy filmů a druhý jejich délky v minutách, např. takto: </p>
-	
+  </%self:exrc>
+  
+  <%self:exrc title="Promítání">
+    <p><strong>Obtížnost: to dáš</strong></p>
+    <p>V letním kině Šmajchl mají program na každý den uložený jako dva seznamy. První seznam obsahuje názvy filmů a druhý jejich délky v minutách, např. takto: </p>
+  
 <pre>nazvy = [
   'Někdo to rád horké, extended edition', 
   'Adéla ještě nevečeřela',
@@ -482,42 +483,42 @@ False</pre>
 ]
 delky = [136, 105, 82]</pre>
 
-		<p>Použijte chroustání seznamů a vyrobte seznam <var>trvani</var>, který bude obsahovat délky filmů nikoliv jako čísla v minutách, ale jako řetězce v hodinách a v minutách. Výsledek tedy bude vypadat takto</p>
-	
+    <p>Použijte chroustání seznamů a vyrobte seznam <var>trvani</var>, který bude obsahovat délky filmů nikoliv jako čísla v minutách, ale jako řetězce v hodinách a v minutách. Výsledek tedy bude vypadat takto</p>
+  
     <pre>trvani = ['2:16', '1:45', '1:22']</pre>
-	  
+    
     <%def name="solution()">
       Řešení zatím není k dispozici
     </%def>
   </%self:exrc>
 
-	<%self:exrc title="Počty obyvatel">
-		<p><strong>Obtížnost: to dáš</strong></p>
-		<p>Mějme počty obyvatel v jednotlivých krajích ČR podle následující tabulky.</p>
-	
-		<table>
-			<thead>
-				<th>Kraj</th><th>Počet obyvatel</th>
-			</thead>
-			<tbody>
-				<tr><td>Hlavní město Praha</td><td>1 280 508</td></tr>
-				<tr><td>Jihočeský kraj</td><td>638 782</td></tr>
-				<tr><td>Jihomoravský kraj</td><td>1 178 812</td></tr>
-				<tr><td>Karlovarský kraj</td><td>296 749</td></tr>
-				<tr><td>Kraj Vysočina</td><td>508 952</td></tr>
-				<tr><td>Královéhradecký kraj</td><td>550 804</td></tr>
-				<tr><td>Liberecký kraj</td><td>440 636</td></tr>
-				<tr><td>Moravskoslezský kraj</td><td>1 209 879</td></tr>
-				<tr><td>Olomoucký kraj</td><td>633 925</td></tr>
-				<tr><td>Pardubický kraj</td><td>517 087</td></tr>
-				<tr><td>Plzeňský kraj</td><td>578 629</td></tr>
-				<tr><td>Středočeský kraj</td><td>1 338 982</td></tr>
-				<tr><td>Ústecký kraj</td><td>821 377</td></tr>
-				<tr><td>Zlínský kraj</td><td>583 698</td></tr>
-			</tbody>
-		</table>
-	
-		<p>Tuto tabulku máme reprezentovanou jako seznam:</p>
+  <%self:exrc title="Počty obyvatel">
+    <p><strong>Obtížnost: to dáš</strong></p>
+    <p>Mějme počty obyvatel v jednotlivých krajích ČR podle následující tabulky.</p>
+  
+    <table>
+      <thead>
+        <th>Kraj</th><th>Počet obyvatel</th>
+      </thead>
+      <tbody>
+        <tr><td>Hlavní město Praha</td><td>1 280 508</td></tr>
+        <tr><td>Jihočeský kraj</td><td>638 782</td></tr>
+        <tr><td>Jihomoravský kraj</td><td>1 178 812</td></tr>
+        <tr><td>Karlovarský kraj</td><td>296 749</td></tr>
+        <tr><td>Kraj Vysočina</td><td>508 952</td></tr>
+        <tr><td>Královéhradecký kraj</td><td>550 804</td></tr>
+        <tr><td>Liberecký kraj</td><td>440 636</td></tr>
+        <tr><td>Moravskoslezský kraj</td><td>1 209 879</td></tr>
+        <tr><td>Olomoucký kraj</td><td>633 925</td></tr>
+        <tr><td>Pardubický kraj</td><td>517 087</td></tr>
+        <tr><td>Plzeňský kraj</td><td>578 629</td></tr>
+        <tr><td>Středočeský kraj</td><td>1 338 982</td></tr>
+        <tr><td>Ústecký kraj</td><td>821 377</td></tr>
+        <tr><td>Zlínský kraj</td><td>583 698</td></tr>
+      </tbody>
+    </table>
+  
+    <p>Tuto tabulku máme reprezentovanou jako seznam:</p>
 <pre>kraje = [
   ['Hlavní město Praha', '1 280 508'],
   ['Jihočeský kraj', '638 782'],
@@ -534,147 +535,147 @@ delky = [136, 105, 82]</pre>
   ['Ústecký kraj', '821 377'],
   ['Zlínský kraj', '583 698']
 ]</pre>
-	
-		<ol>
-			<li>Vytvořte seznam, který obsahuje pouze názvy všech krajů, tedy první sloupeček této tabulky.</li>
-			<li>Vytvořte seznam, který obsahuje počty obyvatel jako čísla.</li>
-			<li>Do vhodně pojmenované proměnné uložte seznam, který reprezentuje výše uvedenou tabulku jako dva seznamy: seznam jmen a seznam počtů obyvatel jako čísla.</li>
-		</ol>
+  
+    <ol>
+      <li>Vytvořte seznam, který obsahuje pouze názvy všech krajů, tedy první sloupeček této tabulky.</li>
+      <li>Vytvořte seznam, který obsahuje počty obyvatel jako čísla.</li>
+      <li>Do vhodně pojmenované proměnné uložte seznam, který reprezentuje výše uvedenou tabulku jako dva seznamy: seznam jmen a seznam počtů obyvatel jako čísla.</li>
+    </ol>
     <%def name="solution()">
       Řešení zatím není k dispozici
     </%def>
   </%self:exrc>
-	
+  
   <%self:exrc title="Volby">
-		<p><strong>Obtížnost: to dáš</strong></p>
-		<p>Máme pět kandidátů na post prezidenta ČR. Následující tabulka obsahuje hlasy, které jednotliví kandidáti získali v prvním kole prezidentských voleb.</p>
-	
-		<table>
-			<thead>
-				<th>Kraj</th>
-				<th>Igor Rezek</th>
-				<th>Augustýn Doležal</th>
-				<th>Vladan Bednář</th>
-				<th>Ondřej Brotz</th>
-				<th>Radim Kašpar</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Hlavní město Praha</td>
-					<td>78774</td>
-					<td>43179</td>
-					<td>225111</td>
-					<td>144799</td>
-					<td>242854</td>
-				</tr>
-				<tr>
-					<td>Jihočeský kraj</td>
-					<td>91062</td>
-					<td>22451</td>
-					<td>17475</td>
-					<td>53391</td>
-					<td>46450</td>
-				</tr>
-				<tr>
-					<td>Jihomoravský kraj</td>
-					<td>179186</td>
-					<td>216499</td>
-					<td>4493</td>
-					<td>156305</td>
-					<td>61222</td>
-				</tr>
-				<tr>
-					<td>Karlovarský kraj</td>
-					<td>9619</td>
-					<td>53476</td>
-					<td>926</td>
-					<td>64737</td>
-					<td>34566</td>
-				</tr>
-				<tr>
-					<td>Kraj Vysočina</td>
-					<td>66904</td>
-					<td>85730</td>
-					<td>27271</td>
-					<td>12964</td>
-					<td>38041</td>
-				</tr>
-				<tr>
-					<td>Královéhradecký kraj</td>
-					<td>118755</td>
-					<td>1929</td>
-					<td>30426</td>
-					<td>25178</td>
-					<td>31952</td>
-				</tr>
-				<tr>
-					<td>Liberecký kraj</td>
-					<td>64467</td>
-					<td>40993</td>
-					<td>81181</td>
-					<td>39392</td>
-					<td>4335</td>
-				</tr>
-				<tr>
-					<td>Moravskoslezský kraj</td>
-					<td>11221</td>
-					<td>97970</td>
-					<td>26179</td>
-					<td>98539</td>
-					<td>112578</td>
-				</tr>
-				<tr>
-					<td>Olomoucký kraj</td>
-					<td>171064</td>
-					<td>7638</td>
-					<td>8752</td>
-					<td>96666</td>
-					<td>39738</td>
-				</tr>
-				<tr>
-					<td>Pardubický kraj</td>
-					<td>74235</td>
-					<td>101680</td>
-					<td>18920</td>
-					<td>45904</td>
-					<td>1922</td>
-				</tr>
-				<tr>
-					<td>Plzeňský kraj</td>
-					<td>39309</td>
-					<td>1505</td>
-					<td>10531</td>
-					<td>30458</td>
-					<td>40228</td>
-				</tr>
-				<tr>
-					<td>Středočeský kraj</td>
-					<td>131584</td>
-					<td>1812</td>
-					<td>241122</td>
-					<td>22267</td>
-					<td>99326</td>
-				</tr>
-				<tr>
-					<td>Ústecký kraj</td>
-					<td>194133</td>
-					<td>39985</td>
-					<td>200997</td>
-					<td>28229</td>
-					<td>20780</td>
-				</tr>
-				<tr>
-					<td>Zlínský kraj</td>
-					<td>66188</td>
-					<td>51607</td>
-					<td>15977</td>
-					<td>177272</td>
-					<td>17664</td>
-				</tr>
-			</tbody>
-		</table>
-	
-		<p>Data máme k dispozici v následujícím formátu</p>
+    <p><strong>Obtížnost: to dáš</strong></p>
+    <p>Máme pět kandidátů na post prezidenta ČR. Následující tabulka obsahuje hlasy, které jednotliví kandidáti získali v prvním kole prezidentských voleb.</p>
+  
+    <table>
+      <thead>
+        <th>Kraj</th>
+        <th>Igor Rezek</th>
+        <th>Augustýn Doležal</th>
+        <th>Vladan Bednář</th>
+        <th>Ondřej Brotz</th>
+        <th>Radim Kašpar</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hlavní město Praha</td>
+          <td>78774</td>
+          <td>43179</td>
+          <td>225111</td>
+          <td>144799</td>
+          <td>242854</td>
+        </tr>
+        <tr>
+          <td>Jihočeský kraj</td>
+          <td>91062</td>
+          <td>22451</td>
+          <td>17475</td>
+          <td>53391</td>
+          <td>46450</td>
+        </tr>
+        <tr>
+          <td>Jihomoravský kraj</td>
+          <td>179186</td>
+          <td>216499</td>
+          <td>4493</td>
+          <td>156305</td>
+          <td>61222</td>
+        </tr>
+        <tr>
+          <td>Karlovarský kraj</td>
+          <td>9619</td>
+          <td>53476</td>
+          <td>926</td>
+          <td>64737</td>
+          <td>34566</td>
+        </tr>
+        <tr>
+          <td>Kraj Vysočina</td>
+          <td>66904</td>
+          <td>85730</td>
+          <td>27271</td>
+          <td>12964</td>
+          <td>38041</td>
+        </tr>
+        <tr>
+          <td>Královéhradecký kraj</td>
+          <td>118755</td>
+          <td>1929</td>
+          <td>30426</td>
+          <td>25178</td>
+          <td>31952</td>
+        </tr>
+        <tr>
+          <td>Liberecký kraj</td>
+          <td>64467</td>
+          <td>40993</td>
+          <td>81181</td>
+          <td>39392</td>
+          <td>4335</td>
+        </tr>
+        <tr>
+          <td>Moravskoslezský kraj</td>
+          <td>11221</td>
+          <td>97970</td>
+          <td>26179</td>
+          <td>98539</td>
+          <td>112578</td>
+        </tr>
+        <tr>
+          <td>Olomoucký kraj</td>
+          <td>171064</td>
+          <td>7638</td>
+          <td>8752</td>
+          <td>96666</td>
+          <td>39738</td>
+        </tr>
+        <tr>
+          <td>Pardubický kraj</td>
+          <td>74235</td>
+          <td>101680</td>
+          <td>18920</td>
+          <td>45904</td>
+          <td>1922</td>
+        </tr>
+        <tr>
+          <td>Plzeňský kraj</td>
+          <td>39309</td>
+          <td>1505</td>
+          <td>10531</td>
+          <td>30458</td>
+          <td>40228</td>
+        </tr>
+        <tr>
+          <td>Středočeský kraj</td>
+          <td>131584</td>
+          <td>1812</td>
+          <td>241122</td>
+          <td>22267</td>
+          <td>99326</td>
+        </tr>
+        <tr>
+          <td>Ústecký kraj</td>
+          <td>194133</td>
+          <td>39985</td>
+          <td>200997</td>
+          <td>28229</td>
+          <td>20780</td>
+        </tr>
+        <tr>
+          <td>Zlínský kraj</td>
+          <td>66188</td>
+          <td>51607</td>
+          <td>15977</td>
+          <td>177272</td>
+          <td>17664</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <p>Data máme k dispozici v následujícím formátu</p>
 <pre>hlasy = [ 
   [78774, 43179, 225111, 144799, 242854],
   [91062, 22451, 17475, 53391, 46450],
@@ -691,16 +692,16 @@ delky = [136, 105, 82]</pre>
   [194133, 39985, 200997, 28229, 20780],
   [66188, 51607, 15977, 177272, 17664]
 ]</pre>
-	
-		<p>Zodpovězte následující otázky</p>
-	
-		<ol>
-			<li>Kolik získal každý kandidát hlasů v celé ČR?</li>
-			<li>Který kandidát vyhrál první kolo voleb?</li>
-			<li>Ve kterých krajích byla nejvyšší a nejnižší volební účast</li>
-			<li>Vytvořte tabulku, která ukazuje který kandidát vyhrál v kterém kraji.</li>
-			<li>Využijte tabulku počtů obyvatel v krajích a vytvořte tabulku podobnou té z tohoto cvičení, která místo čísel bude obsahovat kolik procent hlasů získal každý kandidát v daném kraji.</li>
-			<li>Vytvořte seznam pravdivostních hodnot, který bude říkat ve kterých krajích překročila volební účast 50%.</li>	
-		</ol>
-	</%self:exrc>
+  
+    <p>Zodpovězte následující otázky</p>
+  
+    <ol>
+      <li>Kolik získal každý kandidát hlasů v celé ČR?</li>
+      <li>Který kandidát vyhrál první kolo voleb?</li>
+      <li>Ve kterých krajích byla nejvyšší a nejnižší volební účast</li>
+      <li>Vytvořte tabulku, která ukazuje který kandidát vyhrál v kterém kraji.</li>
+      <li>Využijte tabulku počtů obyvatel v krajích a vytvořte tabulku podobnou té z tohoto cvičení, která místo čísel bude obsahovat kolik procent hlasů získal každý kandidát v daném kraji.</li>
+      <li>Vytvořte seznam pravdivostních hodnot, který bude říkat ve kterých krajích překročila volební účast 50%.</li>	
+    </ol>
+  </%self:exrc>
 </%self:exercises>

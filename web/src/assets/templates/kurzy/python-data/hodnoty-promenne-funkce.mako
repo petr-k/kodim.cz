@@ -69,6 +69,7 @@
 
 <%self:exercises>
   <h2>Cvičení</h2>
+  <a name="vyplata" />
   <%self:exrc title="Výplata">
     <ol>
       <li>Spočítejte svůj měsíční příjem víte-li, že pracujete 7 hodin denně se mzdou 450 kč na hodinu. Řekněme, že měsíc má 21 pracovních dní.</li>

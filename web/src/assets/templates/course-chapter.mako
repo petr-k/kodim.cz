@@ -69,31 +69,35 @@
     </div>
     %if (type == 'lesson' and exkey == chapter.exkey) or (type == 'home' and hwkey == chapter.hwkey):
       <div class="exercise-buttons">
-        <button
-          onclick="open_solution('solution${counter.value}');"
-        >
+        <button 
+          type="button" 
+          class="btn btn-secondary" 
+          data-toggle="modal" 
+          data-target="#solution${counter.value}">
           Řešení
         </button>
       </div>
-      <div id="solution${counter.value}" class="modal">
-        <div class="container exercise-solution">
-          <div class="solution-header">
-            <h3>Řešení</h3>
-            <button
-              onclick="close_solution('solution${counter.value}');"
-            >
-              Zavřít
-            </button>
-          </div>
-          <div class="solution-body">
-            ${caller.solution()}
-          </div>
-          <div class="solution-footer">
-            <button
-              onclick="close_solution('solution${counter.value}');"
-            >
-              Zavřít
-            </button>
+      <div id="solution${counter.value}" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Řešení</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body solution-body">
+              ${caller.solution()}
+            </div>
+            <div class="modal-footer">
+              <button 
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -102,12 +106,21 @@
 </%def>
 
 <%block name="header">
-  <div class="chapter-intro container">
-    <div class="chapter-number">${chapter.nums[lang]}</div>
-    <h1 class="chapter-title">${chapter.title[lang]}</h1>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row justify-content-center align-items-md-baseline">
+        <div class="col-md-auto text-center">
+          <div class="chapter-number">${chapter.nums[lang]}</div>
+        </div>
+        <div class="col-md-8 text-center">
+          <h1 class="display-4">${chapter.title[lang]}</h1>
+        </div>
+      </div>
+    </div>
   </div>
 </%block>
 
 <%block name="main">
   ${self.body()}
 </%block>
+
