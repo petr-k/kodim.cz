@@ -30,15 +30,19 @@
   </section>
   <section class="container my-5">
     %for section in course.all_sections():
-      <h2 class="my-5 text-center">${section.title[lang]}</h2>
-      <div class="row">
-        %for i, chapter in enumerate(section.all_chapters()):
-          ${chapterTile(chapter)}
-            %if i % 2 == 1:
-              <div class="w-100"></div>
+      %if section.ready[lang]:
+        <h2 class="my-5 text-center">${section.title[lang]}</h2>
+        <div class="row">
+          %for i, chapter in enumerate(section.all_chapters()):
+            %if chapter.ready[lang]:
+              ${chapterTile(chapter)}
+              %if i % 2 == 1:
+                <div class="w-100"></div>
+              %endif
             %endif
-        %endfor
-      </div>
+          %endfor
+        </div>
+      %endif
     %endfor
   </section>
 </%block>

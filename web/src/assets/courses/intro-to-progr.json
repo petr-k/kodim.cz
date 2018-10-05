@@ -19,6 +19,10 @@
         "cz": "Základy",
         "en": "Basics"
       },
+      "ready": {
+        "cz": true,
+        "en": true
+      },
       "chapters": [
         {
           "link": {
@@ -63,6 +67,10 @@
       "title": {
         "cz": "Začínáme programovat",
         "en": "Starting to Code"
+      },
+      "ready": {
+        "cz": true,
+        "en": true
       },
       "chapters": [
         {
@@ -198,6 +206,10 @@
       "title": {
         "cz": "Další úroveň",
         "en": "Next Level"
+      },
+      "ready": {
+        "cz": false,
+        "en": false
       },
       "chapters": [
         {

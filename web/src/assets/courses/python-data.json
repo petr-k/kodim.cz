@@ -15,6 +15,10 @@
       "title": {
         "cz": "Základy"
       },
+      "ready": {
+        "cz": true,
+        "en": true
+      },
       "chapters": [
         {
           "link": {

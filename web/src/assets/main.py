@@ -39,6 +39,7 @@ class Section:
     self.name = section_json['name']
     self.chapters = []
     self.title = section_json['title']
+    self.ready = section_json['ready']
     self.chapters_dict = OrderedDict()
 
     nums = start_nums
