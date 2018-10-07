@@ -455,9 +455,8 @@ False</pre>
 
 <%self:exercises>
   <h2>Domácí úkoly ‒ povinné</h2>
-  <p><strong>Obtížnost: pohodička</strong></p>
   
-  <%self:exrc title="Ověřování věku" type="home">
+  <%self:exrc title="Ověřování věku" type="home" type="home" diffi="0">
     <p>Následující seznam obsahuje věky uživatelů naší malé sociální sítě.</p>
   
     <pre>veky = [35, 12, 44, 11, 18, 21, 28, 18]</pre>
@@ -472,8 +471,7 @@ False</pre>
     </%def>
   </%self:exrc>
   
-  <%self:exrc title="Promítání">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Promítání" type="home" diffi="1">
     <p>V letním kině Šmajchl mají program na každý den uložený jako dva seznamy. První seznam obsahuje názvy filmů a druhý jejich délky v minutách, např. takto: </p>
   
 <pre>nazvy = [
@@ -492,8 +490,7 @@ delky = [136, 105, 82]</pre>
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Počty obyvatel">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Počty obyvatel" type="home" diffi="1">
     <p>Mějme počty obyvatel v jednotlivých krajích ČR podle následující tabulky.</p>
   
     <table>
@@ -546,8 +543,7 @@ delky = [136, 105, 82]</pre>
     </%def>
   </%self:exrc>
   
-  <%self:exrc title="Volby">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Volby" type="home" diffi="2">
     <p>Máme pět kandidátů na post prezidenta ČR. Následující tabulka obsahuje hlasy, které jednotliví kandidáti získali v prvním kole prezidentských voleb.</p>
   
     <table>

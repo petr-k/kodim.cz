@@ -284,17 +284,18 @@
   <h2>Domácí úložky - povinné</h2>
   <p>Povinné v tomto případě znamená, že budu na další hodině přepokládat, že jste tyto úkoly alespoň zkusili, ne že se budu na vás zle mračit, když je neuděláte :-)</p>
 
-  <%self:exrc title="Úroky" type="home">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Úroky" type="home" diffi="1">
     <p>Fíha banka a.s. nabízí na svých stránkách spořící účet s úrokem 2,4&nbsp;%. Když si na takový účet uložíte 1&nbsp;000&nbsp;000 kč, kolik peněz nastřádáte za 10 let?</p>
     
     <%def name="solution()">
-      Řešení zatím není k dispozici
+<pre>&gt;&gt;&gt;round(1000000 * 1.024 ** 10)
+1267651</pre>
+
+      <p>Za deset let nastřádáme 1&nbsp;267&nbsp;651 kč</p>
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Délka filmu" type="home">
-    <p><strong>Obtížnost: pohodička</strong></p>
+  <%self:exrc title="Délka filmu" type="home" diffi="0">
     <p>V programu kin se často uvádí délka filmu v minutách. Například rozšířená verze filmu <em>Pán prstenů: Dvě věže</em> trvá 223 minut. My bychom ovšem délku filmu raději věděli v hodinách a minutách. Použijte operátory celočíselného dělení a dělení se zbytkem, abyste spočetli, kolik hodin a minut trvá film <em>Pán prstenů: Dvě věže.</em></p>
     
     <%def name="solution()">
@@ -302,8 +303,7 @@
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Průměrné teploty" type="home">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Průměrné teploty" type="home" diffi="1">
     <p>Následující tabulka obsahuje průměrné roční teploty v České republice za roky 2001 až 2010 (zdroj: Český hydrometeorologický ústav). </p>
 
     <table>
@@ -389,8 +389,7 @@
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Průměr" type="home">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Průměr" type="home" diffi="1">
     <p>Mějme proměnnou <var>s</var>, ve které předpokládáme uložený nějaký seznam. Sestavte v Python konzoli výraz (vzoreček), který spočítá průměrnou hodnotu v takovém seznamu. Otestujte jej na seznamech různých délek. </p>
 
     <%def name="solution()">
@@ -401,8 +400,7 @@
   <h2>Domácí úložky - nepovinné</h1>
   <p>Konzumujte, pokud si chcete dál procvičovat Python.</p>
 
-  <%self:exrc title="Nový koberec" type="home">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Nový koberec" type="home" diffi="1">
     <p>Do místnosti tvaru čtverce o rozloze 30&nbsp;m<sup>2</sup> 
     potřebujeme koupit nový koberec. Jakou délku má mít strana koberce? Vejde se nám srolovaný do dodávky s nákladovým prostorem dlouhým 5&nbsp;m?</p>
 
@@ -415,8 +413,7 @@
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Rozpětí" type="home">
-    <p><strong>Obtížnost: to dáš</strong></p>
+  <%self:exrc title="Rozpětí" type="home" diffi="1">
     <p>Postupujte obdobně jako v úložce <strong>Průměr</strong>, ale tentokrát sestavte výraz pro výpočet <em>rozpětí</em>, tedy rozdílu mezi minimální a maximální hodnotou. </p>
 
     <%def name="solution()">
@@ -424,8 +421,7 @@
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Vlastní minimum a maximum" type="home">
-    <p><strong>Obtížnost: roztoč mozkové závity</strong></p>
+  <%self:exrc title="Vlastní minimum a maximum" type="home" diffi="2">
     <p>Prohlédněte si funkce pro práci se seznamy uvedené dříve v obsahu lekce. Představte si, že bychom neměli k dispozici funkce <code>min()</code> a <code>max()</code>. Dokázali byste vytvořit výraz, který zjistí minimální resp. maximální hodnotu v seznamu <var>s</var>? Můžete v tomto vzorečku použít cokoliv, co jsme probrali na lekci kromě samotných funkcí <code>min()</code> a <code>max()</code>.</p>
 
     <%def name="solution()">
@@ -436,8 +432,7 @@
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Střed seznamu" type="home">
-    <p><strong>Obtížnost: pro drsňáky</strong></p>
+  <%self:exrc title="Střed seznamu" type="home" diffi="3">
     <p>Sestavte výraz, který vrátí číslo nacházející se přesně uprostřed v zadaném seznamu <var>s</var>. U seznamů liché délky je střed jasně definovaný, ovšem u seznamů sudé délky nám padne mezi dvě čísla. V takovém případě vyberte jako střed číslo blíž ke konci seznamu. </p>
 
     <%def name="solution()">
@@ -445,8 +440,7 @@
     </%def>
   </%self:exrc>
 
-  <%self:exrc title="Střed seznamu podruhé" type="home">
-    <p><strong>Obtížnost: smrt v přímém přenosu</strong></p>
+  <%self:exrc title="Střed seznamu podruhé" type="home" type="home" diffi="4">
     <p>Sestavte vzoreček, který vrátí číslo nacházející se přesně uprostřed v zadaném seznamu <var>s</var>. Tentokrát však u seznamů sudé délky vyberte jako střed číslo blíž k <em>začátku</em> seznamu. </p>
 
     <%def name="solution()">

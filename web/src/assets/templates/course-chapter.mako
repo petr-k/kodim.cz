@@ -58,13 +58,16 @@
   %endif
 </%def>
 
-<%def name="exrc(title, type='lesson')">
+<%def name="exrc(title, type='lesson', diffi='0')">
   <div class="exercise">
     <div class="exercise-title">
       <div class="exercise-num">${counter.next()}</div>
       <h3>${title}</h3>
     </div>
     <div class="exercise-body">
+      %if type == 'home':
+        <p><strong>Obtížnost: ${difficulties[lang][int(diffi)]}</strong></p>
+      %endif
       ${caller.body()}
     </div>
     %if (type == 'lesson' and exkey == chapter.exkey) or (type == 'home' and hwkey == chapter.hwkey):

@@ -297,13 +297,13 @@ range(1, 11)
 <%self:exercises>
   <h2>Domácí úložky ‒ povinné</h2>
   
-  <%self:exrc title="Fahrnheit vs. Celsius">
+  <%self:exrc title="Fahrnheit vs. Celsius" type="home" diffi="1">
     <p>Pokud pečete podle anglických receptů, často se po váš požaduje rozehřát troubu na uvedenou teplotu. Pokud si ovšem neuvědomíte, že Američané používají pro měření teploty stupně Fahrenheita namísto Celsia, bude vás na konci pečení čekat nemilé překvapení. </p>
 
     <p>Nastudujte si na <a href="https://cs.wikipedia.org/wiki/Stupe%C5%88_Fahrenheita">České Wikipedii</a>  jak se převádějí stupně Fahrenheita na stupně Celsia a napište program, který takový převod provede. Váš program dostane na příkazové řádce teplotu ve stupních Fahrenheita a vypíše její ekvivalent ve stupních Celsia.</p>
   </%self:exrc>
 
-  <%self:exrc title="Cesta k souboru">
+  <%self:exrc title="Cesta k souboru" type="home" diffi="1">
     <p>Ve Windows se cesty k souborům zapisují pomocí zpětných lomítek, tedy například takto</p>
     
     <pre>cesta\do\rise\smazenych\krevet</pre>
@@ -315,7 +315,7 @@ range(1, 11)
     <p>Napište program, který dostane jako parametr cestu ve Windows stylu a převede ji na Unix styl.</p>
   </%self:exrc>
 
-  <%self:exrc title="Házení kostkou">
+  <%self:exrc title="Házení kostkou" type="home" diffi="2">
     <ol>
       <li>Napište program, který při každém spustění hodí šestistěnnou kostkou ‒ tedy vypíše náhodné číslo mezi 1 až 6.</li>
       <li>Upravte program tak, aby jako parametr dostal počet stěn kostky. Bude tedy umět házet třeba sedmistěnnou nebo devítistěnnou kostkou podle toho, jaké číslo dostane na vstupu.</li>
@@ -323,8 +323,7 @@ range(1, 11)
     </ol>
   </%self:exrc>
 
-  <%self:exrc title="Karty 1">
-    <p><strong>Obtížnost: neboj se zamyslet</strong></p>
+  <%self:exrc title="Karty 1" type="home" diffi="2">
     <p>Napište program, který vylosuje náhodnou hrací kartu z klasické whistové sady obsahující 52 karet, rozdělených do čtyř barev (kříže, srdce, piky, káry), s hodnotami 2, 3, 4, 5, 6, 7, 8, 9, 10, J (kluk), Q (dáma), K (král), A (eso).</p>
 
     <p>Výstup programu může vypadat například takto:</p>
@@ -333,14 +332,30 @@ range(1, 11)
   </%self:exrc>
 
   <h2>Domácí úložky ‒ nepovinné</h2>
-  <strong>Obtížnost: neboj se zamyslet</strong>
-
-  <%self:exrc title="Jak proměnit hada na velblouda">
+  
+  <%self:exrc title="Jak proměnit hada na velblouda" type="home" diffi="1">
     <p>Napište program, který dostane na příkazovém řádku název proměnné v hadí notaci a vrátí tentýž název zapsaný ve velbloudí notaci. </p>
 
     <p>Příklad:</p>
 <pre>$ python3 had-velbloud.py had_honi_velblouda
 hadHoniVelblouda
 </pre>
+  </%self:exrc>
+
+  <%self:exrc title="Jak proměnit velblouda na hada" type="home" diffi="4">
+    <p>Napište program, který dostane na příkazovém řádku název proměnné ve velbloudí notaci a vrátí tentýž název zapsaný v hadí notaci. </p>
+
+    <p>Příklad:</p>
+<pre>$ python3 velbloud-had.py velbloudHoniHada
+velbloud_honi_hada
+</pre>
+
+    <p>Ano, tohle už není procházka růžovým sadem a jde o úložku spíše pro fajnšmekry, Python gurmány a lidi s neutišitelnou tohou nenechat žádný příklad nevyřešený. Vězte, že skutečně existuje řešení, které používá výhradně probrané techniky. Vyplatí se mrknout na to, jaké všechny metody nabízí Python řetězce ale jinak není potřeba žádné googlení, jen se nesmíte bát věci, které už tak dobře znáte, opravdu použít a nemít je ve své programátorské dílně jen vystavené za sklem.</p>
+
+    <p>Některé pasáže programu si lze mírně ulehčit použítím funkce <code>enumerate()</code>, která vám při chroustání seznamů vrací nejen prvek seznamu, ale i jeho index. Vyzkoušejte například následující příkaz</p>
+
+<pre>[[i, jmeno] for i, jmeno in ['petr', 'jana', 'vlasta', 'onyx']]</pre>
+
+    <p>Úlohu lze však vyřešit i bez <code>enumerate()</code>!</p> 
   </%self:exrc>
 </%self:exercises>

@@ -124,6 +124,25 @@ class Counter:
     self.value += 1
     return value
 
+difficulties = {
+  'cz': [
+    'Pohodička',
+    'To dáš',
+    'Zapni hlavu',
+    'Zavařovačka',
+    'Smrt v přímém přenosu',
+    'Trýznění nevinných koťátek'
+  ],
+  'es': [
+    'Easy peasy',
+    'You can do it',
+    'Turn your brain ON',
+    'Overheat!',
+    'Death going live',
+    'Torturing innocent kittens'
+  ]
+}
+
 courses = Courses()
 
 @app.route('/')
@@ -169,6 +188,7 @@ def course_chapter(courses_url, course_link, chapter_link):
     chapter=course.get_chapter(lang, chapter_link),
     counter=Counter(),
     lang=lang,
+    difficulties=difficulties,
     exkey=request.args.get('exkey'),
     hwkey=request.args.get('hwkey')
   )
