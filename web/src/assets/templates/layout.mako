@@ -69,7 +69,11 @@
     <%block name="main" />
   </main>
   <footer>
-    
+    <div class="jumbotron jumbotron-fluid mb-0">
+      <div class="container">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Kódím.cz</span>, jehož autorem je <a xmlns:cc="http://creativecommons.org/ns#" href="http://kodim.cz" property="cc:attributionName" rel="cc:attributionURL">Martin Podloucký</a>, podléhá licenci <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci 4.0 Mezinárodní </a>.
+      </div>
+    </div>
   </footer>
   
   <script

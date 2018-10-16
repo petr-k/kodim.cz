@@ -6,6 +6,10 @@ body {
   color: $text-primary;
 }
 
+footer {
+  background-color: #eee;
+}
+
 .container {
   max-width: 960px;
 }
@@ -26,4 +30,18 @@ h2 {
 .display-em {
   color: $text-emphasis;
   font-style: normal;
+}
+
+@media print {
+  body {
+    margin: 25mm;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  h2 {
+    page-break-before: always;
+  }
 }

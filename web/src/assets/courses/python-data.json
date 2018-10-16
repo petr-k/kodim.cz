@@ -13,7 +13,7 @@
     {
       "name": "basics",
       "title": {
-        "cz": "Základy"
+        "cz": "Základy programování"
       },
       "ready": {
         "cz": true,
@@ -28,7 +28,7 @@
             "cz": "Než začneme programovat"
           },
           "desc": {
-            "cz": "Abychom mohli začít programovat musíme nainstalovat potřebné néstroje a seznámit se s příkazovou řádkou."
+            "cz": "Abychom mohli začít programovat musíme nainstalovat potřebné nástroje a seznámit se s příkazovou řádkou."
           },
           "ready": {
             "cz": true
@@ -76,13 +76,137 @@
             "cz": "První programy"
           },
           "desc": {
-            "cz": "Místo psaní příkazů do konzole se naučíme psát opravdové programy. Taky si ukážeme, jak číst data se souborů na disku."
+            "cz": "Místo psaní příkazů do konzole se naučíme psát opravdové programy. Taky si ukážeme, jak číst data z příkazové řádky."
           },
           "ready": {
             "cz": true
           },
           "exkey": "0VjP8MLd",
           "hwkey": "qLZVHKYo"
+        },
+        {
+          "link": {
+            "cz": "soubory"
+          },
+          "title": {
+            "cz": "Soubory: čtení a zápis"
+          },
+          "desc": {
+            "cz": "Naučíme se jak číst a zapisovat data do souborů na disku a tím v naších programech zpracovávat větší objemy dat."
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "rXU8ZfiF",
+          "hwkey": "dnC0sZPG"
+        },
+        {
+          "link": {
+            "cz": "podminky-for"
+          },
+          "title": {
+            "cz": "Podmínky a cyklus FOR"
+          },
+          "desc": {
+            "cz": "Podmínky a cykly jsou základní stavební prvky větších programů, které už řeší složitější a praktičtější problémy."
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "OGjE30J3",
+          "hwkey": "iAngJILv"
+        },
+        {
+          "link": {
+            "cz": "slovniky-json"
+          },
+          "title": {
+            "cz": "Slovníky, JSON"
+          },
+          "desc": {
+            "cz": "Díky slovníkům dokážeme v našem programu zpracovávat složitěji strukturovaná data a díky formátu JSON je můžeme snadno ukládat nebo například stahovat z internetu."
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "OGjE30J3",
+          "hwkey": "iAngJILv"
+        }
+      ]
+    },
+    {
+      "name": "data-analytics",
+      "title": {
+        "cz": "Datová analýza"
+      },
+      "ready": {
+        "cz": true,
+        "en": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "regex-scraping"
+          },
+          "title": {
+            "cz": "Regulární výrazy, webscraping"
+          },
+          "desc": {
+            "cz": "Lekce se připravuje"
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "",
+          "hwkey": ""
+        },
+        {
+          "link": {
+            "cz": "pandas-zaklady"
+          },
+          "title": {
+            "cz": "Základy Pandas"
+          },
+          "desc": {
+            "cz": "Lekce se připravuje"
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "",
+          "hwkey": ""
+        },
+        {
+          "link": {
+            "cz": "pandas-pokracovani"
+          },
+          "title": {
+            "cz": "Pandas pokračování"
+          },
+          "desc": {
+            "cz": "Lekce se připravuje"
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "",
+          "hwkey": ""
+        },
+        {
+          "link": {
+            "cz": "vizualizace"
+          },
+          "title": {
+            "cz": "Vizualizace dat"
+          },
+          "desc": {
+            "cz": "Lekce se připravuje"
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "",
+          "hwkey": ""
         }
       ]
     }
